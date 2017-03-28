@@ -30,9 +30,9 @@ get_header(); ?>
 ?>
 	
 	<div>
-		<div class="container" style="background:url('<?php echo $img; ?>'); background-size: cover;">
-			<div class="row">
-				<div class="col-md-6">
+		<div class="container" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 250px;">
+			<div class="row sec-img-2">
+				<div class="col-md-4">
 					<p><?php echo $descripcion; ?></p>
 					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary"> 
 					Consultar</button></a>

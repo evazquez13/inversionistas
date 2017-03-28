@@ -48,6 +48,16 @@
 }
 .barraFooter p a{
 	color: #363636;
-	font-size: 10px;
 }
 /*Termina estilos de footer*/
+/*Estilos para index*/
+.sec-img-2{
+	margin-top: 20px;
+}
+.sec-img-2 p{
+	color: red;
+	font-size: 10px;
+	font-size: 22px;
+	font-family: 'bbva-regular';
+}
+/*Termina estilos para index*/
