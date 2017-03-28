@@ -19,7 +19,10 @@ get_header(); ?>
 	$urlBoton = get_field('url-boton');
 ?>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -82,6 +85,9 @@ get_header(); ?>
 	<?php } ?>
   </ol>
 
+</div>
+		</div>
+	</div>
 </div>
 
 <?php 
