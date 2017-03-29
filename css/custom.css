@@ -50,6 +50,7 @@
 	color: #363636;
 }
 /*Termina estilos de footer*/
+
 /*Estilos para index*/
 .sec-img-2{
 	margin-top: 20px;
@@ -60,10 +61,7 @@
 	font-size: 22px;
 	font-family: 'bbva-regular';
 }
-<<<<<<< HEAD
 /*Termina estilos para index*/
-=======
-/*Termina estilos de footer*/
 
 /*Estilos de index-Banner*/
 .banner-msn{
@@ -71,5 +69,9 @@
 	padding: 15px;
 	opacity: .5;
 }
+
+.relleno{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 /*Termina estilos de index-Banner*/
->>>>>>> 6de0ba1a5818b35092ddef24bf182057107a3ff8

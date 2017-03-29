@@ -21,7 +21,7 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 relleno">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
