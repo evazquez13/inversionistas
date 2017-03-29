@@ -1,18 +1,94 @@
 @font-face {
-  font-family: 'bbva-regular';
-  src: url("fonts/bbvaweb-book.eot");
-  src: url("fonts/bbvaweb-book.eot?#iefix") format("embedded-opentype"), url("fonts/bbvaweb-book.woff") format("woff"), url("fonts/bbvaweb-book.ttf") format("truetype"), url("fonts/bbvaweb-book.svg#StagSansBook") format("svg");
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: normal;
+    font-family: 'bentonsansbold';
+    src: url('fontsBBVA/bentonsansbbva-bold-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsansbbva-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+
+
 @font-face {
-  font-family: 'bbva-bold';
-  src: url("fonts/bbvaweb-semibold.eot");
-  src: url("fonts/bbvaweb-semibold.eot?#iefix") format("embedded-opentype"), url("fonts/bbvaweb-semibold.woff") format("woff"), url("fonts/bbvaweb-semibold.ttf") format("truetype"), url("fonts/bbvaweb-semibold.svg#StagSansBook") format("svg");
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: normal;
+    font-family: 'bentonsansbook';
+    src: url('fontsBBVA/bentonsansbbva-book-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsansbbva-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsanslight';
+    src: url('fontsBBVA/bentonsansbbva-light-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsansbbva-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsansmedium';
+    src: url('fontsBBVA/bentonsansbbva-medium-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsansbbva-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsansbold';
+    src: url('fontsBBVA/bentonsans-bold-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsansbook';
+    src: url('fontsBBVA/bentonsans-book-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsans-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsanslight';
+    src: url('fontsBBVA/bentonsans-light-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bentonsansmedium';
+    src: url('fontsBBVA/bentonsans-medium-webfont.woff2') format('woff2'),
+         url('fontsBBVA/bentonsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 /*Estilos de footer*/
 .footer h4{
