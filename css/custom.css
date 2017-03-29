@@ -151,3 +151,18 @@
 	padding-right: 0px;
 }
 /*Termina estilos de index-Banner*/
+
+/*Estilos de ventana interes*/
+.titulo{
+	text-align: center;
+	font-size: 25px;
+	margin: 15px;
+}
+.interes{
+	margin-top: 140px;
+	color: red;
+}
+.relleno2{
+	margin-bottom: 30px;
+}
+/*Termina estilos de ventanas ineteres*/
