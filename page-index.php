@@ -114,4 +114,33 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 titulo">
+			<h1>Información de interés</h1>
+		</div>
+	</div>
+
+	<div class="row">
+	<?php
+		// check if the repeater field has rows of data
+		if( have_rows('interes') ):
+			// loop through the rows of data
+			while ( have_rows('interes') ) : the_row();			
+	?>
+		<div class = "col-md-6 relleno2">
+			<div class="col-md-12" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 200px;" >
+				<div class="col-md-8 interes">
+					<p><?php the_sub_field('tema'); ?></p> 
+				</div>	
+			</div>
+		</div>	
+		<?php
+					endwhile;
+					endif;
+				?>
+	</div>
+</div >
 <?php get_footer(); ?>
