@@ -125,6 +125,9 @@
   letter-spacing: normal;
   color: #49a5e6;
 }
+.separador{
+  margin-bottom: 40px;  
+}
 .accionista{
   width: 386px;
   height: 29px;

@@ -63,12 +63,12 @@
 </div>
 <div class="barraFooter">
 	<div class="container">
-    <div class="row">
-      <div class="col-md-4 imag1">
+    <div class="row separador">
+      <div class="col-md-4">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
       <div class="col-md-4 accionista">
-        <h2>Accionistas e Inversores</h2>
+        <p>Accionistas e Inversores</p>
       </div>
     </div>
 		<div class="row">
