@@ -24,7 +24,8 @@ a {
 .menu-container {
     width: 100%;
     margin: 0 auto;
-    background: #FFF;
+    background-color: #072146;
+    border: solid 1px #072146;
 }
 
 .menu-mobile {
@@ -78,15 +79,27 @@ a {
 
 .menu > ul > li {
     float: left;
-    background: #FFF;
-    padding: 0;
-    margin: 0;
+    padding: 3px;
+    margin: 0; 
+    background-color: #072146;
+    border: solid 1px #072146
 }
 
 .menu > ul > li a {
     text-decoration: none;
     padding: 12px;
     display: table;
+    width: 39px;
+    height: 17px;
+    font-family: 'bentonsansbook';
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
 }
 
 .menu > ul > li:hover {
@@ -96,7 +109,7 @@ a {
 .menu > ul > li > ul {
     display: none;
     width: 100%;
-    background: #f0f0f0;
+    background: #072146;
     padding: 20px;
     position: absolute;
     z-index: 99;
