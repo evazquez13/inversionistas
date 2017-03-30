@@ -102,15 +102,25 @@
 	border-left: 1px solid #ccc;
 }
 .barraFooter{
-	background-color: #f7f4f4;
 	bottom: 0px;
 	width: 100%;
 	color: #363636;
 	margin: 0px;
-	padding: 10px 0px 0px 0px;
+  padding: 75px 0px 44px 0px;
+  background-color: #072146;
+  border: solid 1px #072146;
 }
 .barraFooter p a{
-	color: #363636;
+  width: 111px;
+  height: 17px;
+  font-family: 'bentonsansbook';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #49a5e6;
 }
 /*Termina estilos de footer*/
 
