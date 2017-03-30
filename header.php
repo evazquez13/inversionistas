@@ -24,7 +24,7 @@
   <?php wp_head(); ?>
 <body>
 <header>
-  <div class="container">
+  <div class="container cabecera">
     <div class="row">
       <div class="col-md-4">
         <div class="logo-container">
