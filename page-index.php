@@ -19,13 +19,11 @@ get_header(); ?>
 	$urlBoton = get_field('url-boton');
 ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 relleno">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+  	
 	<?php
 	$i == 0;
 		// check if the repeater field has rows of data
@@ -33,11 +31,9 @@ get_header(); ?>
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    
-		    <div class="item <?php if($i == 0) {echo 'active';} ?>">
-
-		      <img src="<?php the_sub_field('imagen'); ?>">
-		      <div class="col-md-6 carousel-caption">
+    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;">
+  		<div class="container">
+  			<div class="col-md-4 carousel-caption">
 		            <div class="ctxt banner-msn">
 						<div class="row tt">
 							<div class="col-md-10 col-sm-10 col-xs-10">
@@ -56,7 +52,8 @@ get_header(); ?>
 						</div>
 		    		</div>
 		      </div>
-		    </div>
+  		</div>
+  	</div>
 
 	<?php 
 		$i ++;
@@ -85,9 +82,6 @@ get_header(); ?>
 	<?php } ?>
   </ol>
 
-</div>
-		</div>
-	</div>
 </div>
 
 <?php 

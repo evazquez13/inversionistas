@@ -6412,8 +6412,8 @@ button.close {
   }
   .carousel-caption {
     right: 20%;
-    left: 4%;
-    padding: 14px 9px 14px 9px;
+    left: 20%;
+    padding-bottom: 30px;
     
   }
   .carousel-indicators {
