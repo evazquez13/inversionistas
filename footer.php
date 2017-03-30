@@ -63,8 +63,16 @@
 </div>
 <div class="barraFooter">
 	<div class="container">
+    <div class="row">
+      <div class="col-md-4 imag1">
+      <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
+      </div>
+      <div class="col-md-4 accionista">
+        <h2>Accionistas e Inversores</h2>
+      </div>
+    </div>
 		<div class="row">
-			<div class="col-md-2 col-xs-6">
+			<div class="col-md-1 col-xs-6">
 				<p><a href="#">Seguridad</a></p>
 			</div>
 			<div class="col-md-2 col-xs-6">
@@ -76,10 +84,22 @@
 			<div class="col-md-2 col-xs-6">
 				<p><a href="#">Aviso de Privacidad</a></p>
 			</div>
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-3 col-xs-12">
 				<p><a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
+      <div class="col-md-2 imgsocial">
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive" alt="fb" style="
+    margin-right: 7px;></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive" alt="tw" style="
+    margin-right: 7px;></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a>
+      </div>
 		</div>
+    <div class="row">
+      <div class="col-md-2 social">
+          <p>BBVA Social Media</p>      
+      </div>
+    </div> 
 	</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
