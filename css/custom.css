@@ -71,6 +71,9 @@
 }
 
 /*Estilos para header*/
+.fonfoAzul{
+  background-color: #072146;
+}
 .cabecera{
   background-color: #072146;
   border: solid 1px #072146;

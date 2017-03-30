@@ -24,95 +24,99 @@
   <?php wp_head(); ?>
 <body>
 <header>
-  <div class="container cabecera">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="logo-container">
-          <a class="navbar-trigger">&nbsp;</a>  
-          <a href="/" class="logo-cabecera"><img height="90" class="img-responsive hidden-xs" src="#"></a>
+  <div class="fondoAzul">
+      <div class="container cabecera">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="logo-container">
+              <a class="navbar-trigger">&nbsp;</a>  
+              <a href="/" class="logo-cabecera"><img height="90" class="img-responsive hidden-xs" src="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>  
+
+  <div class="fondoAzul">
+      <div class="container">
+        <div class="row">
+            <div class="menu-container">
+              <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Conócenos</a>
+                        <ul>
+                            <li><a href="#">Misión</a></li>
+                            <li><a href="#">Historia</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">BBVA en Resumen</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Modelo de Negocio</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Estructura Directiva</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Negocio Responsable</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Grupo BBVA</a>
+                                <ul></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Información Financiera</a>
+                        <ul>
+                            <li><a href="#">Información Trimestral</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Informe Anual</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Información para Reguladores</a>
+                                <ul></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Renta Fija</a>
+                        <ul>
+                            <li><a href="#">Calificaciones</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Factsheet</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Emisiones</a>
+                                <ul></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gobierno Corporativo</a>
+                        <ul>
+                            <li><a href="#">Consejo de Administración</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Asamblea de Accionistas</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Estatutos Sociales y Convenio Único</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Código de Conducta</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Código de Mejores Prácticas Corporativas</a>
+                                <ul></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
         </div>
       </div>
     </div>
   </div>
-  </header>  
-
-  <div class="container">
-    <div class="row">
-        <div class="menu-container">
-          <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Conócenos</a>
-                    <ul>
-                        <li><a href="#">Misión</a></li>
-                        <li><a href="#">Historia</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">BBVA en Resumen</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Modelo de Negocio</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Estructura Directiva</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Negocio Responsable</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Grupo BBVA</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Información Financiera</a>
-                    <ul>
-                        <li><a href="#">Información Trimestral</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Informe Anual</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Información para Reguladores</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Renta Fija</a>
-                    <ul>
-                        <li><a href="#">Calificaciones</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Factsheet</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Emisiones</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Gobierno Corporativo</a>
-                    <ul>
-                        <li><a href="#">Consejo de Administración</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Asamblea de Accionistas</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Estatutos Sociales y Convenio Único</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Código de Conducta</a>
-                            <ul></ul>
-                        </li>
-                        <li><a href="#">Código de Mejores Prácticas Corporativas</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-  </div>
-</div>
