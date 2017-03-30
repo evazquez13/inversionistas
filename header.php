@@ -24,7 +24,7 @@
   <?php wp_head(); ?>
 <body>
 <header>
-  <div class="fondoAzul">    
+  <div class="fonfoAzul">    
     <div class="container cabecera">
       <div class="row">
         <div class="col-md-4">
@@ -38,7 +38,7 @@
   </div>
   </header>  
 
-  <div class="fondoAzul">
+  <div class="fonfoAzul">
       <div class="container">
         <div class="row">
             <div class="menu-container">
