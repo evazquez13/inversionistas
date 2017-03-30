@@ -125,6 +125,21 @@
   letter-spacing: normal;
   color: #49a5e6;
 }
+.accionista{
+  width: 386px;
+  height: 29px;
+  font-family: 'bentonsansbook';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  float: right;
+  margin-right: 69px;
+}
 .imgsocial{
   display: flex;
 }
