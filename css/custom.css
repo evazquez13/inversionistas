@@ -128,9 +128,12 @@
 .imgsocial{
   display: flex;
 }
+.imgsocial2{
+  margin-right: 7px;
+}
 .social{
   float: right;
-  width: 90px;
+  width: 130px;
   height: 14px;
   font-family: 'bentonsansbook';
   font-size: 10px;
@@ -140,6 +143,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #3c92e0;
+  margin-right: 58px;
 }
 
 /*Termina estilos de footer*/

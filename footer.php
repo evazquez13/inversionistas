@@ -88,10 +88,8 @@
 				<p><a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
       <div class="col-md-2 imgsocial">
-        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive" alt="fb" style="
-    margin-right: 7px;></a>
-        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive" alt="tw" style="
-    margin-right: 7px;></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a>
         <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a>
       </div>
 		</div>
