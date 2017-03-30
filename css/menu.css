@@ -88,7 +88,6 @@ a {
 .menu > ul > li a {
     text-decoration: none;
     padding: 12px;
-    display: table;
     width: 39px;
     height: 17px;
     font-family: 'bentonsansbook';
@@ -139,11 +138,21 @@ a {
 }
 
 .menu > ul > li > ul > li a {
-    color: #777;
     padding: .2em 0;
-    width: 95%;
+   /* width: 95%;  */
     display: block;
-    border-bottom: 1px solid #ccc;
+    width: 193px;
+    height: 17px;
+    opacity: 0.6;
+    font-family: 'bentonsansbook';
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
 }
 
 .menu > ul > li > ul > li > ul {
