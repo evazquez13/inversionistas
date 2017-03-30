@@ -37,19 +37,19 @@ get_header(); ?>
 		    <div class="item <?php if($i == 0) {echo 'active';} ?>">
 
 		      <img src="<?php the_sub_field('imagen'); ?>">
-		      <div class="carousel-caption">
+		      <div class="col-md-6 carousel-caption">
 		            <div class="ctxt banner-msn">
-						<div class="row">
-							<div class="col-md-7 col-sm-7 col-xs-7">
+						<div class="row tt">
+							<div class="col-md-10 col-sm-10 col-xs-10">
 								<h2><?php the_sub_field('titulo'); ?></h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-7 col-sm-7 col-xs-7">
+							<div class="col-md-12 col-sm-12 col-xs-12 tt2">
 								<p><?php the_sub_field('introduccion'); ?></p>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
 								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
 							</div>
@@ -100,18 +100,23 @@ get_header(); ?>
 ?>
 	
 	<div>
-		<div class="container" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 250px;">
+		<div class="container" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px;">
 			<div class="row sec-img-2">
 				<div class="col-md-4">
 					<p><?php echo $descripcion; ?></p>
+				</div>
+			</div>
+
+			<div class="row sec-img-2">
+				<div class="col-md-4">
 					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary"> 
 					Consultar</button></a>
+				</div>
+			</div>
 					<?php
 					the_content();
 					endwhile;
 					?>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -131,10 +136,7 @@ get_header(); ?>
 			while ( have_rows('interes') ) : the_row();			
 	?>
 		<div class = "col-md-6 relleno2">
-			<div class="col-md-12" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 200px;" >
-				<div class="col-md-8 interes">
-					<p><?php the_sub_field('tema'); ?></p> 
-				</div>	
+			<div class="col-md-12" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;" >
 			</div>
 		</div>	
 		<?php
