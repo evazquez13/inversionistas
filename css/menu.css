@@ -138,7 +138,6 @@ a {
     display: block;
     width: 193px;
     height: 17px;
-    opacity: 0.6;
     font-family: 'bentonsansbook';
     font-size: 12px;
     font-weight: 500;
@@ -147,7 +146,7 @@ a {
     line-height: normal;
     letter-spacing: normal;
     text-align: right;
-    color: #ffffff;
+    color: #FFF;
 }
 
 .menu > ul > li > ul > li > ul {
