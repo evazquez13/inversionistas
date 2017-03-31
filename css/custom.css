@@ -81,6 +81,9 @@
 /*Termina estilos de header*/
 
 /*Estilos de footer*/
+.ayuda{
+  margin: 60px;
+}
 .footer h4{
   width: 255px;
   height: 20px;

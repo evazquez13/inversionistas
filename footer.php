@@ -11,7 +11,7 @@
 ?>
 <?php wp_footer(); ?>
 <!-- <div class="row separador"></div> -->
-<div>
+<div class="ayuda">
   <div class="container footer">
   <div class="row arealink">
     <div class="col-md-3 col-xs-6 borde">
