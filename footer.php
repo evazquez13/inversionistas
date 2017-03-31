@@ -11,7 +11,7 @@
 ?>
 <?php wp_footer(); ?>
 <!-- <div class="row separador"></div> -->
-<div>
+<div class="ayuda">
   <div class="container footer">
   <div class="row arealink">
     <div class="col-md-3 col-xs-6 borde">
@@ -63,12 +63,12 @@
 </div>
 <div class="barraFooter">
 	<div class="container">
-    <div class="row">
-      <div class="col-md-4 imag1">
+    <div class="row separador">
+      <div class="col-md-4">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
       <div class="col-md-4 accionista">
-        <h2>Accionistas e Inversores</h2>
+        <p>Accionistas e Inversores</p>
       </div>
     </div>
 		<div class="row">
@@ -88,10 +88,8 @@
 				<p><a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
       <div class="col-md-2 imgsocial">
-        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive" alt="fb" style="
-    margin-right: 7px;></a>
-        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive" alt="tw" style="
-    margin-right: 7px;></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a>
+        <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a>
         <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a>
       </div>
 		</div>

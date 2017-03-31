@@ -81,11 +81,20 @@
 /*Termina estilos de header*/
 
 /*Estilos de footer*/
+.ayuda{
+  margin: 60px;
+}
 .footer h4{
-	font-size: 12px;
-	color: #363636;
-	text-transform: uppercase;
-	font-family: 'bbva-regular';
+  width: 255px;
+  height: 20px;
+  font-family: 'bentonsansbook';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #363636;
 }
 .footer ul{
 	padding-left: 0px;
@@ -97,9 +106,16 @@
 	color: #666666;
 }
 .footer li a{
-	color: #666666;
-	font-size: 12px;
-	font-family: 'bbva-regular';
+  width: 255px;
+  height: 17px;
+  font-family: 'bentonsansbook';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2a86ca;
 }
 .footer .borde{
 	border-left: 1px solid #ccc;
@@ -109,7 +125,7 @@
 	width: 100%;
 	color: #363636;
 	margin: 0px;
-  padding: 75px 0px 44px 0px;
+  padding: 42px 0px 20px 0px;
   background-color: #072146;
   border: solid 1px #072146;
 }
@@ -125,12 +141,33 @@
   letter-spacing: normal;
   color: #49a5e6;
 }
+.separador{
+  margin-bottom: 40px;  
+}
+.accionista{
+  width: 386px;
+  height: 29px;
+  font-family: 'bentonsansbook';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  float: right;
+  margin-right: 69px;
+}
 .imgsocial{
   display: flex;
 }
+.imgsocial2{
+  margin-right: 7px;
+}
 .social{
   float: right;
-  width: 90px;
+  width: 130px;
   height: 14px;
   font-family: 'bentonsansbook';
   font-size: 10px;
@@ -140,6 +177,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #3c92e0;
+  margin-right: 58px;
 }
 
 /*Termina estilos de footer*/
