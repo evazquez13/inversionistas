@@ -141,6 +141,10 @@
   letter-spacing: normal;
   color: #49a5e6;
 }
+.barraFooter p a:hover{
+  text-decoration: none;
+  color: #fff;
+}
 .separador{
   margin-bottom: 40px;  
 }
