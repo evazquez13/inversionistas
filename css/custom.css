@@ -124,11 +124,8 @@
 	color: #666666;
 }
 .footer li a{
-  width: 255px;
-  height: 17px;
   font-family: 'bentonsansbook';
   font-size: 12px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -148,11 +145,8 @@
   border: solid 1px #072146;
 }
 .barraFooter p a{
-  width: 111px;
-  height: 17px;
   font-family: 'bentonsansbook';
   font-size: 12px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -167,19 +161,15 @@
   margin-bottom: 40px;  
 }
 .accionista{
-  width: 386px;
-  height: 29px;
   font-family: 'bentonsansbook';
   font-size: 24px;
-  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: right;
   color: #ffffff;
   float: right;
-  margin-right: 69px;
+  margin-right: 43px;
 }
 .imgsocial{
   display: flex;
@@ -189,17 +179,14 @@
 }
 .social{
   float: right;
-  width: 130px;
-  height: 14px;
   font-family: 'bentonsansbook';
   font-size: 10px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #3c92e0;
-  margin-right: 58px;
+  margin-right: 80px;
 }
 
 /*Termina estilos de footer*/
@@ -218,6 +205,9 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+.botonzote{
+  padding: 19px 66px 19px 66px;
 }
 /*Termina estilos para index*/
 
