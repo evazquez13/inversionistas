@@ -78,6 +78,23 @@
   background-color: #072146;
   border: solid 1px #072146;
 }
+.accionistahead{
+  width: 386px;
+  height: 29px;
+  font-family: 'bentonsansbook';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-top: 18px;
+}
+.bordehead{
+  border-right: solid 0.5px #ffffff;
+  margin-right: 20px;
+}
 /*Termina estilos de header*/
 
 /*Estilos de footer*/
