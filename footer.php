@@ -50,14 +50,6 @@
         <li><a href="#">Centro de Innovación</a></li>
       </ul>
     </div>
-    <div class="col-md-3 col-xs-6 borde">
-    	<h4>BBVA EN REDES SOCIALES</h4>
-    	<ul>
-    		<li><a href="#">Facebook</a></li>
-    		<li><a href="#">Twitter</a></li>
-    		<li><a href="#">YouTube</a></li>
-    	</ul>
-    </div>  
     </div>
 </div>
 </div>
