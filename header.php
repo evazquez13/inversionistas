@@ -48,15 +48,15 @@
               <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                  <li><a href="http://localhost/wordpress/conocenos/">Conócenos</a>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a>
                     </li>     
-                    <li><a href="http://localhost/wordpress/inf_financiera/">Información Financiera</a>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a>
                     </li>
-                    <li><a href="http://localhost/wordpress/renta_fija/">Renta Fija</a>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a>
                     </li>
-                    <li><a href="http://localhost/wordpress/gobierno_corporativo/">Gobierno Corporativo</a>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a>
                     </li>
-                    <li><a href="http://localhost/wordpress/contacto/">Contacto</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>
