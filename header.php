@@ -41,15 +41,38 @@
   </div>
   </header>  
 
-  <div class="fonfoAzul">
+<div class="fonfoAzul visible-lg visible-md">
+     <div class="container">
+        <div class="row">
+            <div class="menu-container">
+              <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                  <li><a href="http://localhost/wordpress/conocenos/">Conócenos</a>
+                    </li>     
+                    <li><a href="http://localhost/wordpress/inf_financiera/">Información Financiera</a>
+                    </li>
+                    <li><a href="http://localhost/wordpress/renta_fija/">Renta Fija</a>
+                    </li>
+                    <li><a href="http://localhost/wordpress/gobierno_corporativo/">Gobierno Corporativo</a>
+                    </li>
+                    <li><a href="http://localhost/wordpress/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <div class="fonfoAzul hidden-lg hidden-md">
       <div class="container">
         <div class="row">
             <div class="menu-container">
               <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Conócenos</a>
-                        <ul>
+                  <li><a href="#">Conócenos</a>
+                         <ul>
                             <li><a href="#">Misión</a></li>
                             <li><a href="#">Historia</a>
                                 <ul></ul>
@@ -69,8 +92,8 @@
                             <li><a href="#">Grupo BBVA</a>
                                 <ul></ul>
                             </li>
-                        </ul>
-                    </li>
+                        </ul> 
+                    </li>     
                     <li><a href="#">Información Financiera</a>
                         <ul>
                             <li><a href="#">Información Trimestral</a>
@@ -82,7 +105,7 @@
                             <li><a href="#">Información para Reguladores</a>
                                 <ul></ul>
                             </li>
-                        </ul>
+                        </ul>  
                     </li>
                     <li><a href="#">Renta Fija</a>
                         <ul>
@@ -95,7 +118,7 @@
                             <li><a href="#">Emisiones</a>
                                 <ul></ul>
                             </li>
-                        </ul>
+                        </ul>   -->
                     </li>
                     <li><a href="#">Gobierno Corporativo</a>
                         <ul>
@@ -114,7 +137,7 @@
                             <li><a href="#">Código de Mejores Prácticas Corporativas</a>
                                 <ul></ul>
                             </li>
-                        </ul>
+                        </ul>       
                     </li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -123,3 +146,98 @@
       </div>
     </div>
   </div>
+ 
+
+<?php 
+if (is_page("Conócenos")) { ?>
+ <div class="fondoClaro visible-lg visible-md">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                 <ul>
+                     <li><a href="#">Misión</a></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">BBVA en Resumen</a></li>
+                        <li><a href="#">Modelo de Negocio</a>
+                        </li>
+                        <li><a href="#">Estructura Directiva</a>
+                        </li>
+                        <li><a href="#">Negocio Responsable</a>
+                        </li>
+                        <li><a href="#">Grupo BBVA</a>
+                        </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+
+<?php 
+  } 
+if (is_page("Inf_Financiera")) { ?>
+ <div class="fondoClaro visible-lg visible-md">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                <ul>
+                    <li><a href="#">Información Trimestral</a></li>
+                    <li><a href="#">Informe Anual</a></li>
+                    <li><a href="#">Información para Reguladores</a></li>
+                </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+
+<?php 
+  } 
+if (is_page("Renta_fija")) { ?>
+ <div class="fondoClaro visible-lg visible-md">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                <ul>
+                    <li><a href="#">Calificaciones</a> </li>
+                    <li><a href="#">Factsheet</a></li>
+                    <li><a href="#">Emisiones</a></li>
+                </ul>  
+             </div>
+         </div>
+     </div>
+ </div>
+
+<?php 
+  } 
+if (is_page("Gobierno_Corporativo")) { ?>
+ <div class="fondoClaro visible-lg visible-md">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                <ul>
+                    <li><a href="#">Consejo de Administración</a></li>
+                    <li><a href="#">Asamblea de Accionistas</a></li>
+                    <li><a href="#">Estatutos Sociales y Convenio Único</a></li>
+                    <li><a href="#">Código de Conducta</a></li>
+                    <li><a href="#">Código de Mejores Prácticas Corporativas</a></li>
+                </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+
+<?php 
+  } 
+if (is_page("Contacto")) { ?>
+<!-- <div class="fondoClaro visible-lg visible-md">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+
+             </div>
+         </div>
+     </div>
+ </div>
+-->
+<?php 
+  } 
+  ?>

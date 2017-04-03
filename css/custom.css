@@ -96,6 +96,10 @@
   border-right: solid 0.5px #ffffff;
   margin-right: 20px;
 }
+.fondoClaro{
+  background-color: #004481;
+  padding: 12px 1px 7px 1px;
+}
 /*Termina estilos de header*/
 
 /*Estilos de footer*/
