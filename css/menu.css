@@ -86,7 +86,7 @@ a {
     width: 39px;
     height: 17px;
     font-family: 'bentonsansbook';
-    font-size: 12px;
+    font-size: 105%;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -97,7 +97,7 @@ a {
 }
 
 .menu > ul > li:hover {
- /*   background: #f0f0f0; */
+ /*background: #f0f0f0; */
 }
 
 .menu > ul > li > ul {
@@ -198,7 +198,7 @@ a {
   color: #5BBEF2;
 }
 .menu-claro{
-    width: 100%;
+    width: 110%;
     margin: 0 auto;
     background-color: #004481;
     border: solid 1px #004481;
@@ -220,7 +220,7 @@ a {
     width: 39px;
     height: 17px;
     font-family: 'bentonsansbook';
-    font-size: 11px;
+    font-size: 90%;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
