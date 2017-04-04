@@ -239,6 +239,7 @@ get_header(); ?>
 <script type="text/javascript">
 
 	function mostrarAnio(an1){
+		$('.anio').val($('option:first').val());
 	      $('.anio , .insti').css('display','none');
 				$('#anio'+an1.value).stop().delay(200).fadeIn();
 		}
