@@ -268,3 +268,11 @@
 	margin-bottom: 30px;
 }
 /*Termina estilos de ventanas ineteres*/
+/*Estilos para informacion financiera*/
+.insti{
+  display: none;
+}
+.anio{
+  display: none;
+}
+/*Estilos para informacion financiera*/

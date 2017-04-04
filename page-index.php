@@ -84,6 +84,102 @@ get_header(); ?>
 
 </div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<h1>Información Financiera</h1>
+				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span> Seleccione el documento que requiere:</span></p>
+			</div>
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<select name="institucion" id="institucion" class="form-control" onchange="mostrarAnio(this)">
+						<option>-Selecciona</option>
+						<?php
+						$i=0;
+
+							// check if the repeater field has rows of data
+							if( have_rows('institucion') ):
+								// loop through the rows of data
+								while ( have_rows('institucion') ) : the_row();
+						?>
+						<option value="<?php echo $i; ?>"><?php the_sub_field('nombre-institucion') ?></option>
+						<?php 
+						$i ++;
+						endwhile;
+						endif;
+					?>
+					</select>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<?php 
+					$i=0;
+					$a=0; 
+					if( have_rows('institucion') ):
+								// loop through the rows of data
+								while ( have_rows('institucion') ) : the_row();
+						?>
+						<select id="anio<?php echo $i; ?>" class="form-control anio" onchange="mostrarPdf(this)">
+					<option>-Selecciona</option>
+						<?php
+						 
+						 
+							// check if the repeater field has rows of data
+							if( have_rows('anio') ):
+								// loop through the rows of data
+								while ( have_rows('anio') ) : the_row();
+						?>
+						<option value="<?php echo $a; ?>"><?php the_sub_field('nuemero-anio') ?></option>
+						<?php
+						$a++;
+						endwhile;
+						endif;
+						?>
+						</select>
+						<?php
+						$i++;
+						endwhile;
+						endif;
+						?>
+				</div>
+						
+				
+			</div>
+			<?php $e=0;
+					if( have_rows('institucion') ):
+								// loop through the rows of data
+								while ( have_rows('institucion') ) : the_row();
+							// check if the repeater field has rows of data
+							
+							if( have_rows('anio') ):
+								// loop through the rows of data
+								while ( have_rows('anio') ) : the_row();
+							
+			 ?>
+				<div class="col-md-12 col-xs-12 col-sm-12 insti" id="insti<?php echo $e; ?>">
+				<?php 
+								// check if the repeater field has rows of data
+							if( have_rows('pdf') ):
+							// loop through the rows of data
+							while ( have_rows('pdf') ) : the_row();
+				 ?>
+					<div class="col-md-6 col-xs-6 col-sm-6"><?php the_sub_field('nombre-pdf'); ?></div>
+					<div class="col-md-6 col-xs-6 col-sm-6"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
+					<?php 
+					endwhile;
+					endif;		
+					 ?>
+				</div>
+				<?php 
+					$e++;
+					endwhile;
+					endif;
+					endwhile;
+					endif;
+				 ?>
+				
+		</div>
+	</div>
+
 <?php 
 	// Start the loop.
 	while ( have_posts() ) : the_post();
@@ -135,8 +231,20 @@ get_header(); ?>
 		</div>	
 		<?php
 					endwhile;
-					endif;
+						endif;
 				?>
 	</div>
 </div >
 <?php get_footer(); ?>
+<script type="text/javascript">
+
+	function mostrarAnio(an1){
+	      $('.anio , .insti').css('display','none');
+				$('#anio'+an1.value).stop().delay(200).fadeIn();
+		}
+	function mostrarPdf(pdf){
+		$('.insti').css('display','none');
+			console.warn(pdf.value)	
+					$('#insti'+pdf.value).stop().delay(300).fadeIn();
+		}
+</script>
