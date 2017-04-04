@@ -50,14 +50,6 @@
         <li><a href="#">Centro de Innovación</a></li>
       </ul>
     </div>
-    <div class="col-md-3 col-xs-6 borde">
-    	<h4>BBVA EN REDES SOCIALES</h4>
-    	<ul>
-    		<li><a href="#">Facebook</a></li>
-    		<li><a href="#">Twitter</a></li>
-    		<li><a href="#">YouTube</a></li>
-    	</ul>
-    </div>  
     </div>
 </div>
 </div>
@@ -92,12 +84,10 @@
         <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a>
         <a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a>
       </div>
-		</div>
-    <div class="row">
-      <div class="col-md-2 social">
+      <div class="social">
           <p>BBVA Social Media</p>      
       </div>
-    </div> 
+		</div> 
 	</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

@@ -73,10 +73,32 @@
 /*Estilos para header*/
 .fonfoAzul{
   background-color: #072146;
+  padding: 12px 1px 7px 1px;
 }
 .cabecera{
   background-color: #072146;
   border: solid 1px #072146;
+}
+.accionistahead{
+  width: 386px;
+  height: 29px;
+  font-family: 'bentonsansbook';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-top: 18px;
+}
+.bordehead{
+  border-right: solid 0.5px #ffffff;
+  margin-right: 20px;
+}
+.fondoClaro{
+  background-color: #004481;
+  padding: 12px 1px 7px 1px;
 }
 /*Termina estilos de header*/
 
@@ -106,11 +128,8 @@
 	color: #666666;
 }
 .footer li a{
-  width: 255px;
-  height: 17px;
   font-family: 'bentonsansbook';
   font-size: 12px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -118,7 +137,7 @@
   color: #2a86ca;
 }
 .footer .borde{
-	border-left: 1px solid #ccc;
+/*	border-left: 1px solid #ccc; */
 }
 .barraFooter{
 	bottom: 0px;
@@ -130,34 +149,31 @@
   border: solid 1px #072146;
 }
 .barraFooter p a{
-  width: 111px;
-  height: 17px;
   font-family: 'bentonsansbook';
   font-size: 12px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #49a5e6;
 }
+.barraFooter p a:hover{
+  text-decoration: none;
+  color: #fff;
+}
 .separador{
   margin-bottom: 40px;  
 }
 .accionista{
-  width: 386px;
-  height: 29px;
   font-family: 'bentonsansbook';
   font-size: 24px;
-  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: right;
   color: #ffffff;
   float: right;
-  margin-right: 69px;
+  margin-right: 43px;
 }
 .imgsocial{
   display: flex;
@@ -167,17 +183,14 @@
 }
 .social{
   float: right;
-  width: 130px;
-  height: 14px;
   font-family: 'bentonsansbook';
   font-size: 10px;
-  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #3c92e0;
-  margin-right: 58px;
+  margin-right: 80px;
 }
 
 /*Termina estilos de footer*/
@@ -196,6 +209,9 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+.botonzote{
+  padding: 19px 66px 19px 66px;
 }
 /*Termina estilos para index*/
 

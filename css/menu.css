@@ -86,7 +86,7 @@ a {
     width: 39px;
     height: 17px;
     font-family: 'bentonsansbook';
-    font-size: 12px;
+    font-size: 105%;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -97,7 +97,7 @@ a {
 }
 
 .menu > ul > li:hover {
-    background: #f0f0f0;
+ /*background: #f0f0f0; */
 }
 
 .menu > ul > li > ul {
@@ -193,8 +193,54 @@ a {
     border: 0;
     padding: 1em 0;
 }
+.menu > ul > li > a:hover {
+  text-decoration: none;
+  color: #5BBEF2;
+}
+.menu-claro{
+    width: 110%;
+    margin: 0 auto;
+    background-color: #004481;
+    border: solid 1px #004481;
+}
 
+.menu-claro > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
 
+.menu-claro > ul > li a {
+    text-decoration: none;
+    padding: 12px;
+    width: 39px;
+    height: 17px;
+    font-family: 'bentonsansbook';
+    font-size: 90%;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+}
+.menu-claro > ul > li > a:hover {
+  text-decoration: none;
+  color: #5BBEF2;
+}
+
+.menu-claro > ul > li {
+    float: left;
+    padding: 3px;
+    margin: 0; 
+    background-color:  #004481;
+    border: solid 1px #004481;
+}
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

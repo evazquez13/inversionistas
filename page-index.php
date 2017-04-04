@@ -199,7 +199,7 @@ get_header(); ?>
 
 			<div class="row sec-img-2">
 				<div class="col-md-4">
-					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary"> 
+					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"> 
 					Consultar</button></a>
 				</div>
 			</div>
