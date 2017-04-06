@@ -90,35 +90,65 @@ get_header(); ?>
 				<h1>Información Financiera</h1>
 				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span> Seleccione el documento que requiere:</span></p>
 			</div>
-			<div class="col-md-12 col-xs-12 col-sm-12">
-				<div class="col-md-6 col-xs-12 col-sm-6">
-					<select name="institucion" id="institucion" class="form-control" onchange="mostrarAnio(this)">
+			<div class="col-md-12 col-xs-12 col-sm-12 space">
+				<div class="col-md-4 col-xs-12 col-sm-12">
+					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
+						<option>-Selecciona</option>
+						<?php 
+							$t=0;
+							if (have_rows('tipo-informacion') ):
+								while (have_rows('tipo-informacion') ): the_row(); 
+						 ?>
+						 <option value="<?php echo $t; ?>"><?php the_sub_field('nombre-info') ?></option>
+						 <?php 
+						 	$t++;
+						 	endwhile;
+							endif;
+						  ?>
+					</select>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-6">
+				<?php 
+				$i=0;
+				$z=0;
+				if (have_rows('tipo-informacion') ):
+								while (have_rows('tipo-informacion') ): the_row();
+				?>
+					<select name="institucion" id="institucion<?php echo $i; ?>" class="form-control institucion" onchange="mostrarAnio(this)">
 						<option>-Selecciona</option>
 						<?php
-						$i=0;
-
 							// check if the repeater field has rows of data
 							if( have_rows('institucion') ):
 								// loop through the rows of data
 								while ( have_rows('institucion') ) : the_row();
 						?>
-						<option value="<?php echo $i; ?>"><?php the_sub_field('nombre-institucion') ?></option>
+						<option value="<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
 						<?php 
-						$i ++;
+						$z++;
 						endwhile;
 						endif;
+						$i ++;
 					?>
 					</select>
-				</div>
-				<div class="col-md-6 col-xs-12 col-sm-6">
 					<?php 
-					$i=0;
-					$a=0; 
+					endwhile;
+					endif;
+					 ?>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-6">
+					<?php 
+					$y=0;
+					$a=0;
+					if (have_rows('tipo-informacion') ):
+								while (have_rows('tipo-informacion') ): the_row();
+							// check if the repeater field has rows of data
+					 
+					
 					if( have_rows('institucion') ):
 								// loop through the rows of data
 								while ( have_rows('institucion') ) : the_row();
 						?>
-						<select id="anio<?php echo $i; ?>" class="form-control anio" onchange="mostrarPdf(this)">
+						<select id="anio<?php echo $y; ?>" class="form-control anio" onchange="mostrarPdf(this)">
 					<option>-Selecciona</option>
 						<?php
 						 
@@ -128,7 +158,7 @@ get_header(); ?>
 								// loop through the rows of data
 								while ( have_rows('anio') ) : the_row();
 						?>
-						<option value="<?php echo $a; ?>"><?php the_sub_field('nuemero-anio') ?></option>
+						<option value="<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
 						<?php
 						$a++;
 						endwhile;
@@ -136,7 +166,9 @@ get_header(); ?>
 						?>
 						</select>
 						<?php
-						$i++;
+						$y++;
+						endwhile;
+						endif;
 						endwhile;
 						endif;
 						?>
@@ -144,7 +176,10 @@ get_header(); ?>
 						
 				
 			</div>
+
 			<?php $e=0;
+			if (have_rows('tipo-informacion') ):
+								while (have_rows('tipo-informacion') ): the_row();
 					if( have_rows('institucion') ):
 								// loop through the rows of data
 								while ( have_rows('institucion') ) : the_row();
@@ -164,13 +199,16 @@ get_header(); ?>
 				 ?>
 					<div class="col-md-6 col-xs-6 col-sm-6"><?php the_sub_field('nombre-pdf'); ?></div>
 					<div class="col-md-6 col-xs-6 col-sm-6"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
+					<div class="space1"></div>
 					<?php 
 					endwhile;
 					endif;		
 					 ?>
 				</div>
 				<?php 
-					$e++;
+				$e++;
+					endwhile;
+					endif;
 					endwhile;
 					endif;
 					endwhile;
@@ -238,9 +276,15 @@ get_header(); ?>
 <?php get_footer(); ?>
 <script type="text/javascript">
 
+	function mostrarInstitucion(ins){
+		$('.institucion').val($('option:first').val());
+		console.info(ins.value);
+			$('.anio, .insti , .institucion').css('display','none');
+				$('#institucion'+ins.value).stop().delay(200).fadeIn();
+	}
 	function mostrarAnio(an1){
-		$('.anio').val($('option:first').val());
-	      $('.anio , .insti').css('display','none');
+		$('.anio , .insti').val($('option:first').val());
+	      $('.anio , .insti ').css('display','none');
 				$('#anio'+an1.value).stop().delay(200).fadeIn();
 		}
 	function mostrarPdf(pdf){

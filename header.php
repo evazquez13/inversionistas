@@ -24,6 +24,7 @@
   <?php wp_head(); ?>
 <body>
 <header>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
   <div class="fonfoAzul">    
     <div class="container cabecera">
       <div class="row">
@@ -36,6 +37,9 @@
         <div class="col-md-4 accionistahead">
             <p><span class="bordehead"></span>Accionistas e Inversores</p>
         </div>
+        <div class="col-md-3">
+          <ul><?php pll_the_languages();?></ul>
+        </div>
       </div>
     </div>
   </div>
@@ -47,8 +51,8 @@
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a>
+                    <li><a href="#">Inicio</a></li>
+                  <li><a href="http://localhost/inversionistas/contact/">Conócenos</a>
                     </li>     
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a>
                     </li>

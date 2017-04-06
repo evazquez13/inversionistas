@@ -291,4 +291,16 @@
 .anio{
   display: none;
 }
+.institucion{
+  display: none;
+}
 /*Estilos para informacion financiera*/
+.space{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.space1{
+  width: 100%;
+  height: 40px;
+}
