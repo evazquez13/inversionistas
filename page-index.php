@@ -214,7 +214,9 @@ get_header(); ?>
 					endwhile;
 					endif;
 				 ?>
+			<div class="col-md-12 col-xs-12 col-md-12" id="mensaje">
 				
+			</div>	
 		</div>
 	</div>
 
@@ -274,22 +276,4 @@ get_header(); ?>
 	</div>
 </div >
 <?php get_footer(); ?>
-<script type="text/javascript">
 
-	function mostrarInstitucion(ins){
-		$('.institucion').val($('option:first').val());
-		console.info(ins.value);
-			$('.anio, .insti , .institucion').css('display','none');
-				$('#institucion'+ins.value).stop().delay(200).fadeIn();
-	}
-	function mostrarAnio(an1){
-		$('.anio , .insti').val($('option:first').val());
-	      $('.anio , .insti ').css('display','none');
-				$('#anio'+an1.value).stop().delay(200).fadeIn();
-		}
-	function mostrarPdf(pdf){
-		$('.insti').css('display','none');
-			console.warn(pdf.value)	
-					$('#insti'+pdf.value).stop().delay(300).fadeIn();
-		}
-</script>

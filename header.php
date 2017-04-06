@@ -24,7 +24,6 @@
   <?php wp_head(); ?>
 <body>
 <header>
-        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
   <div class="fonfoAzul">    
     <div class="container cabecera">
       <div class="row">
@@ -37,8 +36,13 @@
         <div class="col-md-4 accionistahead">
             <p><span class="bordehead"></span>Accionistas e Inversores</p>
         </div>
-        <div class="col-md-3">
-          <ul><?php pll_the_languages();?></ul>
+        <div class="col-md-2">
+          <div class="col-md-6">
+            <a onclick="alertEn()"><h1 class="menuEnEs">EN</h1></a>
+          </div>
+          <div class="col-md-6">
+            <a onclick="alertEs()"><h1 class="menuEnEs">ES</h1></a>
+          </div>
         </div>
       </div>
     </div>
@@ -228,7 +232,6 @@ if (is_page("Gobierno_Corporativo")) { ?>
          </div>
      </div>
  </div>
-
 <?php 
   } 
 if (is_page("Contacto")) { ?>

@@ -304,3 +304,22 @@
   width: 100%;
   height: 40px;
 }
+/*Estilos para menu ingles y españor*/
+.menuEnEs {
+  opacity: .6;
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'BentonSansBBVA';
+  margin-top: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menuEnEs.activado{
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'BentonSansBBVA';
+  margin-top: 22px;
+  font-weight: bold;
+  opacity: 1;
+}
+/*Estilos para menu ingles y españor*/
