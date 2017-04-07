@@ -29,8 +29,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="logo-container">
-            <a class="navbar-trigger">&nbsp;</a>  
-            <a href="/" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" height="90" class="img-responsive hidden-xs" src="#"></a>
+            <a href="#" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" height="90" class="img-responsive hidden-xs"></a>
           </div>
         </div>
         <div class="col-md-4 accionistahead">
