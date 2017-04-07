@@ -197,8 +197,13 @@ get_header(); ?>
 							// loop through the rows of data
 							while ( have_rows('pdf') ) : the_row();
 				 ?>
-					<div class="col-md-6 col-xs-6 col-sm-6"><?php the_sub_field('nombre-pdf'); ?></div>
-					<div class="col-md-6 col-xs-6 col-sm-6"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
+					<div class="col-md-4 col-xs-4 col-sm-4"><?php the_sub_field('nombre-pdf'); ?></div>
+					<div class="col-md-3 col-xs-4 col-sm-3"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
+					<div class="col-md-5 col-xs-4 col-md-5 <?php the_sub_field('idioma'); ?>">
+						<?php if (get_sub_field('idioma')=="ingles") { ?>
+							<p>Esta información solo está disponible en Inglés</p>
+						<?php } ?>
+					</div>
 					<div class="space1"></div>
 					<?php 
 					endwhile;
@@ -213,10 +218,7 @@ get_header(); ?>
 					endif;
 					endwhile;
 					endif;
-				 ?>
-			<div class="col-md-12 col-xs-12 col-md-12" id="mensaje">
-				<p>Esta información solo está disponible en Inglés</p>
-			</div>	
+				 ?>	
 		</div>
 	</div>
 

@@ -1,12 +1,15 @@
 	function alertEn(){
-    $('#mensaje').html("<p>This information is only available in Spanish</p>");
+		console.info("Boton EN");
+    $('.espanol').html("<p>This information is only available in Spanish</p>");
+    $('.ingles').html("<p></p>");
   }
   function alertEs(){
-    $('#mensaje').html("<p>Esta información solo está disponible en Inglés</p>");
+  	console.info('Boton ES');
+    $('.ingles').html("<p>Esta información solo está disponible en Inglés</p>");
+    $('.espanol').html("<p></p>");
   }
 	function mostrarInstitucion(ins){
 		$('.institucion').val($('option:first').val());
-		console.info(ins.value);
 			$('.anio, .insti , .institucion').css('display','none');
 				$('#institucion'+ins.value).stop().delay(200).fadeIn();
 	}
@@ -16,8 +19,7 @@
 				$('#anio'+an1.value).stop().delay(200).fadeIn();
 		}
 	function mostrarPdf(pdf){
-		$('.insti').css('display','none');
-			console.warn(pdf.value)	
+		$('.insti').css('display','none');	
 					$('#insti'+pdf.value).stop().delay(300).fadeIn();
 		}
 	
