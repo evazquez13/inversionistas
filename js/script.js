@@ -1,10 +1,8 @@
 	function alertEn(){
-		console.info("Boton EN");
     $('.espanol').html("<p>This information is only available in Spanish</p>");
     $('.ingles').html("<p></p>");
   }
   function alertEs(){
-  	console.info('Boton ES');
     $('.ingles').html("<p>Esta información solo está disponible en Inglés</p>");
     $('.espanol').html("<p></p>");
   }
@@ -22,19 +20,22 @@
 		$('.insti').css('display','none');	
 					$('#insti'+pdf.value).stop().delay(300).fadeIn();
 		}
-	
 
-$(document).on( 'ready' , function() {
+$(document).on('ready', function() {
 
 	function pantalla(){
-		pant = $(window).width();
-		//console.info( 'la pantalla mide ' + pant + 'px' );
-		if (pant <= 440) {
-
-		}else{
-
-		}
+	  pant = $(window).width();
+	  // console.info( 'la pantalla mide ' + pant + 'px' );
+	  if (pant <= 769) {
+	  	$('.lista-redes').css('marginLeft','-30px');
+	  }else{
+	  	$('.lista-redes').css('marginLeft','-12px');
 	  }
+	}
+$(window).resize(
+  	function(){
+  		pantalla();
+  	})
 
 	$('.menuEnEs').on('click' , function(){
 		$('.menuEnEs').removeClass('activado');
