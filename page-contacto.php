@@ -59,8 +59,8 @@ get_header(); ?>
 				<div>
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="col-md-6 active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><?php the_field('panel-pestaña-1') ?></a></li>
-					<li role="presentation" class="col-md-6"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><?php the_field('panel-pestaña-2') ?></a></li>
+					<li role="presentation" class="col-md-6 active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Productos</a></li>
+					<li role="presentation" class="col-md-6"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Servicios</a></li>
 					</ul>
 
 					<div class="space"></div>
@@ -72,10 +72,10 @@ get_header(); ?>
 
 						<?php
 							$i=0;
-							if( have_rows('tabla-pestaña-1') ):
+							if( have_rows('tabla-productos') ):
 
  								// loop through the rows of data
-   								 while ( have_rows('tabla-pestaña-1') ) : the_row(); ?>
+   								 while ( have_rows('tabla-productos') ) : the_row(); ?>
 
 							<div class="panel panel-default bordeAzul">
 							  	<!-- Default panel contents -->
@@ -110,16 +110,16 @@ get_header(); ?>
 
 						<?php
 							$i=100;
-							if( have_rows('tabla-pestaña-2') ):
+							if( have_rows('tabla-servicios') ):
 
  								// loop through the rows of data
-   								 while ( have_rows('tabla-pestaña-2') ) : the_row(); ?>
+   								 while ( have_rows('tabla-servicios') ) : the_row(); ?>
 
 							<div class="panel panel-default bordeAzul">
 							  	<!-- Default panel contents -->
 							  	<div class="panelColor">
 							        <h5 class="panel-title">
-							      	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse<?php echo $i; ?>" class="collapsed"><?php the_sub_field('titulo') ?><span class = "flecha der"></span></a>
+							      	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse<?php echo $i; ?>" class="collapsed"><?php the_sub_field('tema') ?><span class = "flecha der"></span></a>
 							      	</h5>
 							  	</div>
 							  	<div id="collapse<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
