@@ -83,19 +83,17 @@ a {
 .menu > ul > li a {
     text-decoration: none;
     padding: 12px;
-    width: 39px;
-    height: 17px;
     font-family: 'bentonsansbook';
-    font-size: 105%;
+    font-size: 12px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: right;
+    opacity: .6;
     color: #ffffff;
 }
-
 .menu > ul > li:hover {
  /*background: #f0f0f0; */
 }

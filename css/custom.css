@@ -80,8 +80,6 @@
   border: solid 1px #072146;
 }
 .accionistahead{
-  width: 386px;
-  height: 29px;
   font-family: 'bentonsansbook';
   font-size: 24px;
   font-weight: 300;
@@ -291,4 +289,30 @@
 .anio{
   display: none;
 }
+.institucion{
+  display: none;
+}
 /*Estilos para informacion financiera*/
+.space{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.space1{
+  width: 100%;
+  height: 40px;
+}
+/*Estilos para menu ingles y españor*/
+.menuEnEs {
+  opacity: .6;
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'BentonSansBBVA';
+  margin-top: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menuEnEs.activado{
+  opacity: 1;
+}
+/*Estilos para menu ingles y españor*/
