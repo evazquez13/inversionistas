@@ -1,8 +1,8 @@
 	function alertEn(){
-    $('#mensaje').html("<h1>This information is only in Spanish</h1>");
+    $('#mensaje').html("<p>This information is only available in Spanish</p>");
   }
   function alertEs(){
-    $('#mensaje').html("<h1>Mensaje para idioma español</h1>");
+    $('#mensaje').html("<p>Esta información solo está disponible en Inglés</p>");
   }
 	function mostrarInstitucion(ins){
 		$('.institucion').val($('option:first').val());
@@ -37,5 +37,5 @@ $(document).on( 'ready' , function() {
 	$('.menuEnEs').on('click' , function(){
 		$('.menuEnEs').removeClass('activado');
 	$(this).addClass('activado');		
-	})	
+	})
 });

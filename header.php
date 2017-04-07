@@ -34,14 +34,14 @@
           </div>
         </div>
         <div class="col-md-4 accionistahead">
-            <p><span class="bordehead"></span>Accionistas e Inversores</p>
+            <p><span class="bordehead"></span>Información Financiera</p>
         </div>
         <div class="col-md-2">
           <div class="col-md-6">
             <a onclick="alertEn()"><h1 class="menuEnEs">EN</h1></a>
           </div>
           <div class="col-md-6">
-            <a onclick="alertEs()"><h1 class="menuEnEs">ES</h1></a>
+            <a onclick="alertEs()"><h1 class="menuEnEs activado">ES</h1></a>
           </div>
         </div>
       </div>
@@ -55,16 +55,12 @@
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                  <li><a href="http://localhost/inversionistas/contact/">Conócenos</a>
-                    </li>     
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a>
-                    </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a>
-                    </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a>
-                    </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="http://localhost/inversionistas/contact/">Conócenos</a></li>     
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>

@@ -80,8 +80,6 @@
   border: solid 1px #072146;
 }
 .accionistahead{
-  width: 386px;
-  height: 29px;
   font-family: 'bentonsansbook';
   font-size: 24px;
   font-weight: 300;
@@ -315,11 +313,6 @@
   cursor: pointer;
 }
 .menuEnEs.activado{
-  color: #FFF;
-  font-size: 12px;
-  font-family: 'BentonSansBBVA';
-  margin-top: 22px;
-  font-weight: bold;
   opacity: 1;
 }
 /*Estilos para menu ingles y españor*/

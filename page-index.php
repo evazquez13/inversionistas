@@ -215,7 +215,7 @@ get_header(); ?>
 					endif;
 				 ?>
 			<div class="col-md-12 col-xs-12 col-md-12" id="mensaje">
-				
+				<p>Esta información solo está disponible en Inglés</p>
 			</div>	
 		</div>
 	</div>
