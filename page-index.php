@@ -91,7 +91,7 @@ get_header(); ?>
 				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span> Seleccione el documento que requiere:</span></p>
 			</div>
 			<div class="col-md-12 col-xs-12 col-sm-12 space">
-				<div class="col-md-4 col-xs-12 col-sm-12">
+				<div class="col-md-4 col-xs-12 col-sm-12 form-group">
 					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
 						<option>-Selecciona</option>
 						<?php 
@@ -107,7 +107,7 @@ get_header(); ?>
 						  ?>
 					</select>
 				</div>
-				<div class="col-md-4 col-xs-12 col-sm-6">
+				<div class="col-md-4 col-xs-12 col-sm-6 form-group">
 				<?php 
 				$i=0;
 				$z=0;
@@ -135,7 +135,7 @@ get_header(); ?>
 					endif;
 					 ?>
 				</div>
-				<div class="col-md-4 col-xs-12 col-sm-6">
+				<div class="col-md-4 col-xs-12 col-sm-6 form-group">
 					<?php 
 					$y=0;
 					$a=0;
