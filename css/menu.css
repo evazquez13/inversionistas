@@ -34,6 +34,7 @@ a {
 }
 
 .menu-mobile:after {
+    font-size: 2.5rem;
     padding: 0;
     float: right;
     position: relative;
@@ -262,7 +263,7 @@ Mobile style's
         display: block;
     }
     .menu > ul > li a {
-        padding: 1.5em;
+        padding: .5em;
         width: 100%;
         display: block;
     }

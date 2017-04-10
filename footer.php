@@ -64,22 +64,22 @@
       </div>
     </div>
 		<div class="row text-center">
-			<div class="col-md-1 col-sm-12 col-xs-6">
+			<div class="col-md-1 col-sm-12 col-xs-12">
 				<p><a href="#">Seguridad</a></p>
 			</div>
-			<div class="col-md-2 col-sm-12 col-xs-6">
+			<div class="col-md-2 col-sm-12 col-xs-12">
 				<p><a href="#">Aviso Legal</a></p>
 			</div>
-			<div class="col-md-2 col-sm-12 col-xs-6">
+			<div class="col-md-2 col-sm-12 col-xs-12">
 				<p><a href="#">Mapa del Sitio</a></p>
 			</div>
-			<div class="col-md-2 col-sm-12 col-xs-6">
+			<div class="col-md-2 col-sm-12 col-xs-12">
 				<p><a href="#">Aviso de Privacidad</a></p>
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<p><a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
-      <div class="col-md-2 col-sm-12">
+      <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
           <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a></li>
           <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a></li>

@@ -24,9 +24,9 @@
   <?php wp_head(); ?>
 <body>
 <header>
-  <div class="fonfoAzul">    
+  <div class="fonfoAzul hidden-xs">    
     <div class="container cabecera">
-      <div class="row">
+      <div class="row hidden-xs">
         <div class="col-md-3 col-sm-3">
           <div class="logo-container">
             <a href="#" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" class="img-responsive hidden-xs"></a>
@@ -54,7 +54,7 @@
               <div class="menu">
                 <ul>
                   <li><a href="#">Inicio</a></li>
-                  <li><a href="http://localhost/inversionistas/contact/">Conócenos</a></li>     
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a></li>     
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
@@ -72,7 +72,9 @@
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li>
+                      <a href="#" class="menu-mobile"></a>
+                    </li>
                   <li><a href="#">Conócenos</a>
                          <ul>
                             <li><a href="#">Misión</a></li>
@@ -120,7 +122,7 @@
                             <li><a href="#">Emisiones</a>
                                 <ul></ul>
                             </li>
-                        </ul>   -->
+                        </ul> 
                     </li>
                     <li><a href="#">Gobierno Corporativo</a>
                         <ul>
