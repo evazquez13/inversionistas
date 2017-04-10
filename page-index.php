@@ -197,9 +197,9 @@ get_header(); ?>
 							// loop through the rows of data
 							while ( have_rows('pdf') ) : the_row();
 				 ?>
-					<div class="col-md-4 col-xs-4 col-sm-4"><?php the_sub_field('nombre-pdf'); ?></div>
-					<div class="col-md-3 col-xs-4 col-sm-3"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
-					<div class="col-md-5 col-xs-4 col-md-5 <?php the_sub_field('idioma'); ?>">
+					<div class="col-md-4 col-sm-4 col-xs-12"><?php the_sub_field('nombre-pdf'); ?></div>
+					<div class="col-md-3 col-sm-3 col-xs-12"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
+					<div class="col-md-5 col-sm-5 col-xs-12 <?php the_sub_field('idioma'); ?>">
 						<?php if (get_sub_field('idioma')=="ingles") { ?>
 							<p>Esta información solo está disponible en Inglés</p>
 						<?php } ?>
@@ -231,8 +231,8 @@ get_header(); ?>
     $imgDestacada = wp_get_attachment_url( $thumbID );    	
 ?>
 	
-	<div>
-		<div class="container" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px;">
+	<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px;">
+		<div class="container">
 			<div class="row sec-img-2">
 				<div class="col-md-4">
 					<p><?php echo $descripcion; ?></p>
