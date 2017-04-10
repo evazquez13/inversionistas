@@ -325,3 +325,103 @@ ul.lista-redes{
 ul.lista-redes li{
   padding-right: 10px;
 }
+/*Estilos Para Pag-Contacto*/
+.contactanos h1{
+  font-family: 'bentonsansbook';
+}
+.helpyou{
+  font-family: 'bentonsansbook';
+}
+.paratu{
+  font-family: 'bentonsansbook';
+}s
+.masInfo{
+  font-family: 'bentonsansbook';
+  font-size: 20px;
+}
+.masInfo ul.nav-tabs{
+  border-bottom: 1px solid #ddd;
+}
+.masInfo ul.nav.nav-tabs li a:hover{  
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+}
+.masInfo ul.nav.nav-tabs li a{  
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  border-color: #fff #fff #fff;
+  border-bottom: 1px solid #ddd;
+    font-family: 'bentonsansbook';
+  font-size: 20px;
+}
+
+.masInfo ul.nav.nav-tabs li.active a{
+  border-bottom-color: #009ee5;
+}
+.space {
+    height: 35px;
+    width: 100%;
+}
+
+/* Estilos Panel */
+.panelColor{
+    color: #006de9;
+    background-color: white;
+    padding: 10px 15px;
+    border-color: #000;
+    text-decoration: none;
+}
+.panelColor .panel-title a:hover{
+ text-decoration: none;
+}
+.panelColor .panel-title a:focus{
+ text-decoration: none;
+}
+.panelColor h5{
+  font-family: 'bentonsansbook';
+  font-size: 14px;
+}
+.bordeAzul{
+  border-color: #000;
+  margin-bottom: auto;
+  border-radius: 0px;
+}
+.bordeAzul tbody tr td{
+  border-color: #fff;
+}
+.bordeAzul thead tr th{
+  border-bottom: 1px solid #009ee5;
+}
+/* Estilos Panel */
+.der{
+  float: right;
+}
+.collapsed .flecha:after{
+  position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e114";  
+}
+.flecha:after{
+  position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e113";  
+}
+/* Estilos Panel */
+/*Termina Estilos Para Pag-Contacto*/
