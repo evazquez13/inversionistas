@@ -359,9 +359,15 @@ ul.lista-redes li{
     font-family: 'bentonsansbook';
   font-size: 20px;
 }
+
 .masInfo ul.nav.nav-tabs li.active a{
   border-bottom-color: #009ee5;
 }
+.space {
+    height: 35px;
+    width: 100%;
+}
+
 /* Estilos Panel */
 .panelColor{
     color: #006de9;
@@ -381,12 +387,6 @@ ul.lista-redes li{
   font-size: 14px;
 }
 .bordeAzul{
-  border-color: #000;
-  margin-bottom: auto;
-  border-bottom: none;
-  border-radius: 0px;
-}
-.bordeAzul_1{
   border-color: #000;
   margin-bottom: auto;
   border-radius: 0px;
@@ -425,12 +425,3 @@ ul.lista-redes li{
 }
 /* Estilos Panel */
 /*Termina Estilos Para Pag-Contacto*/
-/*  Estilos pag universal   */
-.bloque{
-  background-color: rgba(63, 81, 181, 0.7);
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    bottom: -30px;
-}
-/* Termina estilos pag universal   */
