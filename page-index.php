@@ -26,6 +26,9 @@ get_header(); ?>
   	
 	<?php
 	$i == 0;
+	if (get_field('banner')) {
+		
+	}
 		// check if the repeater field has rows of data
 		if( have_rows('banner') ):
 			// loop through the rows of data
@@ -90,6 +93,7 @@ get_header(); ?>
 				<h1>Información Financiera</h1>
 				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span> Seleccione el documento que requiere:</span></p>
 			</div>
+			<?php if (get_field('tipo-informacion')) {?>
 			<div class="col-md-12 col-xs-12 col-sm-12 space">
 				<div class="col-md-4 col-xs-12 col-sm-12 form-group">
 					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
@@ -218,11 +222,13 @@ get_header(); ?>
 					endif;
 					endwhile;
 					endif;
+					}
 				 ?>	
 		</div>
 	</div>
 
 <?php 
+	if (get_field('row-img-1')) {
 	// Start the loop.
 	while ( have_posts() ) : the_post();
     // Ruta de la imagen destacada (tamaño completo)
@@ -230,7 +236,6 @@ get_header(); ?>
     $thumbID = get_post_thumbnail_id( $post->ID );
     $imgDestacada = wp_get_attachment_url( $thumbID );    	
 ?>
-	
 	<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px;">
 		<div class="container">
 			<div class="row sec-img-2">
@@ -251,8 +256,9 @@ get_header(); ?>
 					?>
 		</div>
 	</div>
+	<?php } ?>
 
-
+<?php if (get_field('interes')) {?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 titulo">
@@ -277,5 +283,6 @@ get_header(); ?>
 				?>
 	</div>
 </div >
+<?php } ?>
 <?php get_footer(); ?>
 

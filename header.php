@@ -47,7 +47,7 @@
   </div>
   </header>  
 
-<div class="fonfoAzul visible-lg visible-md">
+<div class="fonfoAzul visible-lg visible-md visible-sm">
      <div class="container">
         <div class="row">
             <div class="menu-container">
@@ -66,7 +66,7 @@
     </div>
 </div>
 
-  <div class="fonfoAzul hidden-lg hidden-md">
+  <div class="fonfoAzul hidden-lg hidden-md hidden-sm">
       <div class="container">
         <div class="row">
             <div class="menu-container">
@@ -154,7 +154,7 @@
 
 <?php 
 if (is_page("Conócenos")) { ?>
- <div class="fondoClaro visible-lg visible-md">
+ <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
@@ -179,7 +179,7 @@ if (is_page("Conócenos")) { ?>
 <?php 
   } 
 if (is_page("Inf_Financiera")) { ?>
- <div class="fondoClaro visible-lg visible-md">
+ <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
@@ -196,7 +196,7 @@ if (is_page("Inf_Financiera")) { ?>
 <?php 
   } 
 if (is_page("Renta_fija")) { ?>
- <div class="fondoClaro visible-lg visible-md">
+ <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
@@ -213,7 +213,7 @@ if (is_page("Renta_fija")) { ?>
 <?php 
   } 
 if (is_page("Gobierno_Corporativo")) { ?>
- <div class="fondoClaro visible-lg visible-md">
+ <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
