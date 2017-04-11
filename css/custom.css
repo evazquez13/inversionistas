@@ -434,3 +434,18 @@ ul.lista-redes li{
     bottom: -30px;
 }
 /* Termina estilos pag universal   */
+/* Estilos infofinanciera   */
+.infofinanciera h1{
+ font-family: 'bentonsansbook';
+  font-size: 32px;
+  color: #1a1a1a;
+}
+.infofinanciera p{
+ font-family: 'bentonsansbook';
+  color: #000000;
+}
+.infofinanciera span{
+ font-family: 'bentonsansbook';
+  color: #2371be;
+}
+/* Termina estilos infofinanciera   */  
