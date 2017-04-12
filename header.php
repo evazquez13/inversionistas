@@ -36,12 +36,14 @@
             <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Información Financiera</p>
             <p class="visible-sm" style="font-size: 17px;">Información Financiera</p>
         </div>
+        <?php if (is_page("Index")) { ?>
         <div class="col-md-5 col-sm-5">
           <ul class="lista-idioma">
             <li><a onclick="alertEn()"><h1 class="menuEnEs">EN</h1></a></li>
             <li><a onclick="alertEs()"><h1 class="menuEnEs activado">ES</h1></a></li>
           </ul>
         </div>
+        <?php } ?>
       </div>
     </div>
   </div>
@@ -53,7 +55,7 @@
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                  <li><a href="#">Inicio</a></li>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a></li>     
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
                   <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
@@ -75,6 +77,7 @@
                     <li>
                       <a href="#" class="menu-mobile"></a>
                     </li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
                   <li><a href="#">Conócenos</a>
                          <ul>
                             <li><a href="#">Misión</a></li>
@@ -144,6 +147,16 @@
                         </ul>       
                     </li>
                     <li><a href="#">Contacto</a></li>
+                    <?php if (is_page("Index")) { ?>
+                    <li>
+                      <div class="col-xs-2 col-xs-offset-8">
+                        <a onclick="alertEn()" style="border-bottom: none;"><h1 class="menuEnEs activado">EN</h1></a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a onclick="alertEs()" style="border-bottom: none;"><h1 class="menuEnEs">ES</h1></a>
+                      </div>
+                    </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
