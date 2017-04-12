@@ -146,7 +146,7 @@
                             </li>
                         </ul>       
                     </li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
                     <?php if (is_page("Index")) { ?>
                     <li>
                       <div class="col-xs-2 col-xs-offset-8">
