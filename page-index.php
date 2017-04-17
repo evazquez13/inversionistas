@@ -87,7 +87,7 @@ get_header(); ?>
 
 </div>
 
-	<div class="container">
+	<div class="container infofinanciera">
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
 				<h1>Información Financiera</h1>
