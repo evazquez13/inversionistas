@@ -1,73 +1,122 @@
-@font-face {
-    font-family: 'bentonsansbold';
-    src: url('fontsBBVA/bentonsansbbva-bold-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsansbbva-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+@font-face {
+  font-family: 'BentonSans';
+  src: url('fontsBBVA/BentonSans-Light.eot');
+  src: url('fontsBBVA/BentonSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Light.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Light.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Light.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Light.svg#BentonSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'bentonsansbook';
-    src: url('fontsBBVA/bentonsansbbva-book-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsansbbva-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'bentonsansbook';
+  src: url('fontsBBVA/BentonSans-Book.eot');
+  src: url('fontsBBVA/BentonSans-Book.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Book.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Book.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Book.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Book.svg#BentonSans-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'bentonsanslight';
-    src: url('fontsBBVA/bentonsansbbva-light-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsansbbva-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'BentonSans';
+  src: url('fontsBBVA/BentonSans-Medium.eot');
+  src: url('fontsBBVA/BentonSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Medium.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Medium.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Medium.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Medium.svg#BentonSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'bentonsansmedium';
-    src: url('fontsBBVA/bentonsansbbva-medium-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsansbbva-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'BentonSans';
+  src: url('fontsBBVA/BentonSans-Bold.eot');
+  src: url('fontsBBVA/BentonSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Bold.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Bold.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Bold.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Bold.svg#BentonSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'bentonsansbold';
-    src: url('fontsBBVA/bentonsans-bold-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsans-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-Bold.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Bold.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Bold.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Bold.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Bold.svg#BentonSansBBVA-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'bentonsansbook';
-    src: url('fontsBBVA/bentonsans-book-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsans-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-BookItalic.eot');
+  src: url('fontsBBVA/BentonSansBBVA-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.svg#BentonSansBBVA-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'bentonsanslight';
-    src: url('fontsBBVA/bentonsans-light-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsans-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-MediumItalic.eot');
+  src: url('fontsBBVA/BentonSansBBVA-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.svg#BentonSansBBVA-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'bentonsansmedium';
-    src: url('fontsBBVA/bentonsans-medium-webfont.woff2') format('woff2'),
-         url('fontsBBVA/bentonsans-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-Book.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Book.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Book.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Book.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Book.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Book.svg#BentonSansBBVA-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-Light.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Light.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Light.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Light.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Light.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Light.svg#BentonSansBBVA-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benton Sans BBVA';
+  src: url('fontsBBVA/BentonSansBBVA-Medium.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Medium.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Medium.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Medium.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Medium.svg#BentonSansBBVA-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 /*Estilos para header*/
@@ -453,8 +502,20 @@ ul.lista-redes li{
 select.form-control{
   color: #2a86ca;
   background-color: #f4f4f4;
+  height: 44px;
 }
 select.form-control option{
   color: #000;
   background-color: #FFF;
+  height: 44px;
+}
+.desktop a{
+  opacity: .6;
+}
+.desktop a:hover{
+  color: #49a5e6;
+  opacity: 1;
+}
+.desktopSelect a{
+  opacity: 1;
 }

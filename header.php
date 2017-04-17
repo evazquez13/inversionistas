@@ -55,12 +55,12 @@
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a></li>     
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                  <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
+                  <li class="desktop <?php if (is_page('Conócenos')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a></li>     
+                  <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
+                  <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
+                  <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
+                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>

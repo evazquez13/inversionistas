@@ -41,4 +41,5 @@ $(window).resize(
 		$('.menuEnEs').removeClass('activado');
 	$(this).addClass('activado');		
 	})
+
 });
