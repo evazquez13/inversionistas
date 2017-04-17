@@ -34,10 +34,10 @@ get_header(); ?>
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;">
+    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: 100% 100%;">
   		<div class="container">
-  			<div class="col-md-4 carousel-caption">
-		            <div class="ctxt banner-msn">
+  			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
+		            <div class="banner-msn">
 						<div class="row tt">
 							<div class="col-md-10 col-sm-10 col-xs-10">
 								<h2><?php the_sub_field('titulo'); ?></h2>
@@ -236,7 +236,7 @@ get_header(); ?>
     $thumbID = get_post_thumbnail_id( $post->ID );
     $imgDestacada = wp_get_attachment_url( $thumbID );    	
 ?>
-	<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px;">
+	<div style="background:url('<?php echo $img; ?>'); background-size: 100% 100%; height: 495px;">
 		<div class="container">
 			<div class="row sec-img-2">
 				<div class="col-md-4">
