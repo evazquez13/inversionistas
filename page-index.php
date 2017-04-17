@@ -65,7 +65,7 @@ get_header(); ?>
 	?>
 
  </div>
-
+<?php if ($i!=1) { ?>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -84,7 +84,7 @@ get_header(); ?>
 
 	<?php } ?>
   </ol>
-
+<?php } ?>
 </div>
 
 	<div class="container infofinanciera">

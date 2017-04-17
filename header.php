@@ -147,20 +147,24 @@
                         </ul>       
                     </li>
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
-                    <?php if (is_page("Index")) { ?>
-                    <li>
-                      <div class="col-xs-2 col-xs-offset-8">
-                        <a onclick="alertEn()" style="border-bottom: none;"><h1 class="menuEnEs activado">EN</h1></a>
-                      </div>
-                      <div class="col-xs-2">
-                        <a onclick="alertEs()" style="border-bottom: none;"><h1 class="menuEnEs">ES</h1></a>
-                      </div>
-                    </li>
-                    <?php } ?>
                 </ul>
             </div>
         </div>
       </div>
+      <?php if (is_page("Index")) { ?>
+      <div class="row">
+      	<div class="col-sm-12 col-xs-12">
+      		<ul class="lista-idioma">
+	      		<li>
+	      			<a onclick="alertEn()"><h1 class="menuEnEs activado">EN</h1></a>
+	            </li>
+	      		<li>
+	      			<a onclick="alertEs()"><h1 class="menuEnEs">ES</h1></a>
+	      		</li>
+	      	</ul>
+      	</div>
+      </div>
+      <?php } ?>
     </div>
   </div>
  

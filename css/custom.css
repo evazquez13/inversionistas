@@ -449,3 +449,11 @@ ul.lista-redes li{
   color: #2371be;
 }
 /* Termina estilos infofinanciera   */  
+select.form-control{
+  color: #2a86ca;
+  background-color: #f4f4f4;
+}
+select.form-control option{
+  color: #000;
+  background-color: #FFF;
+}
