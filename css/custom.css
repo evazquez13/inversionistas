@@ -428,10 +428,11 @@ ul.lista-redes li{
 /*  Estilos pag universal   */
 .bloque{
   background-color: rgba(255, 255, 255, 0.8);
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    bottom: -30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;;
+  padding: 14px;
+  bottom: -203px;
 }
 /* Termina estilos pag universal   */
 /* Estilos infofinanciera   */
