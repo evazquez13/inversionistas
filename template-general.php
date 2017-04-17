@@ -35,17 +35,17 @@ get_header();
 						<p><?php echo $intro; ?></p>
 					</div>
 					<?php if($url !=''){ ?>
-					<div class="col-md-6 col-sm-5 col-xs-5">
+					<div class="col-md-6 col-sm-5 col-xs-12">
 						<a href="<?php echo $url; ?>"><button type="button" class="btn btn-primary"><?php echo $boton; ?></button></a>
 					</div>
 					<?php } 
 					if($icon !=''){ ?>
-					<div class="col-md-6 col-sm-7 col-xs-7">
+					<div class="col-md-6 col-sm-7 col-xs-12">
 						<a href="#">
-						 <div class="col-md-3 col-sm-1 col-xs-1">
+						 <div class="col-md-3 col-sm-1 col-xs-2">
 						 	<img src="<?php echo $icon; ?>">
 						 </div>
-						 <div class="col-md-8 col-sm-6 col-xs-8">
+						 <div class="col-md-8 col-sm-6 col-xs-10">
 							<?php echo $text; ?>
 					   	 </div>
 						</a>
