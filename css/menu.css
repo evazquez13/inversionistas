@@ -134,6 +134,7 @@ a {
     text-align: left;
     color: #2a86ca;
     border-bottom: 1px solid #2a86ca;
+    padding-bottom: 20px;
 }
 
 .menu > ul > li > ul > li > ul {
