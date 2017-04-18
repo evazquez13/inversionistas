@@ -96,3 +96,25 @@
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
+
+<script>
+$( document ).ready(function() {
+    console.log("funcion al cargar")
+    //tamaño pantalla
+     ayuda ();
+
+    $(window).resize(function () {
+        console.info("funcion al rezise")
+          ayuda();
+        }); 
+});
+
+function ayuda () {     
+    if ($(window).width() <993) {
+          $('.fondo').css("height",'auto');
+      }
+      else{
+        $('.fondo').css("height",240);
+      }
+  }
+</script>

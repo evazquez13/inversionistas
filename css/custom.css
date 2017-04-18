@@ -376,16 +376,16 @@ ul.lista-redes li{
 }
 /*Estilos Para Pag-Contacto*/
 .contactanos h1{
-  font-family: 'BentonSansBook';
+  font-family: 'bentonsansmedium';
 }
 .helpyou{
-  font-family: 'BentonSansBook';
+  font-family: 'bentonsansbook';
 }
 .paratu{
-  font-family: 'BentonSansBook';
+  font-family: 'bentonsansbook';
 }s
 .masInfo{
-  font-family: 'BentonSansBook';
+  font-family: 'bentonsansbook';
   font-size: 20px;
 }
 .masInfo ul.nav-tabs{
@@ -405,74 +405,56 @@ ul.lista-redes li{
   border: 1px solid #fff;
   border-color: #fff #fff #fff;
   border-bottom: 1px solid #ddd;
-    font-family: 'BentonSansBook';
+    font-family: 'bentonsansbook';
   font-size: 20px;
 }
 .masInfo ul.nav.nav-tabs li.active a{
   border-bottom-color: #009ee5;
 }
-/* Estilos Panel */
-.panelColor{
-    color: #006de9;
-    background-color: white;
-    padding: 10px 15px;
-    border-color: #000;
-    text-decoration: none;
+/* Estilos credenciales */
+.fondo{
+  background-color: #f4f4f4;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 25px;
+  height: 240px;
 }
-.panelColor .panel-title a:hover{
- text-decoration: none;
+.contacto{
+  bottom: -18px;
+  right: -8px;
 }
-.panelColor .panel-title a:focus{
- text-decoration: none;
+.icon1{
+  bottom: -6px;
 }
-.panelColor h5{
-  font-family: 'BentonSansBook';
-  font-size: 14px;
+.fondo .credenciales h3{
+  font-family: 'bentonsansmedium';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #1a1a1a;
 }
-.bordeAzul{
-  border-color: #000;
-  margin-bottom: auto;
-  border-bottom: none;
-  border-radius: 0px;
+.fondo .credenciales h4{
+  font-family: 'bentonsansbook';
+  font-size: 16px;
+  text-align: left;
+  color: #1a1a1a;
 }
-.bordeAzul_1{
-  border-color: #000;
-  margin-bottom: auto;
-  border-radius: 0px;
+.fondo .credenciales p{
+  font-family: 'bentonsansbook';
+  font-size: 16px;
+  text-align: left;
+  color: #1a1a1a;
 }
-.bordeAzul tbody tr td{
-  border-color: #fff;
+.fondo .credenciales h5{
+  font-family: 'bentonsansmedium';
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #2371be;
 }
-.bordeAzul thead tr th{
-  border-bottom: 1px solid #009ee5;
+.saltolinea{
+    height: 30px;
+    width: 100%;
 }
-/* Estilos Panel */
-.der{
-  float: right;
-}
-.collapsed .flecha:after{
-  position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    content: "\e114";  
-}
-.flecha:after{
-  position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    content: "\e113";  
-}
-/* Estilos Panel */
 /*Termina Estilos Para Pag-Contacto*/
 /*  Estilos pag universal   */
 .bloque{
