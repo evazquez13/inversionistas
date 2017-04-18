@@ -276,6 +276,15 @@ get_header(); ?>
 		<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
 			<div class="col-md-12 col-sm-12 col-xs-12" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;" >
 			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="space"></div>
+			  <p class="rel"><?php the_sub_field('tiulo'); ?></p>
+			<div class="space1"></div>
+			  </div>
+			  
+			<div class="col-md-12 col-sm-12 col-xs-12">
+			  <a href="<?php the_sub_field('url'); ?>"><span class="rell">Leer Más</span></a>
+			</div>
 		</div>	
 		<?php
 					endwhile;
