@@ -456,11 +456,11 @@ ul.lista-redes li{
 /*  Estilos pag universal   */
 .bloque{
   background-color: rgba(255, 255, 255, 0.8);
-  padding-left: 15px;
-  padding-right: 15px;
-  position: absolute;;
-  padding: 14px;
+  box-sizing: border-box;
+  display: grid;
+  padding: 10px 10px 10px 10px;
   bottom: -203px;
+  margin-top: 15px;
 }
 .bloque h1{
   font-family: 'BentonSansBBVABook';
