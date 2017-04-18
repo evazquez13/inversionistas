@@ -59,7 +59,7 @@
       <div class="col-md-4 col-sm-12 col-sx-12">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
-      <div class="col-md-4 col-sm-12 accionista hidden-xs hidden-sm">
+      <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
         <p>Información Financiera</p>
       </div>
     </div>
@@ -96,3 +96,25 @@
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
+
+<script>
+$( document ).ready(function() {
+    console.log("funcion al cargar")
+    //tamaño pantalla
+     ayuda ();
+
+    $(window).resize(function () {
+        console.info("funcion al rezise")
+          ayuda();
+        }); 
+});
+
+function ayuda () {     
+    if ($(window).width() <993) {
+          $('.fondo').css("height",'auto');
+      }
+      else{
+        $('.fondo').css("height",240);
+      }
+  }
+</script>
