@@ -519,3 +519,13 @@ select.form-control option{
 .desktopSelect a{
   opacity: 1;
 }
+p.rel {
+  font-family: 'BentonSansBBVABook';
+  font-size: 16px;
+  color: #072146;
+}
+span.rell{
+  font-family: 'BentonSansBBVA';
+  color: #072146;
+  font-size: 16px;
+}

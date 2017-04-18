@@ -196,7 +196,7 @@ if (is_page("Conócenos")) { ?>
 <?php 
   } 
 if (is_page("Inf_Financiera")) { ?>
- <div class="fondoClaro visible-lg visible-md visible-sm">
+ <!-- <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
@@ -208,7 +208,7 @@ if (is_page("Inf_Financiera")) { ?>
              </div>
          </div>
      </div>
- </div>
+ </div> -->
 
 <?php 
   } 
