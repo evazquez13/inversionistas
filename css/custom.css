@@ -128,16 +128,12 @@
   background-color: #072146;
   border: solid 1px #072146;
 }
-.accionistahead{
-  font-family: 'BentonSansBook';
+.accionistahead p{
+  font-family: 'BentonSansBBVALight';
   font-size: 24px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
-  padding-top: 18px;
+  padding-top: 13px;
 }
 .bordehead{
   border-right: solid 0.5px #ffffff;
@@ -156,7 +152,7 @@
 .footer h4{
   width: 255px;
   height: 20px;
-  font-family: 'BentonSansBook';
+  font-family: 'BentonSansBBVA';
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -196,8 +192,8 @@
   border: solid 1px #072146;
 }
 .barraFooter p a{
-  font-family: 'BentonSansBook';
-  font-size: 12px;
+  font-family: 'BentonSansBBVAMedium';
+  font-size: 14px;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -211,8 +207,8 @@
 .separador{
   margin-bottom: 40px;  
 }
-.accionista{
-  font-family: 'BentonSansBook';
+.accionista p{
+  font-family: 'BentonSansBBVALight';
   font-size: 24px;
   font-style: normal;
   font-stretch: normal;
@@ -220,10 +216,10 @@
   letter-spacing: normal;
   color: #ffffff;
   float: right;
-  margin-right: 43px;
+  margin-right: 21px;
 }
 .social{
-  font-family: 'BentonSansBook';
+  font-family: 'BentonSansBBVAMedium';
   font-size: 10px;
   color: #3c92e0;
   padding-top: 30px;
@@ -237,7 +233,7 @@
   margin-left: 20px;
 }
 .sec-img-2 p{
-  font-family: 'BentonSansBook';
+  font-family: 'BentonSansBBVAMedium';
   font-size: 32px;
   font-weight: 500;
   font-style: normal;
@@ -245,6 +241,10 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+.sec-img-2 a{
+  font-family: 'BentonSansBold';
+  font-size: 16px;
 }
 .botonzote{
   padding: 19px 66px 19px 66px;
@@ -261,18 +261,13 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.tt{
-  font-family: 'BentonSansBook';
+.tt h2{
+  font-family: 'BentonSansBBVALight';
   font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #1a1a1a;
 }
-.tt2{
+.tt2 p{
   font-family: 'BentonSansBook';
   font-size: 16px;
   font-weight: normal;
@@ -284,8 +279,8 @@
   color: #000000;
 }
 
-.tt3{
-  font-family: 'BentonSansBook';
+.tt3 a{
+  font-family: 'BentonSansBold';
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -298,10 +293,10 @@
 /*Termina estilos de index-Banner*/
 
 /*Estilos de ventana interes*/
-.titulo{
+.titulo h1{
   text-align: center;
   object-fit: contain;
-  font-family: 'BentonSansBook';
+  font-family: 'BentonSansBBVABook';
   font-size: 36px;
   font-weight: normal;
   font-style: normal;
@@ -376,7 +371,9 @@ ul.lista-redes li{
 }
 /*Estilos Para Pag-Contacto*/
 .contactanos h1{
-  font-family: 'bentonsansmedium';
+  font-family: 'BentonSansBBVAMedium';
+  color: #1a1a1a;
+  font-size: 32px;
 }
 .helpyou{
   font-family: 'bentonsansbook';
@@ -426,26 +423,26 @@ ul.lista-redes li{
   bottom: -6px;
 }
 .fondo .credenciales h3{
-  font-family: 'bentonsansmedium';
+  font-family: 'BentonSansBBVAMedium';
   font-size: 20px;
   font-weight: 500;
   text-align: left;
   color: #1a1a1a;
 }
 .fondo .credenciales h4{
-  font-family: 'bentonsansbook';
+  font-family: 'BentonSansBBVABook';
   font-size: 16px;
   text-align: left;
   color: #1a1a1a;
 }
 .fondo .credenciales p{
-  font-family: 'bentonsansbook';
+  font-family: 'BentonSansBBVABook';
   font-size: 16px;
   text-align: left;
   color: #1a1a1a;
 }
 .fondo .credenciales h5{
-  font-family: 'bentonsansmedium';
+  font-family: 'BentonSansBBVAMedium';
   font-size: 16px;
   font-weight: 500;
   text-align: left;
@@ -465,20 +462,35 @@ ul.lista-redes li{
   padding: 14px;
   bottom: -203px;
 }
+.bloque h1{
+  font-family: 'BentonSansBBVABook';
+  font-size: 32px;
+  text-align: left;
+  color: #1a1a1a; 
+}
+.bloque p{
+  font-family: 'BentonSansBBVABook';
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #000000;
+}
 /* Termina estilos pag universal   */
 /* Estilos infofinanciera   */
 .infofinanciera h1{
- font-family: 'BentonSansBook';
-  font-size: 32px;
+ font-family: 'BentonSansBBVAMedium';
+  font-size: 30px;
   color: #1a1a1a;
 }
 .infofinanciera p{
  font-family: 'BentonSansBook';
+ font-size: 30px;
   color: #000000;
 }
 .infofinanciera span{
  font-family: 'BentonSansBook';
   color: #2371be;
+  font-size: 30px;
 }
 /* Termina estilos infofinanciera   */  
 select.form-control{

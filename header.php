@@ -32,12 +32,12 @@
             <a href="#" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" class="img-responsive hidden-xs"></a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 accionistahead">
+        <div class="col-md-6 col-sm-4 accionistahead">
             <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Información Financiera</p>
             <p class="visible-sm" style="font-size: 17px;">Información Financiera</p>
         </div>
         <?php if (is_page("Index")) { ?>
-        <div class="col-md-5 col-sm-5">
+        <div class="col-md-3 col-sm-5">
           <ul class="lista-idioma">
             <li><a onclick="alertEn()"><h1 class="menuEnEs">EN</h1></a></li>
             <li><a onclick="alertEs()"><h1 class="menuEnEs activado">ES</h1></a></li>

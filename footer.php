@@ -59,7 +59,7 @@
       <div class="col-md-4 col-sm-12 col-sx-12">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
-      <div class="col-md-4 col-sm-12 accionista hidden-xs hidden-sm">
+      <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
         <p>Información Financiera</p>
       </div>
     </div>
