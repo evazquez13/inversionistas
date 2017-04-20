@@ -1,3 +1,8 @@
+if (varjs=='en') {
+	alertEn();
+}else{
+	alertEs();
+}
 	function alertEn(){
     $('.espanol').html("<p>This information is only available in Spanish</p>");
     $('.ingles').html("<p></p>");
@@ -36,10 +41,4 @@ $(window).resize(
   	function(){
   		pantalla();
   	})
-
-	$('.menuEnEs').on('click' , function(){
-		$('.menuEnEs').removeClass('activado');
-	$(this).addClass('activado');		
-	})
-
 });

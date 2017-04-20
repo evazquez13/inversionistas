@@ -10,6 +10,7 @@
  */
 ?>
 <?php wp_footer(); ?>
+ <?php $idioma = pll_current_language( 'slug' ); ?>
 <!-- <div class="row separador"></div> -->
 <!-- <div class="ayuda">
   <div class="container footer">
@@ -53,6 +54,7 @@
     </div>
 </div>
 </div> -->
+<?php if ($idioma== 'es') {?>
 <div class="barraFooter">
 	<div class="container">
     <div class="row separador text-center">
@@ -96,25 +98,49 @@
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
-
-<script>
-$( document ).ready(function() {
-    console.log("funcion al cargar")
-    //tamaño pantalla
-     ayuda ();
-
-    $(window).resize(function () {
-        console.info("funcion al rezise")
-          ayuda();
-        }); 
-});
-
-function ayuda () {     
-    if ($(window).width() <993) {
-          $('.fondo').css("height",'auto');
-      }
-      else{
-        $('.fondo').css("height",240);
-      }
-  }
-</script>
+<?php } ?>
+<?php if ($idioma == 'en') {?>
+<div class="barraFooter">
+  <div class="container">
+    <div class="row separador text-center">
+      <div class="col-md-4 col-sm-12 col-sx-12">
+      <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
+      </div>
+      <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
+        <p>Financial Information</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-1 col-sm-12 col-xs-12">
+        <p><a href="#">Security</a></p>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <p><a href="#">Legal warning</a></p>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <p><a href="#">Site Map</a></p>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <p><a href="#">Notice of Privacy</a></p>
+      </div>
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <p><a href="#">Consult the Costs and Commissions of our products</a></p>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <ul class="lista-redes">
+          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a></li>
+          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a></li>
+          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a></li>
+        </ul>
+      </div>
+      <div class="social">
+          <p>BBVA Social Media</p>      
+      </div>
+    </div> 
+  </div>
+</div>
+<?php } ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
+<script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>

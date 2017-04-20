@@ -22,6 +22,15 @@
 
 
   <?php wp_head(); ?>
+  <?php 
+  $translations = pll_the_languages( array( 'raw' => url ) );
+  $idioma = pll_current_language( 'slug' ); 
+echo '<script languaje="JavaScript">
+            
+      var varjs="'.$idioma.'";      
+</script>';
+  ?>
+
 <body>
 <header>
   <div class="fonfoAzul hidden-xs">    
@@ -33,22 +42,32 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-4 accionistahead">
+        	<?php if ($idioma== 'en') { ?>
+            <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Financial Information</p>
+            <p class="visible-sm" style="font-size: 17px;">Financial Information</p>
+            <?php } ?>
+            <?php if ($idioma== 'es') { ?>
             <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Información Financiera</p>
             <p class="visible-sm" style="font-size: 17px;">Información Financiera</p>
+            <?php } ?>
         </div>
-        <?php if (is_page("Index")) { ?>
+        
         <div class="col-md-3 col-sm-5">
-          <ul class="lista-idioma">
-            <li><a onclick="alertEn()"><h1 class="menuEnEs">EN</h1></a></li>
-            <li><a onclick="alertEs()"><h1 class="menuEnEs activado">ES</h1></a></li>
-          </ul>
+	        <ul class="lista-idioma">
+	        	<li class="lang-item lang-item-2 lang-item-es lang-item-first">
+	        		<a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma== 'en') { echo 'activado';} ?>">EN</h1></a>
+	          	</li>
+    				<li class="lang-item lang-item-5 lang-item-en">
+    					<a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma== 'es') { echo 'activado';} ?>">ES</h1></a>
+    				</li>
+			</ul>
         </div>
-        <?php } ?>
+        
       </div>
     </div>
   </div>
   </header>  
-
+<?php if ($idioma== 'es') { ?>
 <div class="fonfoAzul visible-lg visible-md visible-sm">
      <div class="container">
         <div class="row">
@@ -60,14 +79,13 @@
                   <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
                   <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
                   <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
-                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://localhost/inversionistas/es/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>
       </div>
     </div>
 </div>
-
   <div class="fonfoAzul hidden-lg hidden-md hidden-sm">
       <div class="container">
         <div class="row">
@@ -146,29 +164,26 @@
                             </li>
                         </ul>       
                     </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                    <li><a href="http://localhost/inversionistas/es/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>
       </div>
-      <?php if (is_page("Index")) { ?>
       <div class="row">
       	<div class="col-sm-12 col-xs-12">
       		<ul class="lista-idioma">
-	      		<li>
-	      			<a onclick="alertEn()"><h1 class="menuEnEs activado">EN</h1></a>
-	            </li>
-	      		<li>
-	      			<a onclick="alertEs()"><h1 class="menuEnEs">ES</h1></a>
-	      		</li>
-	      	</ul>
+	        	<li class="lang-item lang-item-2 lang-item-es lang-item-first">
+	        		<a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma== 'en') { echo 'activado';} ?>">EN</h1></a>
+	          	</li>
+				<li class="lang-item lang-item-5 lang-item-en">
+					<a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma == 'es') { echo 'activado';} ?>">ES</h1></a>
+				</li>
+			</ul>
       	</div>
       </div>
-      <?php } ?>
     </div>
   </div>
  
-
 <?php 
 if (is_page("Conócenos")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
@@ -193,26 +208,8 @@ if (is_page("Conócenos")) { ?>
      </div>
  </div>
 
-<?php 
-  } 
-if (is_page("Inf_Financiera")) { ?>
- <!-- <div class="fondoClaro visible-lg visible-md visible-sm">
-     <div class="container">
-         <div class="row">
-             <div class="menu-claro">
-                <ul>
-                    <li><a href="#">Información Trimestral</a></li>
-                    <li><a href="#">Informe Anual</a></li>
-                    <li><a href="#">Información para Reguladores</a></li>
-                </ul>
-             </div>
-         </div>
-     </div>
- </div> -->
-
-<?php 
-  } 
-if (is_page("Renta_fija")) { ?>
+<?php } ?>
+<?php if (is_page("Renta_fija")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -245,19 +242,168 @@ if (is_page("Gobierno_Corporativo")) { ?>
          </div>
      </div>
  </div>
+<?php } ?>
+<?php } ?>
+
+<!-- Inicia el menu en ingles-->
+<?php if ($idioma== 'en') { ?>
+<div class="fonfoAzul visible-lg visible-md visible-sm">
+     <div class="container">
+        <div class="row">
+            <div class="menu-container">
+              <div class="menu">
+                <ul>
+                  <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://localhost/inversionistas/en/index-2/">Home</a></li>
+                  <li class="desktop <?php if (is_page('Conócenos')) { echo 'desktopSelect'; } ?>"><a href="#">About Us</a></li>
+                  <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="#">Financial Information</a></li>
+                  <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="#">Setteled Rent</a></li>
+                  <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="#">Corporative Goverment </a></li>
+                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://localhost/inversionistas/en/contacto-en/">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <div class="fonfoAzul hidden-lg hidden-md hidden-sm">
+      <div class="container">
+        <div class="row">
+            <div class="menu-container">
+              <div class="menu">
+                <ul>
+                    <li>
+                      <a href="#" class="menu-mobile"></a>
+                    </li>
+                    <li><a href="http://localhost/inversionistas/en/index-2/">Home</a></li>
+                  <li><a href="#">About Us</a>
+                         <ul>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">History</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">BBVA in Resume</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Business Model</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Directive Structure</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Liable Business</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Group BBVA</a>
+                                <ul></ul>
+                            </li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Financial Information</a></li>
+                    <li><a href="#">Setteled Rent</a>
+                        <ul>
+                            <li><a href="#">Qualifications</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Factsheet</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Emissions</a>
+                                <ul></ul>
+                            </li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Corporative Goverment</a>
+                        <ul>
+                            <li><a href="#">Board of Directors</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Investors Assembly</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Social Bylaw and Exclusive Agreement</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Behavior Code</a>
+                                <ul></ul>
+                            </li>
+                            <li><a href="#">Code of Better Corporative Practices</a>
+                                <ul></ul>
+                            </li>
+                        </ul>       
+                    </li>
+                    <li><a href="http://localhost/inversionistas/en/contacto-en/">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-sm-12 col-xs-12">
+      		<ul class="lista-idioma">
+	        	<li class="lang-item lang-item-2 lang-item-es lang-item-first">
+	        		<a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma == 'en') { echo 'activado';} ?>">EN</h1></a>
+	          	</li>
+				<li class="lang-item lang-item-5 lang-item-en">
+					<a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma == 'es') { echo 'activado';} ?>">ES</h1></a>
+				</li>
+			</ul>
+      	</div>
+      </div>
+    </div>
+  </div>
+ 
 <?php 
-  } 
-if (is_page("Contacto")) { ?>
-<!-- <div class="fondoClaro visible-lg visible-md">
+if (is_page("Conócenos")) { ?>
+ <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
-
+                 <ul>
+                     <li><a href="#">>Mission</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">BBVA in Resume</a></li>
+                        <li><a href="#">Business Model</a></li>
+                        <li><a href="#">Directive Structure</a></li>
+                        <li><a href="#">Liable Business</a></li>
+                        <li><a href="#">Group BBVA</a></li>
+                 </ul>
              </div>
          </div>
      </div>
  </div>
--->
+
 <?php 
   } 
-  ?>
+if (is_page("Renta_fija")) { ?>
+ <div class="fondoClaro visible-lg visible-md visible-sm">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                <ul>
+                    <li><a href="#">Qualifications</a> </li>
+                    <li><a href="#">Factsheet</a></li>
+                    <li><a href="#">Emissions</a></li>
+                </ul>  
+             </div>
+         </div>
+     </div>
+ </div>
+<?php 
+  } 
+if (is_page("Gobierno_Corporativo")) { ?>
+ <div class="fondoClaro visible-lg visible-md visible-sm">
+     <div class="container">
+         <div class="row">
+             <div class="menu-claro">
+                <ul>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Investors Assembly</a></li>
+                    <li><a href="#">Social Bylaw and Exclusive Agreement</a></li>
+                    <li><a href="#">Behavior Code</a></li>
+                    <li><a href="#">Code of Better Corporative Practices</a></li>
+                </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+<?php } ?>
+<?php } ?>

@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: template index
+*/
 /**
  * The template for displaying pages
  *
@@ -17,6 +20,7 @@ get_header(); ?>
 	$img = get_field('row-img-1');
 	$descripcion = get_field('descripcion');
 	$urlBoton = get_field('url-boton');
+	$idioma = pll_current_language( 'slug' );
 ?>
 
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -28,7 +32,7 @@ get_header(); ?>
 	$i == 0;
 	if (get_field('banner')) {
 		
-	}
+	
 		// check if the repeater field has rows of data
 		if( have_rows('banner') ):
 			// loop through the rows of data
@@ -84,148 +88,13 @@ get_header(); ?>
 
 	<?php } ?>
   </ol>
-<?php } ?>
+<?php } } ?>
+
+
 </div>
+    <h1>tt</h1>
 
-	<div class="container infofinanciera">
-		<div class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12">
-				<h1>Información Financiera</h1>
-				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span> Seleccione el documento que requiere:</span></p>
-			</div>
-			<?php if (get_field('tipo-informacion')) {?>
-			<div class="col-md-12 col-xs-12 col-sm-12 space">
-				<div class="col-md-4 col-xs-12 col-sm-12 form-group">
-					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
-						<option>-Selecciona</option>
-						<?php 
-							$t=0;
-							if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row(); 
-						 ?>
-						 <option value="<?php echo $t; ?>"><?php the_sub_field('nombre-info') ?></option>
-						 <?php 
-						 	$t++;
-						 	endwhile;
-							endif;
-						  ?>
-					</select>
-				</div>
-				<div class="col-md-4 col-xs-12 col-sm-6 form-group">
-				<?php 
-				$i=0;
-				$z=0;
-				if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
-				?>
-					<select name="institucion" id="institucion<?php echo $i; ?>" class="form-control institucion" onchange="mostrarAnio(this)">
-						<option>-Selecciona</option>
-						<?php
-							// check if the repeater field has rows of data
-							if( have_rows('institucion') ):
-								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
-						?>
-						<option value="<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
-						<?php 
-						$z++;
-						endwhile;
-						endif;
-						$i ++;
-					?>
-					</select>
-					<?php 
-					endwhile;
-					endif;
-					 ?>
-				</div>
-				<div class="col-md-4 col-xs-12 col-sm-6 form-group">
-					<?php 
-					$y=0;
-					$a=0;
-					if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
-							// check if the repeater field has rows of data
-					 
-					
-					if( have_rows('institucion') ):
-								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
-						?>
-						<select id="anio<?php echo $y; ?>" class="form-control anio" onchange="mostrarPdf(this)">
-					<option>-Selecciona</option>
-						<?php
-						 
-						 
-							// check if the repeater field has rows of data
-							if( have_rows('anio') ):
-								// loop through the rows of data
-								while ( have_rows('anio') ) : the_row();
-						?>
-						<option value="<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
-						<?php
-						$a++;
-						endwhile;
-						endif;
-						?>
-						</select>
-						<?php
-						$y++;
-						endwhile;
-						endif;
-						endwhile;
-						endif;
-						?>
-				</div>
-						
-				
-			</div>
 
-			<?php $e=0;
-			if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
-					if( have_rows('institucion') ):
-								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
-							// check if the repeater field has rows of data
-							
-							if( have_rows('anio') ):
-								// loop through the rows of data
-								while ( have_rows('anio') ) : the_row();
-							
-			 ?>
-				<div class="col-md-12 col-xs-12 col-sm-12 insti" id="insti<?php echo $e; ?>">
-				<?php 
-								// check if the repeater field has rows of data
-							if( have_rows('pdf') ):
-							// loop through the rows of data
-							while ( have_rows('pdf') ) : the_row();
-				 ?>
-					<div class="col-md-4 col-sm-4 col-xs-12"><?php the_sub_field('nombre-pdf'); ?></div>
-					<div class="col-md-3 col-sm-3 col-xs-12"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
-					<div class="col-md-5 col-sm-5 col-xs-12 <?php the_sub_field('idioma'); ?>">
-						<?php if (get_sub_field('idioma')=="ingles") { ?>
-							<p>Esta información solo está disponible en Inglés</p>
-						<?php } ?>
-					</div>
-					<div class="space1"></div>
-					<?php 
-					endwhile;
-					endif;		
-					 ?>
-				</div>
-				<?php 
-				$e++;
-					endwhile;
-					endif;
-					endwhile;
-					endif;
-					endwhile;
-					endif;
-					}
-				 ?>	
-		</div>
-	</div>
 
 <?php 
 	if (get_field('row-img-1')) {
@@ -294,4 +163,3 @@ get_header(); ?>
 </div >
 <?php } ?>
 <?php get_footer(); ?>
-
