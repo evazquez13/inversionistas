@@ -452,8 +452,8 @@ ul.lista-redes li{
     height: 30px;
     width: 100%;
 }
-/*Termina Estilos Para Pag-Contacto*/
-/*  Estilos pag universal   */
+/*Termina Estilos Para credenciales*/
+/*Estilos Para Cajas de texto sobre imag*/
 .bloque{
   background-color: rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
@@ -475,7 +475,42 @@ ul.lista-redes li{
   text-align: left;
   color: #000000;
 }
-/* Termina estilos pag universal   */
+/*Termina Estilos Para Cajas de texto sobre imag/
+/*  Estilos infoInteres  */
+.infoInteres{
+  background-color: #f4f4f4;
+}
+.infoInteres h1{
+  font-family: 'BentonSansBBVABook';
+  font-size: 36px;
+  color: #1a1a1a;
+}
+.fondoBlanco{
+  background-color: #fff;
+}
+.borde{
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(158, 158, 158, 0.74);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(158, 158, 158, 0.74);
+  box-shadow: 0px 1px 1px 1px rgba(158, 158, 158, 0.74);
+}
+.infoInteres p{
+  font-family: 'BentonSansBBVABook';
+  font-size: 16px;
+  color: #072146;
+}
+.infoInteres a{
+  font-family: 'BentonSansBBVAMedium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.63;
+  color: #072146;
+}
+.infoInteres .isobres{
+  margin-top: 208px;
+}
+/* Termina estilos infoInteres   */
+/* Termina estilos page-Contacto   */
+
 /* Estilos infofinanciera   */
 .infofinanciera h1{
  font-family: 'BentonSansBBVAMedium';
