@@ -26,31 +26,33 @@ get_header();
 	<div class="container contacto">
 		<div class="row">
 		<?php if($titulo !=''){ ?>
-			<div class="col-md-6 col-sm-6 col-xs-10">
+			<div class="col-md-6 col-sm-6 col-xs-11">
 				<div class="bloque">
-					<div class="col-md-10 col-sm-10 col-xs-10">
+					<div class="col-md-10 col-sm-10 col-xs-11">
 						<h1><?php echo $titulo; ?></h1>	
 					</div>
-					<div class="col-md-10 col-sm-10 col-xs-10">
+					<div class="col-md-10 col-sm-10 col-xs-11">
 						<p><?php echo $intro; ?></p>
 					</div>
-					<?php if($url !=''){ ?>
-					<div class="col-md-6 col-sm-5 col-xs-12">
-						<a href="<?php echo $url; ?>"><button type="button" class="btn btn-primary"><?php echo $boton; ?></button></a>
+					<div class="col-md-12">
+						<?php if($url !=''){ ?>
+						<div class="col-md-6 col-sm-5 col-xs-12">
+							<a href="<?php echo $url; ?>"><button type="button" class="btn btn-primary"><?php echo $boton; ?></button></a>
+						</div>
+						<?php } 
+						if($icon !=''){ ?>
+						<div class="col-md-6 col-sm-7 col-xs-12">
+							<a href="#">
+							 <div class="col-md-3 col-sm-1 col-xs-2">
+							 	<img src="<?php echo $icon; ?>">
+							 </div>
+							 <div class="col-md-8 col-sm-6 col-xs-9">
+								<?php echo $text; ?>
+						   	 </div>
+							</a>
+						</div>
+						<?php } ?>
 					</div>
-					<?php } 
-					if($icon !=''){ ?>
-					<div class="col-md-6 col-sm-7 col-xs-12">
-						<a href="#">
-						 <div class="col-md-3 col-sm-1 col-xs-2">
-						 	<img src="<?php echo $icon; ?>">
-						 </div>
-						 <div class="col-md-8 col-sm-6 col-xs-10">
-							<?php echo $text; ?>
-					   	 </div>
-						</a>
-					</div>
-					<?php } ?>
 				</div>
 			</div>
 			<?php } ?>
@@ -72,12 +74,12 @@ if($campo !=''){?>
 	<div class="container contacto">
 		<div class="row">
 		<?php if($titulo2 !=''){ ?>
-			<div class="col-md-6 col-sm-6 col-xs-10">
+			<div class="col-md-6 col-sm-6 col-xs-11">
 				<div class="bloque">
-					<div class="col-md-10 col-sm-10 col-xs-10">
+					<div class="col-md-10 col-sm-10 col-xs-11">
 						<h1><?php echo $titulo2; ?></h1>	
 					</div>
-					<div class="col-md-10 col-sm-10 col-xs-10">
+					<div class="col-md-10 col-sm-10 col-xs-11">
 						<p><?php echo $intro2; ?></p>
 					</div>
 					<?php if($url2 !=''){ ?>
