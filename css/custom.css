@@ -455,12 +455,11 @@ ul.lista-redes li{
 /*Termina Estilos Para credenciales*/
 /*Estilos Para Cajas de texto sobre imag*/
 .bloque{
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   box-sizing: border-box;
   display: grid;
-  padding: 10px 10px 10px 10px;
-  bottom: -203px;
-  margin-top: 15px;
+  padding: 40px 5px 80px 10px;
+  margin-top: 130px;
 }
 .bloque h1{
   font-family: 'BentonSansBBVABook';

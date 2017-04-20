@@ -100,7 +100,7 @@ if($contacto !=''){
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="col-md-12 fondo">
 							<div class="col-md-4 contacto">	
-								<img src= "<?php the_sub_field('img-contaco'); ?>" alt="">
+								<img src= "<?php the_sub_field('img-contacto'); ?>" alt="">
 							</div>
 							<div class="col-md-8 credenciales">
 								<div class="col-md-12">
