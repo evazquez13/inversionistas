@@ -54,7 +54,11 @@ get_header(); ?>
 						</div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
+								<?php if ($idioma == 'es') {?>
 								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
+								<?php } if ($idioma == 'en') { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+								<?php } ?>
 							</div>
 						</div>
 		    		</div>
@@ -157,7 +161,7 @@ get_header(); ?>
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>">Leer Más</a>
+						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
 					</div>
 				</div>
 			</div>	

@@ -54,7 +54,11 @@ get_header(); ?>
 						</div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
+								<?php if ($idioma == 'es') {?>
 								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
+								<?php } if ($idioma == 'en') { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+								<?php } ?>
 							</div>
 						</div>
 		    		</div>
@@ -96,11 +100,11 @@ get_header(); ?>
 			<div class="col-md-12 col-xs-12 col-sm-12">
 			<?php if ($idioma == 'es') {?>
 				<h1>Información Financiera</h1>
-				<p>Para ver la información, necesita el Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span><br> Seleccione el documento que requiere:</span></p>
+				<p>To view this information you need Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span><br> Seleccione el documento que requiere:</span></p>
 				<?php }
 				if ($idioma == 'en') { ?>
 				<h1>Financial Information</h1>
-				<p>To view the information, you need the Acrobat Reader. If you do not have it, you can download it at no cost at the address:<span> Acrobat Reader the Adobe</span><span><br> Select the document you require:</span></p>
+				<p>To view the information, you need the Acrobat Reader. If you dont have it you can download it for free at the following address:<span> Adobe Acrobat Reader.</span><span><br>Select the document you require:</span></p>
 				<?php } ?>
 			</div>
 			<?php if (get_field('tipo-informacion')) {?>
@@ -246,10 +250,10 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>
-				<h1>Información Financiera</h1>
+				<h1>Información de Interes</h1>
 				<?php } ?>
 			<?php if ($idioma == 'en') {?>
-				<h1>Financial information</h1>
+				<h1>Information of interest</h1>
 				<?php } ?>
 			</div>
 		</div>
@@ -270,7 +274,7 @@ get_header(); ?>
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>">Leer Más</a>
+						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
 					</div>
 				</div>
 			</div>	
