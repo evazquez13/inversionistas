@@ -250,6 +250,16 @@
 .botonzote{
   padding: 19px 66px 19px 66px;
 }
+/*Estilos iconos*/
+.iconos h1{
+  font-family: 'BentonSansBBVAMedium';
+  font-size: 30px;
+}
+.iconos h3{
+  font-family: 'BentonSansBBVAMedium';
+  font-size: 20px;
+}
+/*Termina Estilos iconos*/
 /*Termina estilos para index*/
 
 /*Estilos de index-Banner*/
