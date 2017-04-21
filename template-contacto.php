@@ -33,7 +33,7 @@ get_header();
 	</div>
 </div>
 
-<?php 
+<?php }
 if($contacto !=''){ 
 	?>
 
