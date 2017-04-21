@@ -114,6 +114,7 @@ if (get_field('iconos')) {?>
 				<?php } ?>
 			</div>
 		</div>
+		<div class="space"></div>
 		<div class="row">
 		<?php
 			// check if the repeater field has rows of data
