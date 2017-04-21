@@ -33,8 +33,12 @@ $(document).on('ready', function() {
 	  // console.info( 'la pantalla mide ' + pant + 'px' );
 	  if (pant <= 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
+	  	$('.fondo').css("height",'auto');
+        $('.separador').css("text-align",'center');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
+	  	$('.fondo').css("height",240);
+		$('.separador').css("text-align",'left');
 	  }
 	}
 $(window).resize(
@@ -43,26 +47,3 @@ $(window).resize(
   	})
 });
 
-<script>
-$( document ).ready(function() {
-    console.log("funcion al cargar")
-    //tamaño pantalla
-     ayuda ();
-
-    $(window).resize(function () {
-        console.info("funcion al rezise")
-          ayuda();
-        }); 
-});
-
-function ayuda () {     
-    if ($(window).width() <993) {
-          $('.fondo').css("height",'auto');
-         $('.separador').css("text-align",'center');
-      }
-      else{
-        $('.fondo').css("height",240);
-       $('.separador').css("text-align",'left');
-      }
-  }
-</script>
