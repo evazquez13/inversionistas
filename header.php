@@ -38,7 +38,7 @@ echo '<script languaje="JavaScript">
       <div class="row hidden-xs">
         <div class="col-md-3 col-sm-3">
           <div class="logo-container">
-            <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" class="img-responsive hidden-xs"></a>
+            <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" class="img-responsive hidden-xs"></a>
           </div>
         </div>
         <div class="col-md-6 col-sm-4 accionistahead">
@@ -74,12 +74,12 @@ echo '<script languaje="JavaScript">
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                  <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
-                  <li class="desktop <?php if (is_page('Conócenos')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/conocenos/">Conócenos</a></li>     
-                  <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/inf_financiera/">Información Financiera</a></li>
-                  <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/renta_fija/">Renta Fija</a></li>
-                  <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/gobierno_corporativo/">Gobierno Corporativo</a></li>
-                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                  <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/">Inicio</a></li>
+                  <li class="desktop <?php if (is_page('Conócenos')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/conocenos/">Conócenos</a></li>     
+                  <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/inf_financiera/">Información Financiera</a></li>
+                  <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/renta_fija/">Renta Fija</a></li>
+                  <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/gobierno_corporativo/">Gobierno Corporativo</a></li>
+                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -95,7 +95,7 @@ echo '<script languaje="JavaScript">
                     <li>
                       <a href="#" class="menu-mobile"></a>
                     </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/">Inicio</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/">Inicio</a></li>
                   <li><a href="#">Conócenos</a>
                          <ul>
                             <li><a href="#">Misión</a></li>
@@ -164,7 +164,7 @@ echo '<script languaje="JavaScript">
                             </li>
                         </ul>       
                     </li>
-                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/contacto/">Contacto</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/contacto/">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -253,12 +253,12 @@ if (is_page("Gobierno_Corporativo")) { ?>
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                  <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Home</a></li>
-                  <li class="desktop <?php if (is_page('Conócenos')) { echo 'desktopSelect'; } ?>"><a href="#">About Us</a></li>
-                  <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="#">Financial Information</a></li>
-                  <li class="desktop <?php if (is_page('Renta_fija')) { echo 'desktopSelect'; } ?>"><a href="#">Setteled Rent</a></li>
-                  <li class="desktop <?php if (is_page('Gobierno_Corporativo')) { echo 'desktopSelect'; } ?>"><a href="#">Corporative Goverment </a></li>
-                  <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="#">Contact Us</a></li>
+                  <li class="desktop <?php if (is_page('Index-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/index-en/">Home</a></li>
+                  <li class="desktop <?php if (is_page('Conócenos-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos-en/">About Us</a></li>
+                  <li class="desktop <?php if (is_page('Inf_Financiera-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/inf_financiera-2/">Financial Information</a></li>
+                  <li class="desktop <?php if (is_page('Renta_fija-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/renta_fija-en/">Setteled Rent</a></li>
+                  <li class="desktop <?php if (is_page('Gobierno_Corporativo-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/gobierno_corporativo-en/">Corporative Goverment </a></li>
+                  <li class="desktop <?php if (is_page('Contacto-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/contacto-en/">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -274,8 +274,8 @@ if (is_page("Gobierno_Corporativo")) { ?>
                     <li>
                       <a href="#" class="menu-mobile"></a>
                     </li>
-                    <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/index-en/">Home</a></li>
+                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos-en/">About Us</a>
                          <ul>
                             <li><a href="#">Mission</a></li>
                             <li><a href="#">History</a>
@@ -331,7 +331,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                             </li>
                         </ul>       
                     </li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/contacto-en/">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -352,13 +352,13 @@ if (is_page("Gobierno_Corporativo")) { ?>
   </div>
  
 <?php 
-if (is_page("Conócenos")) { ?>
+if (is_page("Conócenos-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
                  <ul>
-                     <li><a href="#">>Mission</a></li>
+                     <li><a href="#">Mission</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">BBVA in Resume</a></li>
                         <li><a href="#">Business Model</a></li>
@@ -373,7 +373,7 @@ if (is_page("Conócenos")) { ?>
 
 <?php 
   } 
-if (is_page("Renta_fija")) { ?>
+if (is_page("Renta_fija-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -389,7 +389,7 @@ if (is_page("Renta_fija")) { ?>
  </div>
 <?php 
   } 
-if (is_page("Gobierno_Corporativo")) { ?>
+if (is_page("Gobierno_Corporativo-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">

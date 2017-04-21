@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page-Contacto
+Template Name: templete-Contacto
 */
 get_header(); 
 ?>
@@ -23,7 +23,7 @@ get_header();
 ?>
 
 <?php if( $img != '') { ?>
-<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 360px">
+<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 480px">
 	<div class="container contacto">
 		<div class="row">
 		<?php if($titulo !=''){ ?>
@@ -166,7 +166,12 @@ if($contacto !=''){
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Información de interés</h1>
+				<?php if ($idioma == 'es') {?>
+				<h1>Información Financiera</h1>
+				<?php } ?>
+			<?php if ($idioma == 'en') {?>
+				<h1>Financial information</h1>
+				<?php } ?>
 			</div>
 		</div>
 		<div class="space"></div>

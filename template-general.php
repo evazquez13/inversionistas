@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Stats Page
+Template Name: Template-general
 */
 get_header(); 
 ?>

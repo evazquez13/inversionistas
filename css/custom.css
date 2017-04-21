@@ -229,7 +229,7 @@
 
 /*Estilos para index*/
 .sec-img-2{
-	margin-top: 70px;
+	margin-top: 50px;
   margin-left: 20px;
 }
 .sec-img-2 p{
@@ -241,6 +241,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+  line-height: 43px;
 }
 .sec-img-2 a{
   font-family: 'BentonSansBold';
@@ -254,7 +255,7 @@
 /*Estilos de index-Banner*/
 .banner-msn{
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 15px;
+	padding: 0px 25px 25px 25px;
 }
 
 .relleno{
@@ -518,13 +519,13 @@ ul.lista-redes li{
 }
 .infofinanciera p{
  font-family: 'BentonSansBook';
- font-size: 30px;
+ font-size: 20px;
   color: #000000;
 }
 .infofinanciera span{
  font-family: 'BentonSansBook';
   color: #2371be;
-  font-size: 30px;
+  font-size: 20px;
 }
 /* Termina estilos infofinanciera   */  
 select.form-control{

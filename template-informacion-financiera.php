@@ -90,12 +90,7 @@ get_header(); ?>
   </ol>
 <?php } } ?>
 
-
 </div>
-    <h1>tt</h1>
-
-
-
 	<div class="container infofinanciera">
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
@@ -246,38 +241,44 @@ get_header(); ?>
 
 
 <?php if (get_field('interes')) {?>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 titulo">
-			<h1>Información de interés</h1>
+<div class="infoInteres">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<?php if ($idioma == 'es') {?>
+				<h1>Información Financiera</h1>
+				<?php } ?>
+			<?php if ($idioma == 'en') {?>
+				<h1>Financial information</h1>
+				<?php } ?>
+			</div>
 		</div>
-	</div>
-
-	<div class="row">
-	<?php
-		// check if the repeater field has rows of data
-		if( have_rows('interes') ):
-			// loop through the rows of data
-			while ( have_rows('interes') ) : the_row();			
-	?>
-		<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
-			<div class="col-md-12 col-sm-12 col-xs-12" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;" >
-			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12">
-			<div class="space"></div>
-			  <p class="rel"><?php the_sub_field('tiulo'); ?></p>
-			<div class="space1"></div>
-			  </div>
-			  
-			<div class="col-md-12 col-sm-12 col-xs-12">
-			  <a href="<?php the_sub_field('url'); ?>"><span class="rell">Leer Más</span></a>
-			</div>
-		</div>	
+		<div class="space"></div>
+		<div class="row">
 		<?php
-					endwhile;
-						endif;
-				?>
-	</div>
-</div >
+			// check if the repeater field has rows of data
+			if( have_rows('interes') ):
+				// loop through the rows of data
+				while ( have_rows('interes') ) : the_row();			
+		?>
+			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;">
+				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
+					<div class="col-md-9">
+						<div class="space"></div>
+						<p><?php the_sub_field('titulo'); ?></p>
+						<div class="space"></div>
+						<a href="<?php the_sub_field('url'); ?>">Leer Más</a>
+					</div>
+				</div>
+			</div>	
+			<?php
+						endwhile;
+							endif;
+					?>
+	</div >
+</div>
 <?php } ?>
 <?php get_footer(); ?>
