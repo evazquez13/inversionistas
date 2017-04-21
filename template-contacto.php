@@ -14,12 +14,13 @@ get_header();
 	$icon = get_field('icon-1');
 	$text = get_field('text-icon-1');
 	$campo = get_field('campo-html');
-	$contacto = get_field('contacto');
+	$contacto = the_sub_field('img-contacto');
 	$img2 = get_field('imag-2');
 	$titulo2 = get_field('titulo-2');
 	$intro2 = get_field('introduccion-2');
 	$boton2 = get_field('boton-2');
 	$url2 = get_field('url-boton-2');
+	$idioma = pll_current_language( 'slug' );
 ?>
 
 <?php if( $img != '') { ?>
@@ -78,7 +79,12 @@ if($contacto !=''){
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 contactanos">
+				<?php if ($idioma == 'es') {?>
 				<h1>Contacto</h1>
+				<?php } ?>
+			<?php if ($idioma == 'en') {?>
+				<h1>Contact Us</h1>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -113,7 +119,7 @@ if($contacto !=''){
 									<p><?php the_sub_field('correo'); ?></p>
 								</div>
 								<div class="col-md-1 icon1">
-									<img src="http://localhost/wordpress/wp-content/uploads/2017/04/phone.png" alt="">
+									<img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
 								</div>
 								<div class="col-md-9">
 									<h5><?php the_sub_field('telefono'); ?></h5>
@@ -167,10 +173,10 @@ if($contacto !=''){
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>
-				<h1>Información Financiera</h1>
+				<h1>Información de interés</h1>
 				<?php } ?>
 			<?php if ($idioma == 'en') {?>
-				<h1>Financial information</h1>
+				<h1>Information of interest</h1>
 				<?php } ?>
 			</div>
 		</div>
@@ -191,7 +197,7 @@ if($contacto !=''){
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>">Leer Más</a>
+						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
 					</div>
 				</div>
 			</div>	
