@@ -26,21 +26,29 @@ if (varjs=='en') {
 					$('#insti'+pdf.value).stop().delay(300).fadeIn();
 		}
 
-$(document).on('ready', function() {
+$(document).on('ready',function() {
 
+	pantalla();
 	function pantalla(){
 	  pant = $(window).width();
 	  // console.info( 'la pantalla mide ' + pant + 'px' );
-	  if (pant <= 769) {
-	  	$('.lista-redes').css('marginLeft','-30px');
+	  if(pant < 993){
 	  	$('.fondo').css("height",'auto');
         $('.separador').css("text-align",'center');
+	  }
+	  else{
+	  	$('.fondo').css("height",'240');
+		$('.separador').css("text-align",'left');	 	
+	  }
+	  if (pant < 769) {
+	  	$('.lista-redes').css('marginLeft','-30px');
+	  	$('.fondo').css("padding",'inherit');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
-	  	$('.fondo').css("height",240);
-		$('.separador').css("text-align",'left');
+	  	$('.fondo').css("padding",'10px 10px 20px 10px;');
 	  }
 	}
+
 $(window).resize(
   	function(){
   		pantalla();
