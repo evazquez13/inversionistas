@@ -167,7 +167,7 @@ if($contacto !=''){
 <?php }
 ?>
 
-<?php if (get_field ('interes') != '') {?>
+<?php if (get_field ('interes')) {?>
 <div class="infoInteres">
 	<div class="container">
 		<div class="row">

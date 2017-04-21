@@ -211,5 +211,6 @@ if (get_field('iconos')) {?>
 					?>
 	</div >
 </div>
+</div>
 <?php } ?>
 <?php get_footer(); ?>
