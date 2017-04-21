@@ -14,11 +14,8 @@ get_header();
 	$icon = get_field('icon-1');
 	$text = get_field('text-icon-1');
 	$campo = get_field('campo-html');
-	$img2 = get_field('imag-2');
-	$titulo2 = get_field('titulo-2');
-	$intro2 = get_field('introduccion-2');
-	$boton2 = get_field('boton-2');
-	$url2 = get_field('url-boton-2');
+	$idioma = pll_current_language( 'slug' );
+
 ?>
 
 <?php if( $img != '') { ?>
@@ -64,36 +61,53 @@ get_header();
 if($campo !=''){?>
 
 <?php the_field('campo-html'); ?>
+<div class="space"></div>
 
 <?php } ?>
 
-<div class="space"></div>
-
-<?php if($img2 !=''){ ?>
-<div style="background:url('<?php echo $img2; ?>'); background-size: cover; height: 360px">
-	<div class="container contacto">
+<?php if (get_field ('interes')) {?>
+<div class="infoInteres">
+	<div class="container">
 		<div class="row">
-		<?php if($titulo2 !=''){ ?>
-			<div class="col-md-6 col-sm-6 col-xs-11">
-				<div class="bloque">
-					<div class="col-md-10 col-sm-10 col-xs-11">
-						<h1><?php echo $titulo2; ?></h1>	
-					</div>
-					<div class="col-md-10 col-sm-10 col-xs-11">
-						<p><?php echo $intro2; ?></p>
-					</div>
-					<?php if($url2 !=''){ ?>
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="<?php echo $url2; ?>"><button type="button" class="btn btn-primary"><?php echo $boton2; ?></button></a>
-					</div>
-					<?php } ?>
-				</div>
+			<div class="col-md-12 text-center">
+				<?php if ($idioma == 'es') {?>
+				<h1>Información de interés</h1>
+				<?php } ?>
+			<?php if ($idioma == 'en') {?>
+				<h1>Information of interest</h1>
+				<?php } ?>
 			</div>
-			<?php } ?>
 		</div>
+		<div class="space"></div>
+		<div class="row">
+		<?php
+			// check if the repeater field has rows of data
+			if( have_rows('interes') ):
+				// loop through the rows of data
+				while ( have_rows('interes') ) : the_row();			
+		?>
+			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;">
+				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
+					<div class="col-md-9">
+						<div class="space"></div>
+						<p><?php the_sub_field('titulo'); ?></p>
+						<div class="space"></div>
+						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
+					</div>
+				</div>
+			</div>	
+			<?php
+						endwhile;
+							endif;
+					?>
+		</div >
 	</div>
 </div>
+<?php } ?>
 
-<?php }
+
 get_footer(); 
 ?>
