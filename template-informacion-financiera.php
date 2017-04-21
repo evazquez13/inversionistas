@@ -107,7 +107,7 @@ get_header(); ?>
 				<p>To view the information, you need the Acrobat Reader. If you dont have it you can download it for free at the following address:<span> Adobe Acrobat Reader.</span><span><br>Select the document you require:</span></p>
 				<?php } ?>
 			</div>
-			<?php if (get_field('tipo-informacion')) {?>
+			<?php if (get_field('tipo-informacion',142)) {?>
 			<div class="col-md-12 col-xs-12 col-sm-12 space">
 				<div class="col-md-4 col-xs-12 col-sm-12 form-group">
 					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
@@ -115,8 +115,8 @@ get_header(); ?>
 						
 						<?php					
 							$t=0;
-							if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row(); 
+							if (have_rows('tipo-informacion',142) ):
+								while (have_rows('tipo-informacion',142) ): the_row(); 
 						 ?>
 						 <option value="<?php echo $t; ?>"><?php the_sub_field('nombre-info') ?></option>
 						 <?php 
@@ -131,16 +131,16 @@ get_header(); ?>
 				<?php 
 				$i=0;
 				$z=0;
-				if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
+				if (have_rows('tipo-informacion',142) ):
+								while (have_rows('tipo-informacion',142) ): the_row();
 				?>
 					<select name="institucion" id="institucion<?php echo $i; ?>" class="form-control institucion" onchange="mostrarAnio(this)">
 						<option>-Selecciona</option>
 						<?php
 							// check if the repeater field has rows of data
-							if( have_rows('institucion') ):
+							if( have_rows('institucion',142) ):
 								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
+								while ( have_rows('institucion',142) ) : the_row();
 						?>
 						<option value="<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
 						<?php 
@@ -159,14 +159,14 @@ get_header(); ?>
 					<?php 
 					$y=0;
 					$a=0;
-					if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
+					if (have_rows('tipo-informacion',142) ):
+								while (have_rows('tipo-informacion',142) ): the_row();
 							// check if the repeater field has rows of data
 					 
 					
-					if( have_rows('institucion') ):
+					if( have_rows('institucion',142) ):
 								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
+								while ( have_rows('institucion',142) ) : the_row();
 						?>
 						<select id="anio<?php echo $y; ?>" class="form-control anio" onchange="mostrarPdf(this)">
 					<option>-Selecciona</option>
@@ -174,9 +174,9 @@ get_header(); ?>
 						 
 						 
 							// check if the repeater field has rows of data
-							if( have_rows('anio') ):
+							if( have_rows('anio',142) ):
 								// loop through the rows of data
-								while ( have_rows('anio') ) : the_row();
+								while ( have_rows('anio',142) ) : the_row();
 						?>
 						<option value="<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
 						<?php
@@ -198,24 +198,24 @@ get_header(); ?>
 			</div>
 
 			<?php $e=0;
-			if (have_rows('tipo-informacion') ):
-								while (have_rows('tipo-informacion') ): the_row();
-					if( have_rows('institucion') ):
+			if (have_rows('tipo-informacion',142) ):
+								while (have_rows('tipo-informacion',142) ): the_row();
+					if( have_rows('institucion',142) ):
 								// loop through the rows of data
-								while ( have_rows('institucion') ) : the_row();
+								while ( have_rows('institucion',142) ) : the_row();
 							// check if the repeater field has rows of data
 							
-							if( have_rows('anio') ):
+							if( have_rows('anio',142) ):
 								// loop through the rows of data
-								while ( have_rows('anio') ) : the_row();
+								while ( have_rows('anio',142) ) : the_row();
 							
 			 ?>
 				<div class="col-md-12 col-xs-12 col-sm-12 insti" id="insti<?php echo $e; ?>">
 				<?php 
 								// check if the repeater field has rows of data
-							if( have_rows('pdf') ):
+							if( have_rows('pdf',142) ):
 							// loop through the rows of data
-							while ( have_rows('pdf') ) : the_row();
+							while ( have_rows('pdf',142) ) : the_row();
 				 ?>
 					<div class="col-md-4 col-sm-4 col-xs-12"><?php the_sub_field('nombre-pdf'); ?></div>
 					<div class="col-md-3 col-sm-3 col-xs-12"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><button class="btn btn-primary">Descargar PDF</button></a></div>
