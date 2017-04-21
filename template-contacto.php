@@ -113,7 +113,7 @@ if($contacto !=''){
 									<p><?php the_sub_field('correo'); ?></p>
 								</div>
 								<div class="col-md-1 icon1">
-									<img src="http://localhost/wordpress/wp-content/uploads/2017/04/phone.png" alt="">
+									<img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
 								</div>
 								<div class="col-md-9">
 									<h5><?php the_sub_field('telefono'); ?></h5>
@@ -191,7 +191,7 @@ if($contacto !=''){
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>">Leer Más</a>
+						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
 					</div>
 				</div>
 			</div>	
