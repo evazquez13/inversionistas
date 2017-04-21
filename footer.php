@@ -102,7 +102,7 @@
 <?php if ($idioma == 'en') {?>
 <div class="barraFooter">
   <div class="container">
-    <div class="row separador text-center">
+    <div class="row separador">
       <div class="col-md-4 col-sm-12 col-sx-12">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
