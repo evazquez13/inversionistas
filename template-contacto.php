@@ -199,7 +199,8 @@ if($contacto !=''){
 						endwhile;
 							endif;
 					?>
-	</div >
+		</div >
+	</div>
 </div>
 <?php } ?>
 
