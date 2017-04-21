@@ -284,5 +284,6 @@ get_header(); ?>
 					?>
 	</div >
 </div>
+</div>
 <?php } ?>
 <?php get_footer(); ?>
