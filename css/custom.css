@@ -207,7 +207,7 @@
 .separador{
   margin-bottom: 40px;  
 }
-.accionista p{
+.separador .accionista p{
   font-family: 'BentonSansBBVALight';
   font-size: 24px;
   font-style: normal;
