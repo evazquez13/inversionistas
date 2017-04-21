@@ -14,7 +14,7 @@ get_header();
 	$icon = get_field('icon-1');
 	$text = get_field('text-icon-1');
 	$campo = get_field('campo-html');
-	$contacto = the_sub_field('img-contacto');
+	$contacto = get_field('contacto');
 	$img2 = get_field('imag-2');
 	$titulo2 = get_field('titulo-2');
 	$intro2 = get_field('introduccion-2');
@@ -205,7 +205,8 @@ if($contacto !=''){
 						endwhile;
 							endif;
 					?>
-	</div >
+		</div >
+	</div>
 </div>
 <?php } ?>
 
