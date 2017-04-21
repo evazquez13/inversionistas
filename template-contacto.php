@@ -99,9 +99,8 @@ if($contacto !=''){
 
 <?php } ?>
 
-<div class="space"></div>
-
 <?php if (get_field ('interes')) {?>
+<div class="space"></div>
 <div class="infoInteres">
 	<div class="container">
 		<div class="row">
