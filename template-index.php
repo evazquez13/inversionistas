@@ -103,10 +103,15 @@ get_header(); ?>
 if( $icon != '') {
 if (get_field('iconos')) {?>
 <div class="iconos">
+	<div class="space"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Visita nuestro nuevo sitio</h1>
+				<?php if ($idioma == 'es') {?>
+					<h1>Visita nuestro nuevo sitio</h1>
+				<?php } if ($idioma == 'en') { ?>
+					<h1>Visit our new site</h1>
+				<?php } ?>
 			</div>
 		</div>
 		<div class="space"></div>
@@ -119,9 +124,9 @@ if (get_field('iconos')) {?>
 		?>
 			<div class = "col-md-4 col-sm-4 col-xs-12 relleno2 text-center">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-				<img src="<?php the_sub_field('imgicon'); ?>" alt="" class="">
-						<div class="space"></div>
-						<h3><?php the_sub_field('tituloicon'); ?></h3>
+					<img src="<?php the_sub_field('imgicon'); ?>" alt="" class="">
+					<div class="space"></div>
+					<h3><?php the_sub_field('tituloicon'); ?></h3>
 				</div>
 			</div>	
 			<?php
@@ -130,6 +135,7 @@ if (get_field('iconos')) {?>
 			?>
 		</div >
 	</div>
+	<div class="space"></div>
 </div >
 <?php }
 	} ?>
