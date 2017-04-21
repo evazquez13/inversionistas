@@ -83,9 +83,9 @@
 			</div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a></li>
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a></li>
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a></li>
+          <li><a href="#"><div class="icon-redes-footer facebook"></div></a></li>
+          <li><a href="#"><div class="icon-redes-footer twitter"></div></a></li>
+          <li><a href="#"><div class="icon-redes-footer youtube"></div></a></li>
         </ul>
       </div>
       <div class="social">
@@ -94,10 +94,6 @@
 		</div> 
 	</div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
-<script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
 <?php } ?>
 <?php if ($idioma == 'en') {?>
 <div class="barraFooter">
@@ -128,9 +124,9 @@
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/facebook-icon.png" class="img-responsive imgsocial2" alt="fb"></a></li>
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/twitter-icon.png" class="img-responsive imgsocial2" alt="tw"></a></li>
-          <li><a href="#"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/youtube-icon.png" class="img-responsive" alt="tw"></a></li>
+          <li><a href="#"><div class="icon-redes-footer facebook"></div></a></li>
+          <li><a href="#"><div class="icon-redes-footer twitter"></div></a></li>
+          <li><a href="#"><div class="icon-redes-footer youtube"></div></a></li>
         </ul>
       </div>
       <div class="social">
