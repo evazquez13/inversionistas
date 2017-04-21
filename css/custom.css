@@ -576,3 +576,32 @@ span.rell{
   color: #072146;
   font-size: 16px;
 }
+/*Estilos para iconos de redes sociales*/
+.icon-redes-footer{
+  background-image: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/sprite_redes.png');
+  display: inline-block;
+}
+.icon-redes-footer.facebook{
+  width: 17px;
+  height: 17px;
+}
+.icon-redes-footer.facebook:hover{
+  background-position: 0 17px;
+}
+.icon-redes-footer.twitter{
+  width: 17px;
+  height: 17px;
+  background-position: 32px 0px;
+}
+.icon-redes-footer.twitter:hover{
+  background-position: 32px 17px;
+}
+.icon-redes-footer.youtube{
+  width: 17px;
+  height: 17px;
+  background-position: 65px 0px;
+}
+.icon-redes-footer.youtube:hover{
+  background-position: 65px 17px;
+}
+/*Termina estilos para iconos de redes sociales*/
