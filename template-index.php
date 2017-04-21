@@ -20,6 +20,7 @@ get_header(); ?>
 	$img = get_field('row-img-1');
 	$descripcion = get_field('descripcion');
 	$urlBoton = get_field('url-boton');
+	$icon = get_field('iconos');
 	$idioma = pll_current_language( 'slug' );
 ?>
 
@@ -97,8 +98,41 @@ get_header(); ?>
 
 </div>
     
-
-
+<!-- Parte iconos -->
+<?php 
+if( $icon != '') {
+if (get_field('iconos')) {?>
+<div class="iconos">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Visita nuestro nuevo sitio</h1>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+		<?php
+			// check if the repeater field has rows of data
+			if( have_rows('iconos') ):
+				// loop through the rows of data
+				while ( have_rows('iconos') ) : the_row();			
+		?>
+			<div class = "col-md-4 col-sm-4 col-xs-12 relleno2 text-center">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+				<img src="<?php the_sub_field('imgicon'); ?>" alt="" class="">
+						<div class="space"></div>
+						<h3><?php the_sub_field('tituloicon'); ?></h3>
+				</div>
+			</div>	
+			<?php
+				endwhile;
+				endif;
+			?>
+		</div >
+	</div>
+</div >
+<?php }
+	} ?>
 
 <?php 
 	if (get_field('row-img-1')) {
@@ -137,10 +171,10 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>
-				<h1>Información Financiera</h1>
+				<h1>Información de interés</h1>
 				<?php } ?>
 			<?php if ($idioma == 'en') {?>
-				<h1>Financial information</h1>
+				<h1>Information of interest</h1>
 				<?php } ?>
 			</div>
 		</div>
