@@ -33,7 +33,7 @@ get_header();
 		            <div class="banner-msn">
 						<div class="row tt">
 							<div class="col-md-10 col-sm-10 col-xs-10">
-								<h2><?php the_sub_field('titulo-1'); ?></h2>
+								<h3><?php the_sub_field('titulo-1'); ?></h3>
 							</div>
 						</div>
 						<div class="row">
