@@ -119,18 +119,8 @@ echo '<script languaje="JavaScript">
                             </li>
                         </ul> 
                     </li>     
-                    <li><a href="#">Información Financiera</a>
-                        <ul>
-                            <li><a href="#">Información Trimestral</a>
-                                <ul></ul>
-                            </li>
-                            <li><a href="#">Informe Anual</a>
-                                <ul></ul>
-                            </li>
-                            <li><a href="#">Información para Reguladores</a>
-                                <ul></ul>
-                            </li>
-                        </ul>  
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/inf_financiera/">Información Financiera</a>
+                        <ul></ul>  
                     </li>
                     <li><a href="#">Renta Fija</a>
                         <ul>
@@ -275,7 +265,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                       <a href="#" class="menu-mobile"></a>
                     </li>
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/index-en/">Home</a></li>
-                  <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos-en/">About Us</a>
+                  <li><a href="#">About Us</a>
                          <ul>
                             <li><a href="#">Mission</a></li>
                             <li><a href="#">History</a>
@@ -298,7 +288,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                             </li>
                         </ul> 
                     </li>
-                    <li><a href="#">Financial Information</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/inf_financiera-2/">Financial Information</a></li>
                     <li><a href="#">Setteled Rent</a>
                         <ul>
                             <li><a href="#">Qualifications</a>
