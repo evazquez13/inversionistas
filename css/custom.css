@@ -265,7 +265,7 @@
 /*Estilos de index-Banner*/
 .banner-msn{
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 0px 25px 25px 25px;
+	padding: 30px;
 }
 
 .relleno{
@@ -435,6 +435,9 @@ ul.lista-redes li{
   border-bottom-color: #009ee5;
 }
 /* Estilos credenciales */
+.credenciales{
+  bottom: -37px;
+}
 .fondo{
   background-color: #f4f4f4;
   padding: 10px 10px 20px 10px;
@@ -442,7 +445,7 @@ ul.lista-redes li{
   height: 240px;
 }
 .contacto{
-  bottom: -18px;
+  bottom: -40px;
   right: -8px;
 }
 .icon1{

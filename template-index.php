@@ -174,8 +174,8 @@ if (get_field('iconos')) {?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
-<div class="space"></div>
 	<div class="container">
+	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>
@@ -212,8 +212,8 @@ if (get_field('iconos')) {?>
 							endif;
 					?>
 	</div >
+	<div class="space"></div>
 </div>
-<div class="space"></div>
 </div>
 <?php } ?>
 <?php get_footer(); ?>

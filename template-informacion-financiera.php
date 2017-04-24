@@ -247,6 +247,7 @@ get_header(); ?>
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
 	<div class="container">
+	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>
@@ -283,6 +284,7 @@ get_header(); ?>
 							endif;
 					?>
 	</div >
+	<div class="space"></div>
 </div>
 </div>
 <?php } ?>
