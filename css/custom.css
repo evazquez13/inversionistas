@@ -557,6 +557,10 @@ select.form-control{
 select.form-control option{
   color: #000;
   background-color: #FFF;
+  border: none;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
   height: 44px;
 }
 .desktop a{
