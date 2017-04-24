@@ -48,12 +48,6 @@ $(document).on('ready',function() {
 	  	$('.fondo').css("padding",'10px 10px 20px 10px;');
 	  }
 	  if(pant < 380){
-	  	$('.credenciales p').css("font-size",'14px');
-	  }
-	  else{
-	  	$('.credenciales p').css("font-size",'16px');	 	
-	  }
-	  if(pant < 380){
 	  	$('.credenciales p').css("font-size",'12px');
 	  }
 	  else{
