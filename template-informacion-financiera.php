@@ -210,7 +210,7 @@ get_header(); ?>
 								while ( have_rows('anio',142) ) : the_row();
 							
 			 ?>
-				<div class="col-md-12 col-xs-12 col-sm-12 insti" id="insti<?php echo $e; ?>">
+				<div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
 				<?php 
 								// check if the repeater field has rows of data
 							if( have_rows('pdf',142) ):

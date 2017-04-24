@@ -278,8 +278,14 @@
   text-align: left;
   color: #1a1a1a;
 }
+.tt h3{
+  font-family: 'BentonSansBBVABook';
+  font-size: 32px;
+  text-align: left;
+  color: #1a1a1a;
+}
 .tt2 p{
-  font-family: 'BentonSansBook';
+  font-family: 'BentonSansBBVABook';
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -539,6 +545,12 @@ ul.lista-redes li{
  font-family: 'BentonSansBook';
   color: #2371be;
   font-size: 20px;
+}
+.sombra{
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+margin-bottom: 30px;
 }
 /* Termina estilos infofinanciera   */  
 select.form-control{
