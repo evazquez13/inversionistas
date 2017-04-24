@@ -23,7 +23,7 @@ get_header(); ?>
 	$idioma = pll_current_language( 'slug' );
 ?>
 
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
