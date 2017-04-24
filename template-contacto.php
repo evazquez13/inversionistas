@@ -6,34 +6,76 @@ get_header();
 ?>
 
 <?php 
-	$img = get_field('imag-1');
-	$titulo = get_field('titulo-1');
-	$intro = get_field('introduccion-1');
 	$contacto = get_field('contacto');
 	$idioma = pll_current_language( 'slug' );
 ?>
 
-<?php if( $img != '') { ?>
-<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 480px">
-	<div class="container contacto">
-		<div class="row">
-		<?php if($titulo !=''){ ?>
-			<div class="col-md-6 col-sm-6 col-xs-11">
-				<div class="bloque">
-					<div class="col-md-10 col-sm-10 col-xs-11">
-						<h1><?php echo $titulo; ?></h1>	
-					</div>
-					<div class="col-md-10 col-sm-10 col-xs-11">
-						<p><?php echo $intro; ?></p>
-					</div>
-				</div>
-			</div>
-			<?php } ?>
-		</div>
-	</div>
+<!--  -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	
+	<?php
+	$i == 0;
+	if (get_field('banner')) {
+		
+	
+		// check if the repeater field has rows of data
+		if( have_rows('banner') ):
+			// loop through the rows of data
+			while ( have_rows('banner') ) : the_row();
+			?>
+    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: 100% 100%;">
+  		<div class="container">
+  			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
+		            <div class="banner-msn">
+						<div class="row tt">
+							<div class="col-md-10 col-sm-10 col-xs-10">
+								<h2><?php the_sub_field('titulo-1'); ?></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12 tt2">
+								<p><?php the_sub_field('introduccion'); ?></p>
+							</div>
+						</div>
+		    		</div>
+		      </div>
+  		</div>
+  	</div>
+
+	<?php 
+		$i ++;
+		endwhile;
+		endif;
+	?>
+
+ </div>
+<?php if ($i!=1) { ?>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+   	<?php for ($j=0; $j < $i ; $j++) { ?>
+
+   			<li data-target="#carousel-example-generic" data-slide-to="<?php echo $j; ?>" <?php if ($j == 0) {echo " class='active' ";} ?> ></li> 
+
+	<?php } ?>
+  </ol>
+<?php } } ?>
+
 </div>
 
-<?php }
+<?php 
 if($contacto !=''){ 
 	?>
 
