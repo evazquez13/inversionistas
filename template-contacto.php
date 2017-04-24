@@ -144,6 +144,7 @@ if($contacto !=''){
 <?php if (get_field ('interes')) {?>
 <div class="space"></div>
 <div class="infoInteres">
+<div class="space"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -182,6 +183,7 @@ if($contacto !=''){
 					?>
 		</div >
 	</div>
+	<div class="space"></div>
 </div>
 <?php } ?>
 

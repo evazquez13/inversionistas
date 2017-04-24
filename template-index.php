@@ -122,6 +122,7 @@ if (get_field('iconos')) {?>
 				// loop through the rows of data
 				while ( have_rows('iconos') ) : the_row();			
 		?>
+		<div class="space2"></div>
 			<div class = "col-md-4 col-sm-4 col-xs-12 relleno2 text-center">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<img src="<?php the_sub_field('imgicon'); ?>" alt="" class="">
@@ -135,7 +136,7 @@ if (get_field('iconos')) {?>
 			?>
 		</div >
 	</div>
-	<div class="space"></div>
+	<div class="space3"></div>
 </div >
 <?php }
 	} ?>
@@ -173,6 +174,7 @@ if (get_field('iconos')) {?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
+<div class="space"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -211,6 +213,7 @@ if (get_field('iconos')) {?>
 					?>
 	</div >
 </div>
+<div class="space"></div>
 </div>
 <?php } ?>
 <?php get_footer(); ?>
