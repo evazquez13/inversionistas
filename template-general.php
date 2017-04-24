@@ -27,7 +27,7 @@ get_header();
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: 100% 100%;">
+    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
   			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
 		            <div class="banner-msn">
@@ -115,7 +115,7 @@ if($campo !=''){?>
 				while ( have_rows('interes') ) : the_row();			
 		?>
 			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
-				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;">
 				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
