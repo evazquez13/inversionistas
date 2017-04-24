@@ -165,7 +165,7 @@ if($contacto !=''){
 				while ( have_rows('interes') ) : the_row();			
 		?>
 			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
-				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: 100% 100%; height: 303px;">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;">
 				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
