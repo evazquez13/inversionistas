@@ -51,7 +51,7 @@ $(document).on('ready',function() {
 	  	$('.credenciales p').css("font-size",'12px');
 	  }
 	  else{
-	  	$('.credenciales p').css("font-size",'16px');	 	
+	  	$('.credenciales p').css("font-size",'14px');	 	
 	  }
 	}
 

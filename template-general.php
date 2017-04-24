@@ -41,6 +41,8 @@ get_header();
 								<p><?php the_sub_field('introduccion'); ?></p>
 							</div>
 						</div>
+						<?php $boton = get_sub_field('boton');
+						if($boton !=''){ ?>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
 								<?php if ($idioma == 'es') {?>
@@ -50,6 +52,7 @@ get_header();
 								<?php } ?>
 							</div>
 						</div>
+						<?php } ?>
 		    		</div>
 		      </div>
   		</div>

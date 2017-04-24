@@ -436,7 +436,8 @@ ul.lista-redes li{
 }
 /* Estilos credenciales */
 .credenciales{
-  bottom: -37px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .fondo{
   background-color: #f4f4f4;
@@ -446,7 +447,7 @@ ul.lista-redes li{
 }
 .contacto{
   bottom: -40px;
-  right: -8px;
+  right: 3px;
 }
 .icon1{
   bottom: -6px;
