@@ -121,10 +121,10 @@ if($contacto !=''){
 								<div class="col-md-12">
 									<p><?php the_sub_field('correo'); ?></p>
 								</div>
-								<div class="col-md-1 icon1">
+								<div class="col-md-1 col-sm-1 col-xs-1 icon1">
 									<img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
 								</div>
-								<div class="col-md-9">
+								<div class="col-md-9 col-sm-9 col-xs-9">
 									<h5><?php the_sub_field('telefono'); ?></h5>
 								</div>
 							</div>

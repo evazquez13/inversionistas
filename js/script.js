@@ -42,10 +42,8 @@ $(document).on('ready',function() {
 	  }
 	  if (pant < 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
-	  	$('.fondo').css("padding",'inherit');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
-	  	$('.fondo').css("padding",'10px 10px 20px 10px;');
 	  }
 	  if(pant < 380){
 	  	$('.credenciales p').css("font-size",'12px');
