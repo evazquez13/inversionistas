@@ -532,6 +532,9 @@ ul.lista-redes li{
  font-size: 20px;
   color: #000000;
 }
+.infofinanciera p.desPdf{
+  font-size: 14px;
+}
 .infofinanciera span{
  font-family: 'BentonSansBook';
   color: #2371be;
