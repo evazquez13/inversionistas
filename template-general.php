@@ -27,7 +27,7 @@ get_header();
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: cover;">
+    		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
   			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
 		            <div class="banner-msn">
@@ -57,7 +57,33 @@ get_header();
 		      </div>
   		</div>
   	</div>
-
+	<div class="visible-xs">
+  		<img class="img-responsive" src="<?php the_sub_field('imag-1'); ?>">
+	  	<div class="container">
+	  		<div class="row sec-index-mov">
+				<div class="col-xs-12 text-center">
+					<h2><?php the_sub_field('titulo-1'); ?></h2>
+				</div>
+			</div>
+			<div class="row sec-index-mov">
+				<div class="col-xs-12 text-center">
+					<p><?php the_sub_field('introduccion'); ?></p>
+				</div>
+			</div>
+			<?php $boton = get_sub_field('boton');
+						if($boton !=''){ ?>
+			<div class="row text-center">
+				<div class="col-xs-12 text-center">
+					<?php if ($idioma == 'es') {?>
+					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
+					<?php } if ($idioma == 'en') { ?>
+					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+					<?php } ?>
+				</div>
+			</div>
+			<?php } ?>
+	  	</div>
+  	</div>
 	<?php 
 		$i ++;
 		endwhile;

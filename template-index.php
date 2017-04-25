@@ -70,6 +70,7 @@ get_header(); ?>
   	</div>
   	<div class="visible-xs">
   		<img class="img-responsive" src="<?php the_sub_field('imagen'); ?>">
+	  	<div class="container">
 	  		<div class="row sec-index-mov">
 				<div class="col-xs-12 text-center">
 					<h2><?php the_sub_field('titulo'); ?></h2>
@@ -89,6 +90,7 @@ get_header(); ?>
 					<?php } ?>
 				</div>
 			</div>
+	  	</div>
   	</div>
 
 	<?php 
@@ -174,7 +176,7 @@ if (get_field('iconos')) {?>
     $thumbID = get_post_thumbnail_id( $post->ID );
     $imgDestacada = wp_get_attachment_url( $thumbID );    	
 ?>
-	<div style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px; background-position: right;">
+	<div class="hidden-xs" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px; background-position: right;">
 		<div class="container">
 			<div class="row sec-img-2">
 				<div class="col-md-5">
@@ -185,16 +187,31 @@ if (get_field('iconos')) {?>
 			<div class="row sec-img-2">
 				<div class="col-md-4">
 					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"> 
-					Consultar</button></a>
+					<?php if ($idioma == 'es') {?>Consultar <?php } ?> <?php if ($idioma == 'es') {?>Consult <?php } ?></button></a>
 				</div>
-			</div>
-					<?php
-					the_content();
-					endwhile;
-					?>
+			</div>					
 		</div>
 	</div>
-	<?php } ?>
+	<div class="visible-xs">
+		<img class="img-responsive" src="<?php echo $img; ?>">
+		<div class="container" style="background-color: #004481; margin-top: -1px;">
+			<div class="row sec-2-index-mov">
+				<div class="col-xs-12">
+					<p><?php echo $descripcion; ?></p>
+				</div>
+			</div>
+			<div class="row sec-2-index-mov text-center">
+				<div class="col-xs-12">
+					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary"> 
+					<?php if ($idioma == 'es') {?>Consultar<?php } ?> <?php if ($idioma == 'en') {?>Consult <?php } ?></button></a>
+				</div>
+			</div>					
+		</div>		
+	</div>
+	<?php
+		the_content();
+		endwhile;
+	} ?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">

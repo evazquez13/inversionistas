@@ -659,6 +659,15 @@ span.rell{
   font-family: 'BentonSansBBVABook';
   color: #666666;
   font-size: 12px;
-  padding: 5px;
   text-align: center;
+}
+.sec-2-index-mov p{
+  font-family: 'BentonSansBBVA';
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sec-2-index-mov a button{
+  padding: 14px 37px 14px 37px;
+  margin-bottom: 30px;
 }
