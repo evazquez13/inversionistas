@@ -39,17 +39,17 @@ get_header(); ?>
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    		<div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
+    		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
-  			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
+  			<div class="col-md-6 col-sm-6" style="padding-top: 70px;">
 		            <div class="banner-msn">
 						<div class="row tt">
-							<div class="col-md-10 col-sm-10 col-xs-10">
+							<div class="col-md-10 col-sm-10">
 								<h2><?php the_sub_field('titulo'); ?></h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12 tt2">
+							<div class="col-md-12 col-sm-12 tt2">
 								<p><?php the_sub_field('introduccion'); ?></p>
 							</div>
 						</div>
@@ -65,6 +65,28 @@ get_header(); ?>
 		    		</div>
 		      </div>
   		</div>
+  	</div>
+  	<div class="visible-xs">
+  		<img class="img-responsive" src="<?php the_sub_field('imagen'); ?>">
+	  		<div class="row sec-index-mov">
+				<div class="col-xs-12 text-center">
+					<h2><?php the_sub_field('titulo'); ?></h2>
+				</div>
+			</div>
+			<div class="row sec-index-mov">
+				<div class="col-xs-12 text-center">
+					<p><?php the_sub_field('introduccion'); ?></p>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-12 text-center">
+					<?php if ($idioma == 'es') {?>
+					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
+					<?php } if ($idioma == 'en') { ?>
+					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+					<?php } ?>
+				</div>
+			</div>
   	</div>
 
 	<?php 

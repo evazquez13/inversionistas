@@ -42,6 +42,7 @@ $(document).on('ready',function() {
 	  }
 	  if (pant < 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
+	  	$('.menu-mobile .col-xs-2 img').css('float','right');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  }

@@ -640,3 +640,18 @@ span.rell{
   background-position: 65px 17px;
 }
 /*Termina estilos para iconos de redes sociales*/
+.menu-mobile .col-xs-2 img{
+  float: right;
+}
+.sec-index-mov h2{
+  font-family: 'BentonSansBBVABook';
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+.sec-index-mov p{
+  font-family: 'BentonSansBBVABook';
+  color: #666666;
+  font-size: 13px;
+  text-align: center;
+}
