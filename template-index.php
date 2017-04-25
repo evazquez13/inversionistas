@@ -48,11 +48,13 @@ get_header(); ?>
 								<h2><?php the_sub_field('titulo'); ?></h2>
 							</div>
 						</div>
+						<div class="spacebanner"></div>
 						<div class="row">
 							<div class="col-md-12 col-sm-12 tt2">
 								<p><?php the_sub_field('introduccion'); ?></p>
 							</div>
 						</div>
+						<div class="spacebanner"></div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
 								<?php if ($idioma == 'es') {?>
@@ -125,8 +127,8 @@ get_header(); ?>
 if( $icon != '') {
 if (get_field('iconos')) {?>
 <div class="iconos">
-	<div class="space"></div>
 	<div class="container">
+		<div class="space1"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if ($idioma == 'es') {?>

@@ -265,7 +265,7 @@
 /*Estilos de index-Banner*/
 .banner-msn{
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 30px;
+	padding: 25px 20px 25px 30px;;
 }
 
 .relleno{
@@ -346,6 +346,11 @@
 .space{
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 100%;
+}
+.spacebanner{
+  margin-top: 5px;
+  margin-bottom: 7px;
   width: 100%;
 }
 .space1{
