@@ -576,7 +576,6 @@ p.desPdf{
 /* Termina estilos infofinanciera   */  
 select.form-control{
   color: #2a86ca;
-  background-color: #f4f4f4;
   height: 44px;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
@@ -586,6 +585,10 @@ select.form-control{
   -moz-border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px 0px 0px 0px;
   border: 0px solid #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/icn_down.png') no-repeat 95% #f4f4f4;
 }
 select.form-control option{
   color: #000;

@@ -234,6 +234,7 @@ get_header(); ?>
 								while ( have_rows('anio',142) ) : the_row();
 							
 			 ?>
+			 	<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
 				<?php 
 								// check if the repeater field has rows of data
@@ -253,6 +254,7 @@ get_header(); ?>
 					endwhile;
 					endif;		
 					 ?>
+				</div>
 				</div>
 				<?php 
 				$e++;
