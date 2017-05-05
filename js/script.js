@@ -42,7 +42,6 @@ $(document).on('ready',function() {
 	  }
 	  if (pant < 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
-	  	$('.menu-mobile .col-xs-2 img').css('float','right');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  }
@@ -60,3 +59,25 @@ $(window).resize(
   	})
 });
 
+
+//  Parte de menu mobile mov-header
+$( document ).ready(function() {
+	console.log("funcion al cargar")
+	var a =0;
+	$('.menu-mobile').on('click',function(){
+		if(a == 0){
+			a = 1;
+			$('.menu-container').css({'transform':'translateX(-67%)'});
+		    $('.menu-container').css({"transition":'0.2s'});
+		} else {
+			a = 0;
+			$('.menu-container').css({'transform':'translateX(0%)'});
+			$('.menu-container').css({"transition":'0.1s'});
+
+	}
+	})
+
+});
+
+// 
+    

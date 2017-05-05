@@ -14,12 +14,6 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
 }
 .menu-container {
     width: 100%;
@@ -39,11 +33,7 @@ a {
     float: right;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-25%);
-    -ms-transform: translateY(-25%);
-    transform: translateY(-25%);
 }
-
 .menu-dropdown-icon:before {
     display: none;
     cursor: pointer;
@@ -229,7 +219,7 @@ a {
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 521px) {
     .menu-container {
         width: 100%;
     }
@@ -239,9 +229,21 @@ Mobile style's
     .menu-dropdown-icon:before {
         display: block;
     }
+/*+++++++++++++ Lineas para menu mobile mov-header*/
     .menu > ul {
-        display: none;
+    display: block;
+    top:    0px;
+    position: fixed;
+    z-index: 1000;
+    -webkit-transform: translateX(166%);
+    -ms-transform: translateX(166%);
+    transform: translateX(166%);
+     -webkit-transition: -webkit-transform 0.3s, width 0.3s;
+    -moz-transition: -moz-transform 0.3s, width 0.3s;
+    transition: transform 0.9s, width 0.9s;
+    width: 75%;
     }
+/*++++++++++++++*/
     .menu > ul > li {
         width: 100%;
         float: none;
@@ -253,6 +255,13 @@ Mobile style's
         display: block;
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
+    .menu ul.lista-idioma > li a{
+    padding: .5em;
+    width: 100%;
+    display: block;
+    border-bottom: none;
+   
+}
     .menu > ul > li > ul {
         position: relative;
     }
@@ -273,7 +282,28 @@ Mobile style's
     .menu > ul > li > ul > li > ul > li {
         float: none;
     }
+/*+++++++++++++++++Lineas para menu mobile mov-header*/
     .menu .show-on-mobile {
-        display: block;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    top:    0px;
+    list-style: none;
+    padding: 0px;
+    z-index: 1000;
+    position: fixed;
+    box-sizing: border-box;
+    -webkit-transform: translateX(125%);
+    -moz-transform: translateX(125%);
+    transform: translateX(125%);
+    -webkit-transition: -webkit-transform 0.2s, width 0.2s;
+    -moz-transition: -moz-transform 0.2s, width 0.2s;
+    transition: transform 0.2s, width 0.2s;
     }
+.fonfoAzul{
+    position: fixed;
+    width:  100%;
+    z-index: 100000;
+}
+/*++++++++++*/
 }

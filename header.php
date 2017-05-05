@@ -92,9 +92,7 @@ echo '<script languaje="JavaScript">
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                    <li>
-                      <a href="#" class="menu-mobile"></a>
-                    </li>
+<!-- Saque clase menumobile -->
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/">Inicio</a></li>
                   <li><a href="#">Conócenos</a>
                          <ul>
@@ -155,21 +153,25 @@ echo '<script languaje="JavaScript">
                         </ul>       
                     </li>
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/contacto/">Contacto</a></li>
+<!--  -->
+                    <li>
+                      <div class="row">
+                        <div class="col-sm-12 col-xs-11">
+                          <ul class="lista-idioma">
+                            <li class="lang-item lang-item-2 lang-item-es lang-item-first">
+                              <a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><p class="menuEnEs <?php if ($idioma== 'en') { echo 'activado';} ?>">EN</p></a>
+                            </li>
+                            <li class="lang-item lang-item-5 lang-item-en">
+                              <a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><p class="menuEnEs <?php if ($idioma == 'es') { echo 'activado';} ?>">ES</p></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <!--  -->
                 </ul>
             </div>
         </div>
-      </div>
-      <div class="row">
-      	<div class="col-sm-12 col-xs-12">
-      		<ul class="lista-idioma">
-	        	<li class="lang-item lang-item-2 lang-item-es lang-item-first">
-	        		<a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma== 'en') { echo 'activado';} ?>">EN</h1></a>
-	          	</li>
-				<li class="lang-item lang-item-5 lang-item-en">
-					<a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><h1 class="menuEnEs <?php if ($idioma == 'es') { echo 'activado';} ?>">ES</h1></a>
-				</li>
-			</ul>
-      	</div>
       </div>
     </div>
   </div>
@@ -261,9 +263,9 @@ if (is_page("Gobierno_Corporativo")) { ?>
             <div class="menu-container">
               <div class="menu">
                 <ul>
-                    <li>
+<!--                     <li>
                       <a href="#" class="menu-mobile"></a>
-                    </li>
+                    </li> -->
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/index-en/">Home</a></li>
                   <li><a href="#">About Us</a>
                          <ul>
@@ -322,11 +324,28 @@ if (is_page("Gobierno_Corporativo")) { ?>
                         </ul>       
                     </li>
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/contacto-en/">Contact Us</a></li>
+                    <!--  -->
+                    <li>
+                      <div class="row">
+                        <div class="col-sm-12 col-xs-11">
+                          <ul class="lista-idioma">
+                            <li class="lang-item lang-item-2 lang-item-es lang-item-first">
+                              <a lang="en-US" hreflang="en-US" href="<?php echo $translations['en']['url']; ?>"><p class="menuEnEs <?php if ($idioma== 'en') { echo 'activado';} ?>">EN</p></a>
+                            </li>
+                            <li class="lang-item lang-item-5 lang-item-en">
+                              <a lang="es-MX" hreflang="es-MX" href="<?php echo $translations['es']['url']; ?>"><p class="menuEnEs <?php if ($idioma == 'es') { echo 'activado';} ?>">ES</p></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <!--  -->
                 </ul>
             </div>
         </div>
       </div>
-      <div class="row">
+
+<!--       <div class="row">
       	<div class="col-sm-12 col-xs-12">
       		<ul class="lista-idioma">
 	        	<li class="lang-item lang-item-2 lang-item-es lang-item-first">
@@ -337,7 +356,8 @@ if (is_page("Gobierno_Corporativo")) { ?>
 				</li>
 			</ul>
       	</div>
-      </div>
+      </div> -->
+
     </div>
   </div>
  
