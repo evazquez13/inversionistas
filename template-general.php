@@ -116,9 +116,11 @@ get_header();
 
 <?php 
 if($campo !=''){?>
-
-<?php the_field('campo-html'); ?>
-<div class="space"></div>
+<div class="container">
+	<div class="row">
+		<?php the_field('campo-html'); ?>
+	</div>
+</div>
 
 <?php } ?>
 
@@ -165,7 +167,7 @@ if($campo !=''){?>
 		<div class="space"></div>
 	</div>
 </div>
-<?php } ?>
+<?php }
 
 
 get_footer(); 
