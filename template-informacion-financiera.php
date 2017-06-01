@@ -21,6 +21,7 @@ get_header(); ?>
 	$descripcion = get_field('descripcion');
 	$urlBoton = get_field('url-boton');
 	$idioma = pll_current_language( 'slug' );
+	$tituloSecInfo = get_field('titulo-sec-info');
 ?>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -54,10 +55,8 @@ get_header(); ?>
 						</div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<?php if ($idioma == 'es') {?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-								<?php } if ($idioma == 'en') { ?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+							<? if (get_sub_field('urldeboton')) { ?>
+								<a href="<?php the_sub_field('urldeboton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 							</div>
 						</div>
@@ -80,11 +79,9 @@ get_header(); ?>
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
-					<?php if ($idioma == 'es') {?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-					<?php } if ($idioma == 'en') { ?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
-					<?php } ?>
+					<? if (get_sub_field('urldeboton')) { ?>
+								<a href="<?php the_sub_field('urldeboton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+								<?php } ?>
 				</div>
 			</div>
 	  	</div>
@@ -275,14 +272,11 @@ get_header(); ?>
 	<div class="container">
 	<div class="space2"></div>
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<?php if ($idioma == 'es') {?>
-				<h1>Información de Interes</h1>
-				<?php } ?>
-			<?php if ($idioma == 'en') {?>
-				<h1>Information of interest</h1>
-				<?php } ?>
+			<div class="col-md-12 text-center">		
+					<?php if($tituloSecInfo){ ?>
+				<h1><?php echo $tituloSecInfo; ?></h1>
 			</div>
+			<?php } ?>
 		</div>
 		<div class="space"></div>
 		<div class="row">
@@ -301,7 +295,9 @@ get_header(); ?>
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
+						<?php if (get_sub_field('url')) {?>
+							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-leer-mas') ?></a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>	
