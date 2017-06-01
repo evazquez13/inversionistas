@@ -20,6 +20,7 @@ get_header(); ?>
 	$img = get_field('row-img-1');
 	$descripcion = get_field('descripcion');
 	$urlBoton = get_field('url-boton');
+	$textoBtn = get_field('texto-btn');
 	$icon = get_field('iconos');
 	$idioma = pll_current_language( 'slug' );
 ?>
@@ -56,13 +57,11 @@ get_header(); ?>
 						</div>
 						<div class="spacebanner"></div>
 						<div class="row tt3">
+							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<?php if ($idioma == 'es') {?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-								<?php } if ($idioma == 'en') { ?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
-								<?php } ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 							</div>
+							<?php } ?>
 						</div>
 		    		</div>
 		      </div>
@@ -83,10 +82,10 @@ get_header(); ?>
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
-					<?php if ($idioma == 'es') {?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-					<?php } if ($idioma == 'en') { ?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+					<?php if (get_sub_field('boton')) {?>
+					<div class="col-md-7 col-sm-7 col-xs-7 text-left">
+						<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+					</div>
 					<?php } ?>
 				</div>
 			</div>
@@ -125,24 +124,20 @@ get_header(); ?>
 </div>
     
 <!-- Parte iconos -->
-<?php 
-if( $icon != '') {
-if (get_field('iconos')) {?>
 <div class="iconos">
 	<div class="container">
 		<div class="space1"></div>
 		<div class="row">
+		<?php if (get_field('titulo-sec-2')) {?>
 			<div class="col-md-12 text-center">
-				<?php if ($idioma == 'es') {?>
-					<h1>Visita nuestro nuevo sitio</h1>
-				<?php } if ($idioma == 'en') { ?>
-					<h1>Visit our new site</h1>
-				<?php } ?>
+				<h1><?php the_field('titulo-sec-2'); ?></h1>
 			</div>
+		<?php } ?>
 		</div>
 		<div class="space"></div>
 		<div class="row">
 		<?php
+			if (get_field('iconos')) {
 			// check if the repeater field has rows of data
 			if( have_rows('iconos') ):
 				// loop through the rows of data
@@ -159,13 +154,12 @@ if (get_field('iconos')) {?>
 			<?php
 				endwhile;
 				endif;
-			?>
+			 } ?>
 		</div >
 	</div>
 	<div class="space3"></div>
 </div >
-<?php }
-	} ?>
+
 
 <?php 
 	if (get_field('row-img-1')) {
@@ -183,13 +177,13 @@ if (get_field('iconos')) {?>
 					<p><?php echo $descripcion; ?></p>
 				</div>
 			</div>
-
+			<?php if (get_field('url-boton')) {?>
 			<div class="row sec-img-2">
 				<div class="col-md-4">
-					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"> 
-					<?php if ($idioma == 'es') {?>Consultar <?php } ?> <?php if ($idioma == 'es') {?>Consult <?php } ?></button></a>
+					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"><?php echo $textoBtn; ?></button></a>
 				</div>
-			</div>					
+			</div>
+			<?php } ?>					
 		</div>
 	</div>
 	<div class="visible-xs">
@@ -200,12 +194,13 @@ if (get_field('iconos')) {?>
 					<p><?php echo $descripcion; ?></p>
 				</div>
 			</div>
+			<?php if (get_field('url-boton')) {?>
 			<div class="row sec-2-index-mov text-center">
 				<div class="col-xs-12">
-					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary"> 
-					<?php if ($idioma == 'es') {?>Consultar<?php } ?> <?php if ($idioma == 'en') {?>Consult <?php } ?></button></a>
+					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"><?php echo $textoBtn; ?></button></a>
 				</div>
-			</div>					
+			</div>
+			<?php } ?>					
 		</div>		
 	</div>
 	<?php
@@ -213,23 +208,20 @@ if (get_field('iconos')) {?>
 		endwhile;
 	} ?>
 
-<?php if (get_field('interes')) {?>
 <div class="infoInteres">
 	<div class="container">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<?php if ($idioma == 'es') {?>
-				<h1>Información de interés</h1>
-				<?php } ?>
-			<?php if ($idioma == 'en') {?>
-				<h1>Information of interest</h1>
+				<?php if (get_field('titulo-sec-3')) {?>
+				<h1><?php the_field('titulo-sec-3') ?></h1>
 				<?php } ?>
 			</div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
 		<?php
+		if (get_field('interes')) {
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
 				// loop through the rows of data
@@ -244,17 +236,18 @@ if (get_field('iconos')) {?>
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
+						<?php if (get_sub_field('url')) {?>
+						<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-bt'); ?></a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>	
 			<?php
 						endwhile;
 							endif;
-					?>
+				} ?>
 	</div >
 	<div class="space"></div>
 </div>
 </div>
-<?php } ?>
 <?php get_footer(); ?>
