@@ -445,7 +445,7 @@ ul.lista-redes li{
   padding-bottom: 10px;
 }
 .fondo{
-  background-color: #f4f4f4;
+  background-color: transparent;
   padding: 10px 10px 30px 10px;
   margin-bottom: 25px;
   height: 240px;
@@ -487,6 +487,15 @@ ul.lista-redes li{
     height: 30px;
     width: 100%;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.row-trio{
+  padding-bottom : 85px
+}
+
 /*Termina Estilos Para credenciales*/
 /*Estilos Para Cajas de texto sobre imag*/
 .bloque{
