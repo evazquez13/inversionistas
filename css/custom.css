@@ -686,3 +686,30 @@ span.rell{
   padding: 14px 37px 14px 37px;
   margin-bottom: 30px;
 }
+/*Estilos Renta Fija*/
+.rentafija h1{
+ font-family: 'BentonSansBBVA-Medium';
+  font-size: 32px;
+  color: #1a1a1a;
+}
+.rentafija p{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+}
+.rentafija h3{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 22px;
+  color: #1a1a1a;
+}
+
+.rentafija a{
+  font-family: 'BentonSansBBVAMedium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.63;
+  color: #072146;
+}
+
+
+
