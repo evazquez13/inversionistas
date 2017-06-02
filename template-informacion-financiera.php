@@ -119,14 +119,10 @@ get_header(); ?>
 	<div class="container infofinanciera">
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
-			<?php if ($idioma == 'es') {?>
-				<h1>Información Financiera</h1>
-				<p>To view this information you need Acrobat Reader. Si no lo tiene, puede bajarlo sin costo en la dirección:<span> Acrobat Reader de Adobe</span><span><br> Seleccione el documento que requiere:</span></p>
-				<?php }
-				if ($idioma == 'en') { ?>
-				<h1>Financial Information</h1>
-				<p>To view the information, you need the Acrobat Reader. If you dont have it you can download it for free at the following address:<span> Adobe Acrobat Reader.</span><span><br>Select the document you require:</span></p>
-				<?php } ?>
+				<h1><?php echo get_field('titulopdf')?></h1>
+				<p><?php echo get_field('textopdf') ?>
+				<span><?php echo get_field('iradobe')?></span></p>
+				<p><span><?php echo get_field('selecciondoc'); ?></span></p>
 			</div>
 			<?php if (get_field('tipo-informacion',142)) {?>
 			<div class="col-md-12 col-xs-12 col-sm-12 space">

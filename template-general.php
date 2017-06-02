@@ -8,7 +8,7 @@ get_header();
 <?php 
 	$campo = get_field('campo-html');
 	$idioma = pll_current_language( 'slug' );
-
+	$tituloSecInfo = get_field('titulosecinfo');
 ?>
 
 <!--  -->
@@ -20,8 +20,6 @@ get_header();
 	<?php
 	$i == 0;
 	if (get_field('banner')) {
-		
-	
 		// check if the repeater field has rows of data
 		if( have_rows('banner') ):
 			// loop through the rows of data
@@ -45,10 +43,8 @@ get_header();
 						if($boton !=''){ ?>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<?php if ($idioma == 'es') {?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-								<?php } if ($idioma == 'en') { ?>
-								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
+								<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 							</div>
 						</div>
@@ -74,11 +70,9 @@ get_header();
 						if($boton !=''){ ?>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
-					<?php if ($idioma == 'es') {?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">Saber más</button></a>
-					<?php } if ($idioma == 'en') { ?>
-					<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info">know more</button></a>
-					<?php } ?>
+					<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+								<?php } ?>
 				</div>
 			</div>
 			<?php } ?>
@@ -114,29 +108,55 @@ get_header();
 
 </div>
 
-<?php 
-if($campo !=''){?>
-<div class="container">
+<div class="container rentafija" >
 	<div class="row">
-		<?php the_field('campo-html'); ?>
+		<div class="row">
+			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+			<div class="col-md-12 "><p><?php echo get_field('descemisiones') ?></p></div>
+		</div>
+		<div class="row">
+			<?php
+			// check if the repeater field has rows of data
+			if( have_rows('emisiones-corp') ):
+				// loop through the rows of data¡
+				while ( have_rows('emisiones-corp') ) : the_row();			
+		?>
+			<div class = "col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
+					<div class="col-md-9">
+						<div class="space"></div>				
+						<img height="33" src="<?php the_sub_field('imagen');?>" > 
+						<h3><?php the_sub_field('titulo2'); ?></h3>
+						<p><?php the_sub_field('descripcion2'); ?></p>
+						<div class="space"></div>
+						<?php if (get_sub_field('url')) {?>
+							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-url') ?></a>
+						<?php } ?>
+					</div>
+				</div>
+			</div>	
+			<?php
+						endwhile;
+							endif;
+					?>
+		</div>
+			<div class="space3"></div>
 	</div>
 </div>
-
-<?php } ?>
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
 	<div class="container">
 	<div class="space2"></div>
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<?php if ($idioma == 'es') {?>
-				<h1>Información de interés</h1>
-				<?php } ?>
-			<?php if ($idioma == 'en') {?>
-				<h1>Information of interest</h1>
-				<?php } ?>
+			<div class="col-md-12 text-center">		
+					<?php if($tituloSecInfo){ ?>
+				<h1><?php echo $tituloSecInfo; ?></h1>
 			</div>
+			<?php } ?>
 		</div>
 		<div class="space"></div>
 		<div class="row">
@@ -155,7 +175,9 @@ if($campo !=''){?>
 						<div class="space"></div>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
-						<a href="<?php the_sub_field('url'); ?>"><?php if ($idioma == 'es') {?>Leer Más <?php }if ($idioma == 'en') {?> Read more <?php } ?></a>
+						<?php if (get_sub_field('url')) {?>
+							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('textourl') ?></a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>	
@@ -168,7 +190,6 @@ if($campo !=''){?>
 	</div>
 </div>
 <?php }
-
 
 get_footer(); 
 ?>
