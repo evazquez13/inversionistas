@@ -493,9 +493,16 @@ ul.lista-redes li{
 }
 
 .row-trio{
-  padding-bottom : 85px
+  padding-bottom : 85px;
 }
 
+.row-end{
+  padding-bottom : 50px;
+}
+
+.nombre-contacto h3{
+  padding-top : 30px;
+}
 /*Termina Estilos Para credenciales*/
 /*Estilos Para Cajas de texto sobre imag*/
 .bloque{
@@ -685,4 +692,121 @@ span.rell{
 .sec-2-index-mov a button{
   padding: 14px 37px 14px 37px;
   margin-bottom: 30px;
+}
+
+/*Estilos Estructura Directiva*/
+
+.header-directivo h1{
+ font-family: 'BentonSansBBVAMedium';
+  font-size: 32px;
+  color: #1a1a1a;
+}
+
+.directorG h3{
+	font-family: 'BentonSansBBVAMedium';
+	font-size: 22px;
+	color: #1a1a1a;
+    padding-top: 25px;
+}
+
+.cargoDirector h4{
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+.acercaDe h4{
+	font-family: 'BentonSansBBVABook';
+	font-size: 22px;
+	color: #1a1a1a;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.infoDirector p{
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+.leer-m h4 {
+	font-family: 'BentonSansBBVAMedium';
+	font-size: 16px;
+	font-weight: 500;
+	color: #103762;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+/*Estilos Equipo Directivo*/
+.equipoDir h1{
+	font-family: 'BentonSansBBVAMedium';
+	font-size: 22px;
+	color: #1a1a1a;
+}
+
+.nombreDir h3{
+	font-family: 'BentonSansBBVAMedium';
+	font-size: 22px;
+	color: #1a1a1a;
+    padding-top: 28px;
+    
+}
+
+.cargoDirectivo h4{
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+    padding-top: 0px;
+}
+
+/*boot4*/
+.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
+    text-align: left;
+}
+.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
+    text-align: center;
+}
+.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
+    text-align: right;
+}
+.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
+        text-align: inherit;
+    }
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-justify-xs {
+        text-align: justify;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
+        text-align: inherit;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-justify-sm {
+        text-align: justify;
+    }
 }

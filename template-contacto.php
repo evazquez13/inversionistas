@@ -80,6 +80,16 @@ get_header();
                                 <p>
                                     <?php the_sub_field('introduccion'); ?>
                                 </p>
+                                <?php $boton = get_sub_field('boton');
+						if($boton !=''){ ?>
+                                <?php if (get_sub_field('botonurl')) {?>
+                                <div class="tt">
+                                    <div class="text-center">
+                                        <a href="<?php the_sub_field('botonUrl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
+                                    </div>
+                                </div>
+                                <?php } ?>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
@@ -122,7 +132,7 @@ if($contacto !=''){
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 contactanos">
+                <div class="col-md-12 contactanos text-left-sm text-center-xs">
                     <h1>
                         <?php echo get_field('textocontacto');?>
                     </h1>
@@ -133,7 +143,7 @@ if($contacto !=''){
     <div class="space"></div>
     <div>
         <div class="container">
-            <div class="row row-trio ">
+            <div class="row row-end ">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <?php
 					// check if the repeater field has rows of data
@@ -141,18 +151,20 @@ if($contacto !=''){
 						// loop through the rows of data
 						while ( have_rows('contacto') ) : the_row();			
 				?>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="row row-trio">
-                                <div class="col-md-12 fondo">
+                       
+                        <div class="col-md-4 col-sm-6 col-xs-12 ">
+                            <div class="row ">
+                                <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-12 contacto text-left">
-                                            <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="">
+                                        <div class="col-md-12 text-left-md text-center-xs">
+                                            <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 credenciales">
+                                       
+                                        <div class="col-md-12 ">
                                             <div class="row">
-                                                <div class="col-md-10 ">
+                                                <div class="col-md-10 nombre-contacto">
                                                     <h3>
                                                         <?php the_sub_field('nombre'); ?>
                                                     </h3>
@@ -160,31 +172,26 @@ if($contacto !=''){
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-10 ">
                                                     <h4>
                                                         <?php the_sub_field('cargo'); ?>
                                                     </h4>
                                                 </div>
                                             </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
+                                            <div class="row ">
+                                                <div class="col-md-12 col-sm-12 ">
                                                     <p>
-                                                        <?php the_sub_field('correo'); ?>
-                                                    </p>
+                                                        <?php the_sub_field('correo'); ?> </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-1 col-sm-1 col-xs-1 icon1">
-                                                    <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
-                                                </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9 ">
+                                            <div class="col-md-9 col-sm-9 col-xs-9 ">
                                                     <h5>
                                                         <?php the_sub_field('telefono'); ?>
                                                     </h5>
-                                                </div>
                                             </div>
+                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
