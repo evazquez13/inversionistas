@@ -192,10 +192,12 @@ get_header();
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 leer-m">
-                                                    <h4>
+                                                   <?php if (get_sub_field('leermaslink')) {?>
+                                                        <h4>
                                                         <a href="<?php the_sub_field('leermaslink'); ?>">
                                                             <?php the_sub_field('leermasdg'); ?>
                                                         </a>
+                                                   <?php } ?>    
                                                     </h4>
                                                 </div>
                                             </div>
