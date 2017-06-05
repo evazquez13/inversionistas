@@ -121,7 +121,9 @@ get_header(); ?>
 			<div class="col-md-12 col-xs-12 col-sm-12">
 				<h1><?php echo get_field('titulopdf')?></h1>
 				<p><?php echo get_field('textopdf') ?>
-				<span><?php echo get_field('iradobe')?></span></p>
+				<span>
+				<a href="<?php echo get_field('iradobeurl')?>" target="_BLANK">
+				<?php echo get_field('iradobe')?></a></span></p>
 				<p><span><?php echo get_field('selecciondoc'); ?></span></p>
 			</div>
 			<?php if (get_field('tipo-informacion',142)) {?>
