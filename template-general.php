@@ -7,7 +7,6 @@ get_header();
 
 <?php 
 	$campo = get_field('campo-html');
-	$idioma = pll_current_language( 'slug' );
 	$tituloSecInfo = get_field('titulosecinfo');
 ?>
 
