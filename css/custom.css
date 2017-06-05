@@ -493,13 +493,7 @@ ul.lista-redes li{
     margin-top: 30;
 }
 
-.row-trio{
-  padding-bottom : 85px;
-}
 
-.row-trio2{
-  margin-top : 85px;
-}
 
 .row-end{
   padding-bottom : 50px;
@@ -518,13 +512,13 @@ ul.lista-redes li{
 .nombre-contacto h3{
   padding-top : 30px;
   font-family: 'BentonSansBBVA';
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .cargo-contacto h3{
   padding-top : 28px;
   font-family: 'BentonSansBBVABook';
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .cargo-correo p{
@@ -533,8 +527,8 @@ ul.lista-redes li{
   font-size: 16px;
 }
 
-.telefono-contacto p{
-  padding-top : 10px;
+.telefono-contacto h5{
+  padding-top : 15px;
   font-family: 'BentonSansBBVA';
   font-size: 16px;
   color: #2371be;
