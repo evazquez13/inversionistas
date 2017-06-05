@@ -8,7 +8,6 @@ get_header();
     <?php 
     $directorgeneral= get_field('directorgeneral');
 	$equipodirectivo = get_field('equipodirectivo');
-	$idioma = pll_current_language( 'slug' );
 	$tituloSec3 = get_field('titulo-sec-3');
     $subUrl = get_field('subUrl');
     $subTexto3 = get_sub_field('subtexto3');
@@ -127,7 +126,7 @@ get_header();
 
 
     <?php 
-    if($directorgeneral !=''){ ?>
+    if(get_field('headerestructuradirectiva')){ ?>
     <div class="space"></div>
     <div>
         <div class="container estructura-directiva ">
@@ -145,71 +144,76 @@ get_header();
     <div>
         <div class="container">
             <div class="row  ">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <?php
-					// check if the repeater field has rows of data
-					if( have_rows('directorgeneral') ):
-						// loop through the rows of data
-						while ( have_rows('directorgeneral') ) : the_row();			
-				?>
+                <div class="col-md-12 col-sm-12 col-xs-12">     
                         <div class="col-md-12 col-sm-6 col-xs-12">
                             <div class="row ">
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-12 text-left-sm text-center-xs">
-                                            <img class="img-circle" src="<?php the_sub_field('imagendg'); ?>" alt="" height="150" width="150">
+                            
+                                            <img class="img-circle" src="<?php the_field('imagendg'); ?>" alt="" height="150" width="150">
+                                            
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 ">
                                             <div class="row">
                                                 <div class="col-md-10 directorG">
+                                                  
                                                     <h3>
-                                                        <?php the_sub_field('nombredg'); ?>
+                                                        <?php the_field('nombredg'); ?>
                                                     </h3>
+                                                 
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-md-4 cargoDirector">
+                                                   
                                                     <h4>
-                                                        <?php the_sub_field('cargodg'); ?>
+                                                        <?php the_field('cargodg'); ?>
                                                     </h4>
+                                                  
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 acercaDe">
+                                                  
                                                     <h4>
-                                                        <?php the_sub_field('headerdg'); ?>
+                                                        <?php the_field('headerdg'); ?>
                                                     </h4>
+                                                  
                                                 </div>
                                             </div>
                                             <div class="row ">
                                                 <div class="col-md-12 col-sm-12 text-justify infoDirector">
-                                                    <p>
-                                                        <?php the_sub_field('infodg'); ?> </p>
+                                                   
+                                                    <p> <?php the_field('infodg'); ?> </p>
+                                             
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 leer-m">
+<<<<<<< HEAD
                                                    <?php if (get_sub_field('leermaslink')) {?>
                                                         <h4>
+=======
+                                                  <?php if( get_field('leermaslink') ){?>  
+                                                    <h4>
+>>>>>>> ebanos
                                                         <a href="<?php the_sub_field('leermaslink'); ?>">
-                                                            <?php the_sub_field('leermasdg'); ?>
+                                                            <?php the_field('leermasdg'); ?>
                                                         </a>
                                                    <?php } ?>    
                                                     </h4>
+                                                  <?php } ?>    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php
-					endwhile;
-					endif;
-				?>
+                     </div>
                 </div>
             </div>
         </div>
@@ -231,25 +235,27 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="space"></div>
-    <div>
         <div class="container ">
             <div class="row ">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <?php
+                    $i=0;
 					// check if the repeater field has rows of data
 					if( have_rows('equipodirectivo') ):
 						// loop through the rows of data
 						while ( have_rows('equipodirectivo') ) : the_row();			
 				?>
+                       <?php    
+                       if(($i%2) !=0){
+                        echo "<div class='row'>";
+                       }
+                       ?>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row  ">
                                 <div class="col-md-12 ">
-
                                     <div class="col-md-12 contacto text-left-sm text-center-xs">
                                         <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150">
                                     </div>
-
                                     <div class="row">
                                         <div class="col-md-12 nombreDir">
                                             <div class="row">
@@ -273,13 +279,16 @@ get_header();
                             </div>
                         </div>
                         <?php
+                    if(($i%2) !=0){
+                        echo "</div>";
+                       }
+                       $i++;
 					endwhile;
 					endif;
 				?>
                 </div>
             </div>
         </div>
-    </div>
     <?php } ?>
 
 
