@@ -51,14 +51,12 @@ $(document).on('ready',function() {
         $('.btn-lower-space').css('margin-top','89.7px');
         $('.left-credencial').css('margin-left','30px');
         $('.right-credencial').css('margin-right','30px');
+        $('.credenciales p').css("font-size",'12px');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
+	  	$('.credenciales p').css("font-size",'14px');
 	  }
-	  if(pant < 380){
-	  	$('.credenciales p').css("font-size",'12px');
-	  }
-	  else{
-	  	$('.credenciales p').css("font-size",'14px');	 	
+	  		 	
 	  }
 	}
 
