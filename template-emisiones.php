@@ -117,16 +117,23 @@ get_header();
 		<div class="row">
 			<div class="col-md-12 "><p><?php echo get_field('descemisiones') ?></p></div>
 		</div>
+			</div>
+</div>
+		<div class="container rentafija center-block">
 		<div class="row">
 			<?php
+			$i =1;
 			// check if the repeater field has rows of data
 			if( have_rows('emisiones-corp') ):
 				// loop through the rows of data¡
 				while ( have_rows('emisiones-corp') ) : the_row();			
 		?>
-			<div class = "col-md-6 col-sm-6 col-xs-12">
+		<?php if (($i%2) != 0) {
+			echo "<div class='row'>";
+		}
+		?>
+			<div class = "col-md-6 col-sm-6 col-xs-12 ">
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
-					<div class="col-md-9">
 						<div class="space"></div>				
 						<img height="33" src="<?php the_sub_field('imagen');?>" > 
 						<h3><?php the_sub_field('titulo2'); ?></h3>
@@ -135,17 +142,22 @@ get_header();
 						<?php if (get_sub_field('url')) {?>
 							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-url') ?></a>
 						<?php } ?>
-					</div>
+					
 				</div>
 			</div>	
+
 			<?php
+			if (($i%2) == 0) {
+			echo "</div>";
+		}
+					$i++;
 						endwhile;
 							endif;
 					?>
 		</div>
+		</div>
 			<div class="space3"></div>
-	</div>
-</div>
+
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
