@@ -20,7 +20,6 @@ get_header(); ?>
 	$img = get_field('row-img-1');
 	$descripcion = get_field('descripcion');
 	$urlBoton = get_field('url-boton');
-	$idioma = pll_current_language( 'slug' );
 	$tituloSecInfo = get_field('titulo-sec-info');
 ?>
 
