@@ -56,6 +56,7 @@ $(document).on('ready',function() {
 	  }
 	  if(pant < 380){
 	  	$('.credenciales p').css("font-size",'12px');
+         
 	  }
 	  else{
 	  	$('.credenciales p').css("font-size",'14px');	 	

@@ -152,17 +152,15 @@ if($contacto !=''){
 						while ( have_rows('contacto') ) : the_row();			
 				?>
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="row row-trio row-trio2">
-                                <div class="col-md-12 col-sm-6 fondo">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-6 contacto text-left-sm text-center-xs">
-                                            <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">
-                                        </div>
+                            <div class="row  ">
+                                <div class="col-md-12 ">
+                                    <div class="col-md-12 contacto text-left-sm text-center-xs">
+                                        <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-6 credenciales left-credencial right-credencial">
+                                        <div class="col-md-12 nombreDir">
                                             <div class="row">
-                                                <div class="col-md-10 col-sm-4 nombre-contacto">
+                                                <div class="col-md-10 nombreDir">
                                                     <h3>
                                                         <?php the_sub_field('nombre'); ?>
                                                     </h3>
@@ -170,13 +168,13 @@ if($contacto !=''){
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12 col-xs-8 cargo-contacto">
+                                                <div class="col-md-12 cargoDirectivo">
                                                     <h4>
                                                         <?php the_sub_field('cargo'); ?>
                                                     </h4>
                                                 </div>
                                             </div>
-
+                                            
                                             <div class="row">
                                                 <div class="col-md-12 cargo-correo">
                                                     <p>
@@ -184,16 +182,18 @@ if($contacto !=''){
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            
+                                          <div class="row">
                                                 <div class="col-md-1 col-sm-1 col-xs-1 icon1">
                                                     <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
                                                 </div>
-                                                <div class="col-md-9 col-sm-9 col-xs-9 ">
+                                                <div class="col-md-8 col-sm-8 col-xs-8 telefono-contacto">
                                                     <h5>
                                                         <?php the_sub_field('telefono'); ?>
                                                     </h5>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
