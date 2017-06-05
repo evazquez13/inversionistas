@@ -22,7 +22,6 @@ get_header(); ?>
 	$urlBoton = get_field('url-boton');
 	$textoBtn = get_field('texto-btn');
 	$icon = get_field('iconos');
-	$idioma = pll_current_language( 'slug' );
 ?>
 
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
