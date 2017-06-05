@@ -35,6 +35,8 @@ $(document).on('ready',function() {
 	  if(pant < 993){
 	  	$('.fondo').css("height",'auto');
         $('.separador').css("text-align",'center');
+        $('.row-trio').css('height','85px');
+        $('.row-trio2').css('margin-top','85px');  
 	  }
 	  else{
 	  	$('.fondo').css("height",'240');
@@ -42,7 +44,13 @@ $(document).on('ready',function() {
 	  }
 	  if (pant < 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
+        $('.row-trio').css('height','0px');
+        $('.row-trio2').css('margin-top','30px'); 
 	  	$('.menu-mobile .col-xs-2 img').css('float','right');
+        $('.btn-upper-space').css('margin-top','14.8px');
+        $('.btn-lower-space').css('margin-top','89.7px');
+        $('.left-credencial').css('margin-left','30px');
+        $('.right-credencial').css('margin-right','30px');
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  }
