@@ -132,7 +132,7 @@ if($contacto !=''){
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 contactanos text-left-sm text-center-xs">
+                <div class="col-md-12 contactanos text-left-sm text-center-xs btn-upper-space btn-lower-space">
                     <h1>
                         <?php echo get_field('textocontacto');?>
                     </h1>
@@ -152,15 +152,15 @@ if($contacto !=''){
 						while ( have_rows('contacto') ) : the_row();			
 				?>
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="row row-trio">
+                            <div class="row row-trio row-trio2">
                                 <div class="col-md-12 col-sm-6 fondo">
                                     <div class="row">
                                         <div class="col-md-12 col-sm-6 contacto text-left-sm text-center-xs">
-                                            <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="">
+                                            <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-6 credenciales">
+                                        <div class="col-md-12 col-sm-6 credenciales left-credencial right-credencial">
                                             <div class="row">
                                                 <div class="col-md-10 col-sm-4 nombre-contacto">
                                                     <h3>
@@ -170,7 +170,7 @@ if($contacto !=''){
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12 col-xs-8">
+                                                <div class="col-md-12 col-xs-8 cargo-contacto">
                                                     <h4>
                                                         <?php the_sub_field('cargo'); ?>
                                                     </h4>
@@ -178,7 +178,7 @@ if($contacto !=''){
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-12 cargo-correo">
                                                     <p>
                                                         <?php the_sub_field('correo'); ?>
                                                     </p>
