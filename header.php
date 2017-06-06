@@ -130,7 +130,7 @@ echo '<script languaje="JavaScript">
                             <li><a href="#">Factsheet</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Emisiones</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/emisiones-corporativas/">Emisiones</a>
                                 <ul></ul>
                             </li>
                         </ul> 
@@ -207,7 +207,7 @@ if (is_page("Conócenos")) { ?>
                 <ul>
                     <li><a href="#">Calificaciones</a> </li>
                     <li><a href="#">Factsheet</a></li>
-                    <li><a href="#">Emisiones</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/emisiones-corporativas/">Emisiones</a></li>
                 </ul>  
              </div>
          </div>
@@ -297,7 +297,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                             <li><a href="#">Factsheet</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Emissions</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/emisiones-corporativas-en/">Emissions</a>
                                 <ul></ul>
                             </li>
                         </ul> 
@@ -371,7 +371,7 @@ if (is_page("Renta_fija-en")) { ?>
                 <ul>
                     <li><a href="#">Qualifications</a> </li>
                     <li><a href="#">Factsheet</a></li>
-                    <li><a href="#">Emissions</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/emisiones-corporativas-en/">Emissions</a></li>
                 </ul>  
              </div>
          </div>
