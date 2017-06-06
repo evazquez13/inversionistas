@@ -108,7 +108,7 @@ echo '<script languaje="JavaScript">
                             <li><a href="#">Modelo de Negocio</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Estructura Directiva</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estructuradirectiva/">Estructura Directiva</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">Negocio Responsable</a>
@@ -186,7 +186,7 @@ if (is_page("Conócenos")) { ?>
                         <li><a href="#">BBVA en Resumen</a></li>
                         <li><a href="#">Modelo de Negocio</a>
                         </li>
-                        <li><a href="#">Estructura Directiva</a>
+                        <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estructuradirectiva/">Estructura Directiva</a>
                         </li>
                         <li><a href="#">Negocio Responsable</a>
                         </li>
@@ -277,7 +277,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                             <li><a href="#">Business Model</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Directive Structure</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Directive Structure</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">Liable Business</a>
@@ -352,7 +352,7 @@ if (is_page("Conócenos-en")) { ?>
                         <li><a href="#">History</a></li>
                         <li><a href="#">BBVA in Resume</a></li>
                         <li><a href="#">Business Model</a></li>
-                        <li><a href="#">Directive Structure</a></li>
+                        <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Directive Structure</a></li>
                         <li><a href="#">Liable Business</a></li>
                         <li><a href="#">Group BBVA</a></li>
                  </ul>
