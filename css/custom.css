@@ -869,4 +869,19 @@ span.rell{
         text-align: justify;
     }
 }
-
+/*Personalizacion de la pagina de Mision */
+.mision ul{
+list-style-image: url("http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-icon-1.png");
+font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+}
+.mision h1{
+  font-size: 32px;
+  color: #1a1a1a;
+}
+.mision p{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+}
