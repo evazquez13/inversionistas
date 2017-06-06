@@ -146,14 +146,20 @@ if($contacto !=''){
             <div class="row row-end ">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <?php
+                    $i=1;
 					// check if the repeater field has rows of data
 					if( have_rows('contacto') ):
 						// loop through the rows of data
 						while ( have_rows('contacto') ) : the_row();			
 				?>
+                    <?php    
+                       if(($i%3) ==0){
+                        echo "<div class='row'>";
+                       }
+                       ?>   
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="row  ">
-                                <div class="col-md-12 ">
+                                <div class="col-md-12  ">
                                     <div class="col-md-12 contacto text-left-sm text-center-xs">
                                         <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">
                                     </div>
@@ -201,6 +207,10 @@ if($contacto !=''){
                         </div>
                         
                         <?php
+                   if(($i%3) ==0){
+                        echo "</div>";
+                       }
+                       $i++;
 					endwhile;
 					endif;
 				?>

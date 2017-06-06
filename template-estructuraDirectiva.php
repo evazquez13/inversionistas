@@ -145,7 +145,7 @@ get_header();
         <div class="container">
             <div class="row  ">
                 <div class="col-md-12 col-sm-12 col-xs-12">     
-                        <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="row ">
                                 <div class="col-md-12">
                                     <div class="row">
@@ -186,7 +186,7 @@ get_header();
                                                 </div>
                                             </div>
                                             <div class="row ">
-                                                <div class="col-md-12 col-sm-12 text-justify infoDirector">
+                                                <div class="col-md-12 col-sm-12  text-justify infoDirector">
                                                    
                                                     <p> <?php the_field('infodg'); ?> </p>
                                              
@@ -194,19 +194,16 @@ get_header();
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 leer-m">
-<<<<<<< HEAD
-                                                   <?php if (get_sub_field('leermaslink')) {?>
-                                                        <h4>
-=======
+
                                                   <?php if( get_field('leermaslink') ){?>  
                                                     <h4>
->>>>>>> ebanos
                                                         <a href="<?php the_sub_field('leermaslink'); ?>">
                                                             <?php the_field('leermasdg'); ?>
                                                         </a>
+                                                    </h4>    
                                                    <?php } ?>    
-                                                    </h4>
-                                                  <?php } ?>    
+                                                    
+                                                   
                                                 </div>
                                             </div>
                                         </div>
