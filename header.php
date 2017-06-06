@@ -98,7 +98,7 @@ echo '<script languaje="JavaScript">
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/">Inicio</a></li>
                   <li><a href="#">Conócenos</a>
                          <ul>
-                            <li><a href="#">Misión</a></li>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/mision/">Misión</a></li>
                             <li><a href="#">Historia</a>
                                 <ul></ul>
                             </li>
@@ -181,7 +181,7 @@ if (is_page("Conócenos")) { ?>
          <div class="row">
              <div class="menu-claro">
                  <ul>
-                     <li><a href="#">Misión</a></li>
+                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/mision/">Misión</a></li>
                         <li><a href="#">Historia</a></li>
                         <li><a href="#">BBVA en Resumen</a></li>
                         <li><a href="#">Modelo de Negocio</a>
@@ -267,7 +267,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/index-en/">Home</a></li>
                   <li><a href="#">About Us</a>
                          <ul>
-                            <li><a href="#">Mission</a></li>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/mision-en/">Mission</a></li>
                             <li><a href="#">History</a>
                                 <ul></ul>
                             </li>
@@ -348,7 +348,7 @@ if (is_page("Conócenos-en")) { ?>
          <div class="row">
              <div class="menu-claro">
                  <ul>
-                     <li><a href="#">Mission</a></li>
+                     <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/mision-en/">Mission</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">BBVA in Resume</a></li>
                         <li><a href="#">Business Model</a></li>
