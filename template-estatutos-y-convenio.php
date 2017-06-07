@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Template-mision
+Template Name: Template-Estatutos-Convenios
 */
 get_header(); 
 ?>
@@ -24,26 +24,26 @@ get_header();
 			// loop through the rows of data
 			while ( have_rows('banner') ) : the_row();
 			?>
-    		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
+    		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
   			<div class="col-md-6 col-sm-6 col-xs-12" style="padding-top: 70px;">
 		            <div class="banner-msn">
 						<div class="row tt">
 							<div class="col-md-10 col-sm-10 col-xs-10">
-								<h3><?php the_sub_field('titulo'); ?></h3>
+								<h3><?php the_sub_field('titulo-1'); ?></h3>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12 tt2">
-								<p><?php the_sub_field('descripcion'); ?></p>
+								<p><?php the_sub_field('introduccion'); ?></p>
 							</div>
 						</div>
-						<?php $boton = get_sub_field('url-boton');
+						<?php $boton = get_sub_field('boton');
 						if($boton !=''){ ?>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<? if (get_sub_field('url-boton')) { ?>
-								<a href="<?php the_sub_field('url-boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+								<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 							</div>
 						</div>
@@ -57,20 +57,20 @@ get_header();
 	  	<div class="container">
 	  		<div class="row sec-index-mov">
 				<div class="col-xs-12 text-center">
-					<h2><?php the_sub_field('titulo'); ?></h2>
+					<h2><?php the_sub_field('titulo-1'); ?></h2>
 				</div>
 			</div>
 			<div class="row sec-index-mov">
 				<div class="col-xs-12 text-center">
-					<p><?php the_sub_field('descripcion'); ?></p>
+					<p><?php the_sub_field('introduccion'); ?></p>
 				</div>
 			</div>
-			<?php $boton = get_sub_field('url-boton');
+			<?php $boton = get_sub_field('boton');
 						if($boton !=''){ ?>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
-					<? if (get_sub_field('url-boton')) { ?>
-								<a href="<?php the_sub_field('url-boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+					<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 				</div>
 			</div>
@@ -107,47 +107,65 @@ get_header();
 
 </div>
 
-<div class="container mision" >
+<!-- Contenido -->
+<div class="container estatSociales" >
 		<div class="row">
-			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulosecmision'); ?></h1></div>
+			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
-			<div class="col-md-12 "><p><?php echo get_field('mision') ?></p>
-			<p><?php echo get_field('titulo-lista')?></p>
-			</div>
-
+			<div class="col-md-12 "><p><?php echo get_field('mensajeadobe') ?><span><a href="<?php echo get_field('urladobe') ?>" target="_BLANK"><?php echo get_field('textourladobe') ?></a></span></p></div>
 		</div>
-</div>
-		<div class="container">
+
+		<div class="container estatSociales">
 		<div class="row">
 			<?php
+			$i =0;
 			// check if the repeater field has rows of data
-			if( have_rows('lista') ):
+			if( have_rows('seccion-pdf') ):
 				// loop through the rows of data¡
-				while ( have_rows('lista') ) : the_row();			
+				while ( have_rows('seccion-pdf') ) : the_row();			
 		?>
-		<!-- Lista de iconos  -->
-		<div class="container mision">
-			<ul>
-			<li>
-			<div class="col-sm-11 col-md-11">
-			<?php the_sub_field('texto-lista')?>
-			</div>
-			</li>
-			</ul>
-		</div>
-		
-			<!-- Termina lista -->
-
+		<?php if (($i%2) != 0) {
+			echo "<div class='row margin' style='margin: 0px'>";
+		}
+		?>
+			<div class = "col-md-6 col-sm-6 col-xs-12 ">
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
+						<div class="space"></div>				
+						<h3><?php the_sub_field('titulo'); ?></h3>
+						<!--  -->
+				<?php if (have_rows('seleccion-pdf')) :
+						while (have_rows('seleccion-pdf')) : the_row();
+				 ?>
+				 <div class="col-xs-12 col-md-12 col-sm-12 parrafoBold2">
+				 <p><?php the_sub_field('subtitulo') ?></p>
+				 	<div class="row">
+				 		<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"> <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-iconf.png"></div>
+				 		<div class="col-xs-10 col-md-11 col-sm-10"><a href="<?php the_sub_field('url-pdf') ?>" target="_BLANK"><?php the_sub_field('nombre-pdf') ?></a></div>
+				 	</div>
+				 </div>
+				 <?php
+						endwhile;
+							endif;
+					?>
+					<!--  -->
+				</div>
+			</div>	
 			<?php
+			if (($i%2) != 0) {
+			echo "</div>";
+		}
+					$i++;
 						endwhile;
 							endif;
 					?>
 		</div>
 		</div>
-			<div class="space"></div>
-
+		<div class="space3"></div>
+		</div>
+			
+			<!-- Fin Contenido -->
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">

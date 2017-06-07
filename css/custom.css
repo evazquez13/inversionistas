@@ -916,8 +916,16 @@ font-family: 'BentonSansBBVA-Book';
     padding-left: 15px;
 }
 
+/*Generico*/
 .parrafoBold p{
   font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.parrafoBold2 p{
+font-family: 'BentonSansBBVA';
  font-size: 16px;
   color: #1a1a1a;
   font-weight: bold;
@@ -926,6 +934,7 @@ font-family: 'BentonSansBBVA-Book';
 .columnaIcono{
   width: 4%;
 }
+<<<<<<< HEAD
 .gfbb table.table.table-responsive.table-bordered thead{
   background-color: #072146;
 }
@@ -943,4 +952,29 @@ font-family: 'BentonSansBBVA-Book';
   font-family: 'BentonSansBBVABook';
   font-size: 15px;
   color: #121212;
+}
+/*Statutos sociales*/
+.estatSociales img{
+    padding-left: 15px;
+}
+.estatSociales  h1{
+  font-size: 32px;
+  color: #1a1a1a;
+}
+
+.estatSociales  p{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+  margin-top: 15px;
+;
+}
+.estatSociales  h3{
+  font-size: 22px;
+  color: #1a1a1a;
+}
+.estatSociales a{
+  font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #072146;
 }

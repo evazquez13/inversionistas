@@ -108,12 +108,10 @@ get_header();
 </div>
 
 <div class="container historia" >
-	<div class="row">
 		<div class="row">
 			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
-			</div>
 </div>
 		<div class="container historia center-block">
 		<div class="row">
@@ -128,22 +126,14 @@ get_header();
 						<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"></div>	
 						<div class="col-sm-11 col-md-11 col-xs-10 parrafoBold"><p><?php the_sub_field('anio'); ?></p></div>
 						</div>
-						<!-- Aqui va la lista -->
 						<div class="row">
 						<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"> <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-iconf.png"></div>
 							
 								<div class="col-md-11 col-sm-11 col-xs-10">
 								<p><?php the_sub_field('descripcion')?></p>			
 								</div>
-							
-
-						
 						</div>
-						<!-- Aqui termina -->
-						
 				</div>
-				
-
 			<?php
 						endwhile;
 							endif;
