@@ -108,12 +108,10 @@ get_header();
 </div>
 
 <div class="container historia" >
-	<div class="row">
 		<div class="row">
 			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
-			</div>
 </div>
 		<div class="container historia center-block">
 		<div class="row">

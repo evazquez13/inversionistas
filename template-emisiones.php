@@ -111,15 +111,13 @@ get_header();
 </div>
 
 <div class="container rentafija" >
-	<div class="row">
 		<div class="row">
 			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
 			<div class="col-md-12 "><p><?php echo get_field('descemisiones') ?></p></div>
-		</div>
-			</div>
+		</div>>
 </div>
 		<div class="container rentafija center-block">
 		<div class="row">
