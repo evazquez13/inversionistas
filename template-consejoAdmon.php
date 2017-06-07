@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: templete-Contacto
+Template Name: templete-ConsejoAdmon
 */
 get_header(); 
 ?>
@@ -124,78 +124,49 @@ get_header();
 
     </div>
 
-   
-   
-   
-   
-   
-   
-<?php  if( get_field('textocontacto') ): ?>
-    <div class="space"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 contactanos text-left-sm text-center-xs btn-upper-space btn-lower-space">
-                    <h1>
-                        <?php echo get_field('textocontacto');?>
-                    </h1>
-                </div>
+<?php  if(get_field('cabeceraconsejoadministracion')){ ?>
+    <div class="space"></div> <!--Study For later -->
+        <div>
+            <div class="container">
+                <h1 class="header-consejo text-left-sm text-center-xs"> <?php echo get_field('cabeceraconsejoadministracion');?> </h1>
+                <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php echo get_field('infoadobe');?> 
+                    <?php if (get_field('urladobe')) {?>
+				       <a href="<?php the_field('urladobe'); ?>" class="url-adobe" > 
+				            <?php echo the_field('textolinkadobe');?> 
+				       </a>
+				    <?php } ?> 
+                </p>
+               
+                <?php  if( have_rows('bloqueca') ): ?>
+                    <?php  $i =1;?>
+                    <?php  while ( have_rows('bloqueca') ) : the_row(); ?>
+                       
+                        <?php if (($i%2) != 0) { echo "<div class='row margenA'>";} ?>
+                        <div class="col-md-6 col-sm-6 col-xs-12 admon-separation">
+                            <div class="row">
+                              <h3 class="header-bloque"> <?php the_sub_field('titulobloque'); ?> </h3>
+                              <h3 class="cuerpo-bloque text-left"> <?php the_sub_field('infobloque'); ?> </h3>
+                            </div>
+                            <div class="row"> 
+                              <?php if( have_rows('itembloque') ): ?>
+                                    <?php while ( have_rows('itembloque') ) : the_row(); ?> 
+                                      <div class="col-md-3 col-sm-3 col-xs-3 img-pdf"><!-- img-pdf-->
+                                        <img src="<?php the_sub_field('imagensubitem'); ?>" alt="" height="23.6px" width="31.4px">  
+                                      </div>
+                                      <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
+                                        <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3>    
+                                      </div>
+                                     <?php endwhile ?>
+                              <?php endif ?>
+                             </div> 
+                          <?php if (($i%2) == 0){ echo "</div>"; } ?>
+                              
+                          <?php $i++; ?>
+                        </div>   
+                      <?php endwhile ?>
+                <?php endif ?>    
             </div>
         </div>
-<?php endif ?>
-
-
-<?php  if(get_field('contacto')){ ?>
-    <div class="space"></div> <!--Study For later -->
-            <div class="container">
-                    
-                       <?php  if( have_rows('contacto') ): ?>
-                        
-                        <?php
-                        function isMobile() {
-    return        preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
-}
-                        ?>
-                        
-                        <?php  while ( have_rows('contacto') ) : the_row(); ?>
-                            <?php $m++; ?>
-                        <?php endwhile ?>
-                        
-                        <?php 
-                            if(isMobile()){
-                                $s =2;
-                                $i =0;
-                                $m =2;
-                            }
-                            else {
-                                 $s =3;
-                                 $i =0;
-                                 $m =3;
-                            }         
-                        ?>
-                        
-                        <?php  while ( have_rows('contacto') ) : the_row(); ?>
-                        <?php if (($i%$s) == 0) { echo "<div class='row'>";} ?>
-                          
-                            <div class="col-md-4 col-sm-6 mobile-top"> 
-                                    <div class="text-left-sm text-center-xs">
-                                         <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">  
-                                    </div>     
-                                    <h3 class="nombre-contacto"> <?php the_sub_field('nombre'); ?> </h3>        
-                                    <h3 class="info-contacto"> <?php the_sub_field('cargo'); ?> </h3>   
-                                    <h3 class="correo-contacto"> <?php the_sub_field('correo'); ?> </h3>
-                                    <div class="col-md-1 col-sm-1 col-xs-1 icon1">
-                                        <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
-                                    </div>
-                                    <div class="col-md-9 col-sm-9 col-xs-9 ">
-                                        <h5 class="tel-contacto"><?php the_sub_field('telefono'); ?></h5>
-                                    </div>
-                                  <?php $c++; ?>
-                              </div> 
-                                <?php if (  ( ($i%$s) != 0 )  && ($c==$m) ) { echo "</div>"; } ?>
-                                <?php $i++; ?>  
-                          <?php endwhile ?>
-                    <?php endif ?>  
-            </div>
 <?php } ?>
 
 <!--Sección Interés --> 

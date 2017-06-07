@@ -404,8 +404,35 @@ ul.lista-redes li{
 .contactanos h1{
   font-family: 'BentonSansBBVAMedium';
   color: #1a1a1a;
-  font-size: 32px;
+  font-size: 32px;    
 }
+
+h3.nombre-contacto {
+	font-family: 'BentonSansBBVA';
+	font-size: 22px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+
+h3.info-contacto {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+h3.correo-contacto {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+h5.tel-contacto {
+    font-family: 'BentonSansBBVA';
+	font-size: 16px;
+	font-weight: 500;
+	color: #2371be;
+}
+
 .helpyou{
   font-family: 'bentonsansbook';
 }
@@ -723,7 +750,6 @@ span.rell{
   padding: 14px 37px 14px 37px;
   margin-bottom: 30px;
 }
-<<<<<<< HEAD
 /*Estilos Renta Fija*/
 .rentafija h1{
  font-family: 'BentonSansBBVA-Medium';
@@ -748,11 +774,6 @@ span.rell{
   line-height: 2.63;
   color: #072146;
 }
-
-
-
-=======
-
 /*Estilos Estructura Directiva*/
 
 .header-directivo h1{
@@ -761,14 +782,20 @@ span.rell{
   color: #1a1a1a;
 }
 
-.directorG h3{
+h3.directorG{
 	font-family: 'BentonSansBBVAMedium';
 	font-size: 22px;
 	color: #1a1a1a;
     padding-top: 25px;
 }
 
-.cargoDirector h4{
+h4.acerca-de-header{
+	font-family: 'BentonSansBBVABook';
+	font-size: 22px;
+	color: #1a1a1a;
+}
+
+h4.cargoDirector{
 	font-family: 'BentonSansBBVABook';
 	font-size: 16px;
 	color: #1a1a1a;
@@ -782,13 +809,13 @@ span.rell{
     padding-bottom: 25px;
 }
 
-.infoDirector p{
+p.infoDirector{
 	font-family: 'BentonSansBBVABook';
 	font-size: 16px;
 	color: #1a1a1a;
 }
 
-.leer-m h4 {
+a.leer-m{
 	font-family: 'BentonSansBBVAMedium';
 	font-size: 16px;
 	font-weight: 500;
@@ -799,29 +826,140 @@ span.rell{
     text-align:center;
 }
 
+.updown-ed{
+    margin-top: 40px;
+    margin-bottom: 67px;
+}
+/*Estilos EstructuraDirectivaUpdated*/
+
+h3.nombre-equipo-directivo {
+    font-family: 'BentonSansBBVA';
+    color: #1a1a1a;
+    padding-top: 22px;
+}
+
+h4.cargo-equipo-directivo {
+    font-family: 'BentonSansBBVABook';
+    color: #1a1a1a;
+    padding-top: 22px;
+}
 /*Estilos Equipo Directivo*/
-.equipoDir h1{
+.header-equipo-directivo h1{
 	font-family: 'BentonSansBBVAMedium';
-	font-size: 22px;
+	font-size: 16px;
 	color: #1a1a1a;
 }
 
-.nombreDir h3{
+/*Estilos Contactos*/
+
+h3.nombreDir{
 	font-family: 'BentonSansBBVAMedium';
-	font-size: 22px;
 	color: #1a1a1a;
     padding-top: 28px;
     
 }
 
-.cargoDirectivo h4{
+h3.cargoDirectivo{
 	font-family: 'BentonSansBBVABook';
-	font-size: 16px;
+	
 	color: #1a1a1a;
     padding-top: 0px;
 }
 
-/*boot4*/
+h3.cargo-correo{
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+h3.tel-contacto{
+	font-family: 'BentonSansBBVABook';
+	color: #1a1a1a;
+    padding-left: 10.3px;
+}
+
+.mobile-top{  /* Espaciado Bloque Contactos */
+margin-top: 70px;    
+margin-bottom: 85px;
+}
+
+.img-phone img{
+    margin-top: 10px;
+}
+
+.margenB{
+    margin-left: 14px;
+}
+
+.margenA{
+    margin-left: 0px;
+}
+
+/*Estilos Consejo Administracion*/
+
+h1.header-consejo{
+    font-family: 'BentonSansBBVA';
+	font-size: 24px;
+	font-weight: 500;
+	color: #1a1a1a;
+    margin-left: -14px;
+}
+
+p.text-adobe {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+    margin-left: -14px;
+}
+
+a.url-adobe {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #2371be;
+}
+
+h3.header-bloque {
+	font-family: 'BentonSansBBVABook';
+	font-size: 22px;
+	color: #1a1a1a;
+}
+
+h3.cuerpo-bloque {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+h3.nombre-pdf {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #072146;
+}
+
+.img-pdf img{
+    margin-top: 16px;
+}
+
+.prueba{
+ margin-left: 0px;
+}
+
+.spatio{
+margin-bottom: 11px;
+}
+
+
+.admon-separation{
+    margin-bottom: 46px;
+}
+
+.doc-row{
+    margin-bottom: 11px;
+}
+
+/*Centrado Responsivo*/
 .text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
     text-align: left;
 }
@@ -869,6 +1007,7 @@ span.rell{
         text-align: justify;
     }
 }
+
 /*Personalizacion de la pagina de Mision */
 .mision ul{
 list-style-image: url("http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-icon-1.png");

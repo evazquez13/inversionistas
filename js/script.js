@@ -34,9 +34,9 @@ $(document).on('ready',function() {
 	  // console.info( 'la pantalla mide ' + pant + 'px' );
 	  if(pant < 993){
 	  	$('.fondo').css("height",'auto');
-        $('.separador').css("text-align",'center');
-        $('.row-trio').css('height','85px');
-        $('.row-trio2').css('margin-top','85px');  
+        $('.separador').css("text-align",'center'); 
+        $('.margenA').css("margin-left",'0px'); 
+         
 	  }
 	  else{
 	  	$('.fondo').css("height",'240');
@@ -44,17 +44,18 @@ $(document).on('ready',function() {
 	  }
 	  if (pant < 769) {
 	  	$('.lista-redes').css('marginLeft','-30px');
-        $('.row-trio').css('height','0px');
-        $('.row-trio2').css('margin-top','30px'); 
+        $('.margenA').css("margin-left",'20px');    
 	  	$('.menu-mobile .col-xs-2 img').css('float','right');
         $('.btn-upper-space').css('margin-top','14.8px');
         $('.btn-lower-space').css('margin-top','89.7px');
         $('.left-credencial').css('margin-left','30px');
         $('.right-credencial').css('margin-right','30px');
         $('.credenciales p').css("font-size",'12px');
+          
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  	$('.credenciales p').css("font-size",'14px');
+        $('.margenB').css("margin-left",'14px'); 
 	  }
 <<<<<<< HEAD
 	  		 	
