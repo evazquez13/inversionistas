@@ -13,8 +13,7 @@
 <html class="no-js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="shortcut icon" href="http://ec2-52-213-166-151.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/bootstrap.css">
   <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
   <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/menu.css">

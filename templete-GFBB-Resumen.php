@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Templete Factsheet
+Template Name: Templete GFBB en Resumen y Renta fija
 */
 /**
  * The template for displaying pages
@@ -114,11 +114,67 @@ get_header(); ?>
 </div>
     
 <dir class="container">
-	<div class="row">
+	<div class="row gfbb">
+	<?php
+	if (get_field('tabla')) {
+		
+	
+		// check if the repeater field has rows of data
+		if( have_rows('tabla') ):
+			// loop through the rows of data
+			while ( have_rows('tabla') ) : the_row();
+			?>
 		<div class="col-md-12 col-sm-12 col-xs-12">
-			<h1>Facsheet de BBVA Bancome</h1>
-			<p>Regardless of what fnancial stage you are in, The Bank Investment Solutions is here to help. Our experienced Financial Advisorsare here to guide you through each fnancial stage of your life. Work with our professionals to create a complimentary, <br>customized<br>plan, or get started with one of these fnancial planning tools below</p>
+			<h1><?php the_sub_field('titulo'); ?></h1>
+			<p><?php the_sub_field('parrafo'); ?></p>
+			<?php 
+					if( have_rows('contenido-tabla') ):
+					// loop through the rows of data
+					while ( have_rows('contenido-tabla') ) : the_row();
+				 ?>
+			<div <?php if (get_sub_field('num-col')>4) { echo "class='table-responsive'"; } ?>>
+			<table class="table table-responsive table-bordered">
+				<thead>
+					<tr>
+						<th colspan="<?php the_sub_field('num-col'); ?>"><?php the_sub_field('titulo-tab'); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php 
+						if( have_rows('info-fila') ):
+						// loop through the rows of data
+						while ( have_rows('info-fila') ) : the_row();
+					 ?>
+					<tr>
+					<?php 
+						if( have_rows('info-celda') ):
+						// loop through the rows of data
+						while ( have_rows('info-celda') ) : the_row();
+					 ?>
+						<td><?php the_sub_field('texto'); ?></td>
+					<?php 
+						endwhile;
+						endif;
+					 ?>
+					</tr>
+					<?php 
+						endwhile;
+						endif;
+					 ?>
+				</tbody>
+			</table>
+			</div>
+			<p><?php the_sub_field('parrafo2') ?></p>
+			<?php 
+					endwhile;
+					endif;
+				 ?>
 		</div>
+		<?php 
+		endwhile;
+		endif;
+	}
+	?>
 	</div>
 </dir>
 

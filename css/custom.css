@@ -1024,3 +1024,95 @@ font-family: 'BentonSansBBVA-Book';
  font-size: 16px;
   color: #1a1a1a;
 }
+/*Personalizacion de la pagina de Historia*/
+.historiaTop {
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+.historia span {
+    padding: 15px;
+}
+
+.historia  h1{
+  font-size: 32px;
+  color: #1a1a1a;
+}
+
+.historia  p{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+}
+
+.historia ul{
+list-style-image: url("http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-iconf.png");
+font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+}
+
+.historia img{
+    padding-left: 15px;
+}
+
+/*Generico*/
+.parrafoBold p{
+  font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.parrafoBold2 p{
+font-family: 'BentonSansBBVA';
+ font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.columnaIcono{
+  width: 4%;
+}
+.gfbb table.table.table-responsive.table-bordered thead{
+  background-color: #072146;
+}
+.gfbb table.table.table-responsive.table-bordered thead tr th{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'BentonSansBBVA';
+}
+.gfbb table.table.table-responsive.table-bordered tbody tr:nth-child(1){
+  font-weight: bold;
+}
+.gfbb table.table.table-responsive.table-bordered tbody tr td{
+  font-family: 'BentonSansBBVABook';
+  font-size: 15px;
+  color: #121212;
+}
+/*Statutos sociales*/
+.estatSociales img{
+    padding-left: 15px;
+}
+.estatSociales  h1{
+  font-size: 32px;
+  color: #1a1a1a;
+}
+
+.estatSociales  p{
+ font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #1a1a1a;
+  margin-top: 15px;
+;
+}
+.estatSociales  h3{
+  font-size: 22px;
+  color: #1a1a1a;
+}
+.estatSociales a{
+  font-family: 'BentonSansBBVA-Book';
+ font-size: 16px;
+  color: #072146;
+}

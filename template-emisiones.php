@@ -81,9 +81,12 @@ get_header();
 		$i ++;
 		endwhile;
 		endif;
+    
 	?>
 
  </div>
+</div>
+
 <?php if ($i!=1) { ?>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -108,20 +111,18 @@ get_header();
 </div>
 
 <div class="container rentafija" >
-	<div class="row">
 		<div class="row">
 			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
 			<div class="col-md-12 "><p><?php echo get_field('descemisiones') ?></p></div>
-		</div>
-			</div>
+		</div>>
 </div>
 		<div class="container rentafija center-block">
 		<div class="row">
 			<?php
-			$i =1;
+			$i =0;
 			// check if the repeater field has rows of data
 			if( have_rows('emisiones-corp') ):
 				// loop through the rows of data¡
@@ -146,7 +147,7 @@ get_header();
 			</div>	
 
 			<?php
-			if (($i%2) == 0) {
+			if (($i%2) != 0) {
 			echo "</div>";
 		}
 					$i++;
