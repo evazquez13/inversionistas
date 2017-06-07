@@ -926,4 +926,21 @@ font-family: 'BentonSansBBVA-Book';
 .columnaIcono{
   width: 4%;
 }
-
+.gfbb table.table.table-responsive.table-bordered thead{
+  background-color: #072146;
+}
+.gfbb table.table.table-responsive.table-bordered thead tr th{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'BentonSansBBVA';
+}
+.gfbb table.table.table-responsive.table-bordered tbody tr:nth-child(1){
+  font-weight: bold;
+}
+.gfbb table.table.table-responsive.table-bordered tbody tr td{
+  font-family: 'BentonSansBBVABook';
+  font-size: 15px;
+  color: #121212;
+}

@@ -56,17 +56,6 @@ $(document).on('ready',function() {
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  	$('.credenciales p').css("font-size",'14px');
 	  }
-<<<<<<< HEAD
-	  		 	
-=======
-	  if(pant < 380){
-	  	$('.credenciales p').css("font-size",'12px');
-         
-	  }
-	  else{
-	  	$('.credenciales p').css("font-size",'14px');	 	
->>>>>>> ebanos
-	  }
 	}
 
 $(window).resize(
