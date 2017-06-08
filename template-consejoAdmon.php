@@ -124,24 +124,27 @@ get_header();
 
     </div>
 
-<?php  if(get_field('cabeceraconsejoadministracion')){ ?>
-    <div class="space"></div> <!--Study For later -->
-        <div>
+
+<?php  if(get_field('cabeceraconsejoadministracion')): ?>
+    <div class="space"></div> 
             <div class="container">
-                <h1 class="header-consejo text-left-sm text-center-xs"> <?php echo get_field('cabeceraconsejoadministracion');?> </h1>
-                <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php echo get_field('infoadobe');?> 
-                    <?php if (get_field('urladobe')) {?>
+                <h1 class="header-consejo text-left-sm text-center-xs"> <?php echo the_field('cabeceraconsejoadministracion');?> </h1>
+                <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php echo the_field('infoadobe');?> 
+                    <?php if (get_field('urladobe')): ?>
 				       <a href="<?php the_field('urladobe'); ?>" class="url-adobe" > 
 				            <?php echo the_field('textolinkadobe');?> 
 				       </a>
-				    <?php } ?> 
+				    <?php endif ?> 
                 </p>
-               
+            </div> 
+<?php endif ?>                
+           
+<?php  if(get_field('bloqueca')){ ?>                     
+            <div class="container">
                 <?php  if( have_rows('bloqueca') ): ?>
-                    <?php  $i =1;?>
-                    <?php  while ( have_rows('bloqueca') ) : the_row(); ?>
-                       
-                        <?php if (($i%2) != 0) { echo "<div class='row margenA'>";} ?>
+                <?php  $i =0;?>
+                  <?php  while ( have_rows('bloqueca') ) : the_row(); ?>
+                     <?php if (($i%2) == 0) { echo "<div class='row margenA'>";} ?>
                         <div class="col-md-6 col-sm-6 col-xs-12 admon-separation">
                             <div class="row">
                               <h3 class="header-bloque"> <?php the_sub_field('titulobloque'); ?> </h3>
@@ -151,7 +154,7 @@ get_header();
                               <?php if( have_rows('itembloque') ): ?>
                                     <?php while ( have_rows('itembloque') ) : the_row(); ?> 
                                       <div class="col-md-3 col-sm-3 col-xs-3 img-pdf"><!-- img-pdf-->
-                                        <img src="<?php the_sub_field('imagensubitem'); ?>" alt="" height="23.6px" width="31.4px">  
+                                        <img src="<?php the_sub_field('imagensubitem'); ?>" alt="" height="23.6px" width="31.4px"/>  
                                       </div>
                                       <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
                                         <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3>    
@@ -159,70 +162,57 @@ get_header();
                                      <?php endwhile ?>
                               <?php endif ?>
                              </div> 
-                          <?php if (($i%2) == 0){ echo "</div>"; } ?>
-                              
-                          <?php $i++; ?>
-                        </div>   
+                          <?php if (($i%2) != 0){ echo "</div>"; } ?>  
+                          
+                        </div>  
+                        <?php $i++; ?> 
                       <?php endwhile ?>
                 <?php endif ?>    
             </div>
-        </div>
 <?php } ?>
 
+
 <!--Sección Interés --> 
-    <div class="space"></div>
-    <div class="infoInteres">
-        <div class="container">
-            <div class="space2"></div>
-            <div class="row">
-                <?php if (get_field('titulo-sec-3')) {?>
-                <div class="col-md-12 text-center">
-                    <h1>
-                        <?php echo $tituloSec3 ?>
-                    </h1>
-                </div>
-                <?php } ?>
-            </div>
-            <div class="space"></div>
-            <?php if (get_field ('interes')) {?>
-            <div class="row">
-                <?php
+ <div class="infoInteres">
+	<div class="container">
+	<div class="space2"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<?php if (get_field('titulo-sec-3')) {?>
+				<h1><?php the_field('titulo-sec-3') ?></h1>
+				<?php } ?>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+		<?php
+		if (get_field('interes')) {
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
 				// loop through the rows of data
 				while ( have_rows('interes') ) : the_row();			
 		?>
-                    <div class="col-md-6 col-sm-6 col-xs-12 relleno2">
-                        <div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;">
-                            <img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
-                            <div class="col-md-9">
-                                <div class="space"></div>
-                                <p>
-                                    <?php the_sub_field('titulo'); ?>
-                                </p>
-                                <div class="space"></div>
-                                <?php if (get_sub_field('url')) {?>
-                                <a href="<?php the_sub_field('url'); ?>">
-                                    <?php echo the_sub_field('subtexto3') ?> </a>
-                                <?php } ?>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px; background-position: right;">
+				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
+					<div class="col-md-9">
+						<div class="space"></div>
+						<p><?php the_sub_field('titulo'); ?></p>
+						<div class="space"></div>
+						<?php if (get_sub_field('url')) {?>
+						<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('subtexto3'); ?></a>
+						<?php } ?>
+					</div>
+				</div>
+			</div>	
+			<?php
 						endwhile;
 							endif;
-					?>
-            </div>
-            <div class="space"></div>
-        </div>
-    </div>
-    <?php } ?>
-
-    <?php
-get_footer(); 
-?>
+				} ?>
+	</div >
+	<div class="space"></div>
+</div>
+</div>
+<?php get_footer(); ?>

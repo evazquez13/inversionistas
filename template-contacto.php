@@ -199,59 +199,46 @@ get_header();
 <?php } ?>
 
 <!--Sección Interés --> 
-    <div class="space"></div>
-    <div class="infoInteres">
-        <div class="container">
-            <div class="space2"></div>
-            <div class="row">
-                <?php if (get_field('titulo-sec-3')) {?>
-                <div class="col-md-12 text-center">
-                    <h1>
-                        <?php echo $tituloSec3 ?>
-                    </h1>
-                </div>
-                <?php } ?>
-            </div>
-            <div class="space"></div>
-            <?php if (get_field ('interes')) {?>
-            <div class="row">
-                <?php
+ <div class="infoInteres">
+	<div class="container">
+	<div class="space2"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<?php if (get_field('titulo-sec-3')) {?>
+				<h1><?php the_field('titulo-sec-3') ?></h1>
+				<?php } ?>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+		<?php
+		if (get_field('interes')) {
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
 				// loop through the rows of data
 				while ( have_rows('interes') ) : the_row();			
 		?>
-                    <div class="col-md-6 col-sm-6 col-xs-12 relleno2">
-                        <div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;">
-                            <img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
-                            <div class="col-md-9">
-                                <div class="space"></div>
-                                <p>
-                                    <?php the_sub_field('titulo'); ?>
-                                </p>
-                                <div class="space"></div>
-                                <?php if (get_sub_field('url')) {?>
-                                <a href="<?php the_sub_field('url'); ?>">
-                                    <?php echo the_sub_field('subtexto3') ?> </a>
-                                <?php } ?>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px; background-position: right;">
+				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
+					<div class="col-md-9">
+						<div class="space"></div>
+						<p><?php the_sub_field('titulo'); ?></p>
+						<div class="space"></div>
+						<?php if (get_sub_field('url')) {?>
+						<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('subtexto3'); ?></a>
+						<?php } ?>
+					</div>
+				</div>
+			</div>	
+			<?php
 						endwhile;
 							endif;
-					?>
-            </div>
-            <div class="space"></div>
-        </div>
-    </div>
-    <?php } ?>
-
-    <?php
-get_footer(); 
-?>
+				} ?>
+	</div >
+	<div class="space"></div>
+</div>
+</div>
+<?php get_footer(); ?>

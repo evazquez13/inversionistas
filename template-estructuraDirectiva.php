@@ -64,7 +64,7 @@ get_header();
                     </div>
                 </div>
                 <div class="visible-xs">
-                    <img class="img-responsive" src="<?php the_sub_field('imag-1'); ?>">
+                    <img class="img-responsive" src="<?php the_sub_field('imag-1'); ?>"/>
                     <div class="container">
                         <div class="row sec-index-mov">
                             <div class="col-xs-12 text-center">
@@ -142,7 +142,7 @@ get_header();
                      
                             <div class="col-md-3">
                                 <div class="text-left-sm text-center-xs">
-                                  <img class="img-circle" src="<?php the_field('imagendg'); ?>" alt="" height="150" width="150">
+                                  <img class="img-circle" src="<?php the_field('imagendg'); ?>" alt="" height="150" width="150"/>
                                 </div>  
                                   <h3 class="directorG">
                                         <?php the_field('nombredg'); ?>
@@ -167,7 +167,7 @@ get_header();
 <?php } ?>
 
 
-<?php  if($equipodirectivo !=''){ ?>
+<?php  if(get_field('equipodirectivo')): ?>
     <div class="space"></div>
         <div class="container">
             <div class="row">
@@ -177,105 +177,119 @@ get_header();
             </div>
         </div>
         
-        <div class="container ">
-         
-            
+<div class="container ">
                 <?php  if( have_rows('equipodirectivo') ): ?>
-                
-                <?php
-                        function isMobile() {
-    return        preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
-}
-                ?>
-                           
-                <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
-                            <?php $m++; ?>
-                <?php endwhile ?>
+                    <?php $m=0; $c=0; $i=0;?>
+                    <?php
+                            function isMobile() {
+        return        preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+    }
+                    ?>
+
+                    <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
+                        <?php $m++; ?>
                         
-                <?php 
-                      if(isMobile()){
-                         $s =2;
-                         $i =0;
-                         $m =2;
-                      }
-                      else {
-                         $s =3;
-                         $i =0;
-                         $m =3;
-                      }         
-                 ?>
-                                       
-                <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
-                    <?php if (($i%$s) == 0) { echo "<div class='row'>";} ?>
-                             
-                        <div class="col-md-4 col-sm-6 col-xs-12 updown-ed">
-                             <div class="text-left-sm text-center-xs">
-                               <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150">
-                             </div>
-                              <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
-                              <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
-                              <?php $c++; ?>
-                        </div>
-                    <?php if (  ( ($i%$s) != 0 )  && ($c==$m) ) { echo "</div>"; } ?>
-                    <?php $i++; ?>    
-                 <?php endwhile ?>
-                 <?php endif ?>
-            
-            
-        </div>
-<?php } ?>
+                    <?php endwhile ?>
+
+                    <?php 
+                          if(isMobile()){
+                             $s =2;
+                             $i =0;
+                             $c=0;
+                              
+                          }
+                          else {
+                             $s =3;
+                             $i =0;
+                             $c=0;
+                              
+                          }     
+
+                     ?>
+                              
+                              
+           <?php if (isMobile() ) : ?><!--Not-isMobileIf -->                                                               
+                     <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
+                        <?php if (($i%2) == 0) { echo "<div class='row'>"; echo "row"; } ?>      
+                            <div class="col-md-6 col-sm-6 col-xs-12 updown-ed">
+                                 <div class="text-left-sm text-center-xs">
+                                   <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150"/>
+                                 </div>
+                                  <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
+                                  <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
+                                  <?php $c++; echo "$c";?>
+                            </div>
+                        <?php if (  ( ($i%2) != 0 ) ) { echo "</div>"; echo "div";  } ?>
+                         
+                        <?php $i++; ?>    
+                     <?php endwhile ?>
+                     <?php if($c==$m){echo "</div>"; echo "div2";}?>     
+           <?php endif ?><!--Not-isMobileIf -->                 
+                              
+                 
+          <?php if (!(isMobile() )) : ?>                                                                
+                   <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
+                        <?php if (($i%3) == 0) { echo "<div class='row'>"; echo "row"; } ?>      
+                            <div class="col-md-4 col-sm-4 col-xs-12 updown-ed">
+                                 <div class="text-left-sm text-center-xs">
+                                   <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150"/>
+                                 </div>
+                                  <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
+                                  <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
+                                  <?php $c++; echo "$c";?>
+                            </div>
+                        <?php if (  ( ($i%3) != 0 ) && ($c%3==0) ) { echo "</div>"; echo "div";  } ?>
+                        <?php $i++; ?>    
+                     <?php endwhile ?>
+                     <?php { echo "</div>"; echo "div2";  } ?>   
+           <?php endif ?><!--!isMobileIf -->         
+                     
+            <?php endif ?> <!--TopIf -->
+</div>
+<?php endif ?>
 
 
-    <div class="space"></div>
-    <div class="infoInteres">
-        <div class="container">
-            <div class="space2"></div>
-            <div class="row">
-                <?php if (get_field('titulo-sec-3')) {?>
-                <div class="col-md-12 text-center">
-                    <h1>
-                        <?php echo $tituloSec3 ?>
-                    </h1>
-                </div>
-                <?php } ?>
-            </div>
-            <div class="space"></div>
-            <?php if (get_field ('interes')) {?>
-            <div class="row">
-                <?php
+ <!--Sección Interés --> 
+ <div class="infoInteres">
+	<div class="container">
+	<div class="space2"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<?php if (get_field('titulo-sec-3')) {?>
+				<h1><?php the_field('titulo-sec-3') ?></h1>
+				<?php } ?>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+		<?php
+		if (get_field('interes')) {
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
 				// loop through the rows of data
 				while ( have_rows('interes') ) : the_row();			
 		?>
-                    <div class="col-md-6 col-sm-6 col-xs-12 relleno2">
-                        <div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px;">
-                            <img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
-                            <div class="col-md-9">
-                                <div class="space"></div>
-                                <p>
-                                    <?php the_sub_field('titulo'); ?>
-                                </p>
-                                <div class="space"></div>
-                                <?php if (get_sub_field('url')) {?>
-                                <a href="<?php the_sub_field('url'); ?>">
-                                    <?php echo the_sub_field('subtexto3') ?> </a>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+			<div class = "col-md-6 col-sm-6 col-xs-12 relleno2">
+				<div class="col-md-12 col-sm-12 col-xs-12 borde" style="background:url('<?php the_sub_field('fondo'); ?>'); background-size: cover; height: 303px; background-position: right;">
+				<img src="<?php the_sub_field('sobres'); ?>" alt="" class="img-responsive isobres">
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco borde">
+					<div class="col-md-9">
+						<div class="space"></div>
+						<p><?php the_sub_field('titulo'); ?></p>
+						<div class="space"></div>
+						<?php if (get_sub_field('url')) {?>
+						<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('subtexto3'); ?></a>
+						<?php } ?>
+					</div>
+				</div>
+			</div>	
+			<?php
 						endwhile;
 							endif;
-					?>
-            </div>
-            <div class="space"></div>
-        </div>
-    </div>
-    <?php } ?>
-
-    <?php
-get_footer(); 
-?>
+				} ?>
+	</div >
+	<div class="space"></div>
+</div>
+</div>
+<?php get_footer(); ?>
