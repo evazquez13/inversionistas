@@ -1116,3 +1116,34 @@ font-family: 'BentonSansBBVA';
  font-size: 16px;
   color: #072146;
 }
+
+/*Estilos Código de Conducta*/
+
+.bullet-lista  ul{
+    list-style-image: url('http://localhost:8888/wordpress/wp-content/uploads/2017/06/facebook-icon.png');
+}
+
+h1.cabecera-principal-conducta{
+  font-family: 'BentonSansBBVA';
+  font-size: 32px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+h2.subcabecera-conducta{
+  font-family: 'BentonSansBBVA';
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+p.bloque-texto{
+  font-family: 'BentonSansBBVABook';
+  font-size: 16px;
+  color: #1a1a1a;
+}
+ li.texto-lista{
+  font-family: 'BentonSansBBVABook';
+  font-size: 16px;
+  color: #1a1a1a;
+}
