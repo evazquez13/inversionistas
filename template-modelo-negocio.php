@@ -109,7 +109,7 @@ get_header();
 
 <div class="container modeloNegocio" >
 		<div class="row">
-			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
+			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
