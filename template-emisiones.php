@@ -22,7 +22,7 @@ get_header();
 		// check if the repeater field has rows of data
 		if( have_rows('banner') ):
 			// loop through the rows of data
-			while ( have_rows('banner') ) : the_row();
+			while ( have_rows('banner') && $i==0 ) : the_row();
 			?>
     		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imag-1'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
@@ -112,14 +112,13 @@ get_header();
 
 <div class="container rentafija" >
 		<div class="row">
-			<div class="col-md-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
+			<div class="col-md-12 col-sm-12 col-xs-12 text-left"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 		<div class="row">
-			<div class="col-md-12 "><p><?php echo get_field('descemisiones') ?></p></div>
-		</div>>
-</div>
-		<div class="container rentafija center-block">
+			<div class="col-md-12 col-sm-12 col-xs-12"><p><?php echo get_field('descemisiones') ?></p></div>
+		</div>
+		<div class="container center-block">
 		<div class="row">
 			<?php
 			$i =0;
@@ -142,10 +141,8 @@ get_header();
 						<?php if (get_sub_field('url')) {?>
 							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-url') ?></a>
 						<?php } ?>
-					
 				</div>
 			</div>	
-
 			<?php
 			if (($i%2) != 0) {
 			echo "</div>";
@@ -157,7 +154,7 @@ get_header();
 		</div>
 		</div>
 			<div class="space3"></div>
-
+</div>
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">

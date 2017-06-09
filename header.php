@@ -98,7 +98,7 @@ echo '<script languaje="JavaScript">
                   <li><a href="#">Conócenos</a>
                          <ul>
                             <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/mision/">Misión</a></li>
-                            <li><a href="#">Historia</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/historia/">Historia</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">BBVA en Resumen</a>
@@ -142,7 +142,7 @@ echo '<script languaje="JavaScript">
                             <li><a href="#">Asamblea de Accionistas</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Estatutos Sociales y Convenio Único</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estatutos-convenio/">Estatutos Sociales y Convenio Único</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">Código de Conducta</a>
@@ -181,7 +181,7 @@ if (is_page("Conócenos")) { ?>
              <div class="menu-claro">
                  <ul>
                      <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/mision/">Misión</a></li>
-                        <li><a href="#">Historia</a></li>
+                        <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/historia/">Historia</a></li>
                         <li><a href="#">BBVA en Resumen</a></li>
                         <li><a href="#">Modelo de Negocio</a>
                         </li>
@@ -223,7 +223,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                 <ul>
                     <li><a href="#">Consejo de Administración</a></li>
                     <li><a href="#">Asamblea de Accionistas</a></li>
-                    <li><a href="#">Estatutos Sociales y Convenio Único</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estatutos-convenio/">Estatutos Sociales y Convenio Único</a></li>
                     <li><a href="#">Código de Conducta</a></li>
                     <li><a href="#">Código de Mejores Prácticas Corporativas</a></li>
                 </ul>
@@ -267,7 +267,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                   <li><a href="#">About Us</a>
                          <ul>
                             <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/mision-en/">Mission</a></li>
-                            <li><a href="#">History</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/historia-en/">History</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">BBVA in Resume</a>
@@ -309,7 +309,7 @@ if (is_page("Gobierno_Corporativo")) { ?>
                             <li><a href="#">Investors Assembly</a>
                                 <ul></ul>
                             </li>
-                            <li><a href="#">Social Bylaw and Exclusive Agreement</a>
+                            <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estatutos-convenio-en/">Social Bylaw and Exclusive Agreement</a>
                                 <ul></ul>
                             </li>
                             <li><a href="#">Behavior Code</a>
@@ -348,7 +348,7 @@ if (is_page("Conócenos-en")) { ?>
              <div class="menu-claro">
                  <ul>
                      <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/mision-en/">Mission</a></li>
-                        <li><a href="#">History</a></li>
+                        <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/historia-en/">History</a></li>
                         <li><a href="#">BBVA in Resume</a></li>
                         <li><a href="#">Business Model</a></li>
                         <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Directive Structure</a></li>
@@ -386,7 +386,7 @@ if (is_page("Gobierno_Corporativo-en")) { ?>
                 <ul>
                     <li><a href="#">Board of Directors</a></li>
                     <li><a href="#">Investors Assembly</a></li>
-                    <li><a href="#">Social Bylaw and Exclusive Agreement</a></li>
+                    <li><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estatutos-convenio-en/">Social Bylaw and Exclusive Agreement</a></li>
                     <li><a href="#">Behavior Code</a></li>
                     <li><a href="#">Code of Better Corporative Practices</a></li>
                 </ul>
