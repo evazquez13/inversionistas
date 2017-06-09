@@ -148,56 +148,70 @@ get_header();
     <div class="space"></div> <!--Study For later -->
             <div class="container">
                     
-                       <?php  if( have_rows('contacto') ): ?>
-                        
+                <?php  if( have_rows('contacto') ): ?>
+                        <?php $m=0; $c=0; $i=0;?>
                         <?php
                         function isMobile() {
     return        preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 }
                         ?>
                         
-                        <?php  while ( have_rows('contacto') ) : the_row(); ?>
+                        <?php  while ( have_rows('contacto') ) : the_row(); ?> <!--m contiene el número de rows del ACF -->
                             <?php $m++; ?>
                         <?php endwhile ?>
                         
-                        <?php 
-                            if(isMobile()){
-                                $s =2;
-                                $i =0;
-                                $m =2;
-                            }
-                            else {
-                                 $s =3;
-                                 $i =0;
-                                 $m =3;
-                            }         
-                        ?>
                         
-                        <?php  while ( have_rows('contacto') ) : the_row(); ?>
-                        <?php if (($i%$s) == 0) { echo "<div class='row'>";} ?>
-                          
-                            <div class="col-md-4 col-sm-6 mobile-top"> 
-                                    <div class="text-left-sm text-center-xs">
-                                         <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">  
-                                    </div>     
-                                    <h3 class="nombre-contacto"> <?php the_sub_field('nombre'); ?> </h3>        
-                                    <h3 class="info-contacto"> <?php the_sub_field('cargo'); ?> </h3>   
-                                    <h3 class="correo-contacto"> <?php the_sub_field('correo'); ?> </h3>
-                                    <div class="col-md-1 col-sm-1 col-xs-1 icon1">
-                                        <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
-                                    </div>
-                                    <div class="col-md-9 col-sm-9 col-xs-9 ">
-                                        <h5 class="tel-contacto"><?php the_sub_field('telefono'); ?></h5>
-                                    </div>
-                                  <?php $c++; ?>
-                              </div> 
-                                <?php if (  ( ($i%$s) != 0 )  && ($c==$m) ) { echo "</div>"; } ?>
-                                <?php $i++; ?>  
-                          <?php endwhile ?>
-                    <?php endif ?>  
+                        <?php if (isMobile() ) : ?>
+                            <?php  while ( have_rows('contacto') ) : the_row(); ?>
+                                 <?php if (($i%2) == 0) { echo "<div class='row'>";  } ?>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 mobile-top"> 
+                                        <div class="text-left-sm text-center-xs">
+                                             <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">  
+                                        </div>     
+                                        <h3 class="nombre-contacto"> <?php the_sub_field('nombre'); ?> </h3>        
+                                        <h3 class="info-contacto"> <?php the_sub_field('cargo'); ?> </h3>   
+                                        <h3 class="correo-contacto"> <?php the_sub_field('correo'); ?> </h3>
+                                        <div class="col-md-1 col-sm-1 col-xs-1 icon1">
+                                            <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
+                                        </div>
+                                        <div class="col-md-9 col-sm-9 col-xs-9 ">
+                                            <h5 class="tel-contacto"><?php the_sub_field('telefono'); ?></h5>
+                                        </div>
+                                      <?php $c++; ?>
+                                    </div> 
+                              <?php if (  ( ($i%2) != 0 ) ) { echo "</div>";   } ?>
+                              <?php $i++; ?>
+                              <?php endwhile ?>
+                              <?php if($c==$m){echo "</div>"; }?>   
+                        <?php endif ?><!--If mobile -->
+                        
+                        
+                        <?php if (!(isMobile() )) : ?>                                                                
+                            <?php  while ( have_rows('contacto') ) : the_row(); ?>
+                                    <?php if (($i%3) == 0) { echo "<div class='row'>";  } ?>      
+                                     <div class="col-md-4 col-sm-4 col-xs-12  mobile-top"> <!--Usar solo sm-6  -->
+                                        <div class="text-left-sm text-center-xs">
+                                             <img class="img-circle" src="<?php the_sub_field('img-contacto'); ?>" alt="" height="150" width="150">  
+                                        </div>     
+                                        <h3 class="nombre-contacto"> <?php the_sub_field('nombre'); ?> </h3>        
+                                        <h3 class="info-contacto"> <?php the_sub_field('cargo'); ?> </h3>   
+                                        <h3 class="correo-contacto"> <?php the_sub_field('correo'); ?> </h3>
+                                        <div class="col-md-1 col-sm-1 col-xs-1 icon1">
+                                            <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/04/phone.png" alt="">
+                                        </div>
+                                        <div class="col-md-9 col-sm-9 col-xs-9 ">
+                                            <h5 class="tel-contacto"><?php the_sub_field('telefono'); ?></h5>
+                                        </div>
+                                      <?php $c++; ?>
+                                    </div>          
+                                    <?php if (  ( ($i%3) != 0 ) && ($c%3==0) ) { echo "</div>";   } ?>
+                                    <?php $i++; ?>    
+                            <?php endwhile ?>
+                            <?php { echo "</div>";   } ?>   
+                        <?php endif ?><!--!isMobileIf -->  
+                 <?php endif ?>  <!--If Top -->
             </div>
 <?php } ?>
-
 <!--Sección Interés --> 
  <div class="infoInteres">
 	<div class="container">
