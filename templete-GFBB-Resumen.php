@@ -30,7 +30,7 @@ get_header(); ?>
 		// check if the repeater field has rows of data
 		if( have_rows('banner') ):
 			// loop through the rows of data
-			while ( have_rows('banner') ) : the_row();
+			while ( have_rows('banner')  && $i==0 ) : the_row();
 			?>
     		<div class="hidden-xs item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
   		<div class="container">
@@ -113,7 +113,7 @@ get_header(); ?>
 <?php } } ?>
 </div>
     
-<dir class="container">
+<div class="container">
 	<div class="row gfbb">
 	<?php
 	if (get_field('tabla')) {
@@ -132,7 +132,7 @@ get_header(); ?>
 					// loop through the rows of data
 					while ( have_rows('contenido-tabla') ) : the_row();
 				 ?>
-			<div <?php if (get_sub_field('num-col')>4) { echo "class='table-responsive'"; } ?>>
+			<div <?php if (get_sub_field('num-col')>3) { echo "class='table-responsive'"; } ?>>
 			<table class="table table-responsive table-bordered">
 				<thead>
 					<tr>
@@ -176,7 +176,7 @@ get_header(); ?>
 	}
 	?>
 	</div>
-</dir>
+</div>
 
 
 <div class="infoInteres">
