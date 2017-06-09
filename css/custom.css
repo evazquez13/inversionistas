@@ -1116,3 +1116,17 @@ font-family: 'BentonSansBBVA';
  font-size: 16px;
   color: #072146;
 }
+
+.modeloNegocio p{
+  font-family: 'BentonSansBBVA-Book';
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.modeloNegocio h1 {
+  font-family: 'BentonSansBBVA';
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
