@@ -1120,7 +1120,7 @@ font-family: 'BentonSansBBVA';
 /*Estilos Código de Conducta*/
 
 .bullet-lista  ul{
-    list-style-image: url('http://localhost:8888/wordpress/wp-content/uploads/2017/06/facebook-icon.png');
+    list-style-image: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/facebook-icon@2x.png');
 }
 
 h1.cabecera-principal-conducta{
