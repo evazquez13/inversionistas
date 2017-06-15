@@ -1011,7 +1011,7 @@ margin-bottom: 11px;
 /*Personalizacion de la pagina de Mision */
 .mision ul{
 list-style-image: url("http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png");
-font-family: 'BentonSansBBVA-Book';
+font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
 }
@@ -1020,7 +1020,7 @@ font-family: 'BentonSansBBVA-Book';
   color: #1a1a1a;
 }
 .mision p{
- font-family: 'BentonSansBBVA-Book';
+ font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
 }
@@ -1039,14 +1039,14 @@ font-family: 'BentonSansBBVA-Book';
 }
 
 .historia  p{
- font-family: 'BentonSansBBVA-Book';
+ font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
 }
 
 .historia ul{
 list-style-image: url("http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png");
-font-family: 'BentonSansBBVA-Book';
+font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
 }
@@ -1057,7 +1057,7 @@ font-family: 'BentonSansBBVA-Book';
 
 /*Generico*/
 .parrafoBold p{
-  font-family: 'BentonSansBBVA-Book';
+  font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
   font-weight: bold;
@@ -1098,7 +1098,7 @@ font-family: 'BentonSansBBVA';
 }
 
 .estatSociales  p{
- font-family: 'BentonSansBBVA-Book';
+ font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #1a1a1a;
   margin-top: 15px;
@@ -1109,7 +1109,7 @@ font-family: 'BentonSansBBVA';
   color: #1a1a1a;
 }
 .estatSociales a{
-  font-family: 'BentonSansBBVA-Book';
+  font-family: 'BentonSansBBVABook';
  font-size: 16px;
   color: #072146;
 }
@@ -1145,7 +1145,7 @@ p.bloque-texto{
   color: #1a1a1a;
 }
 .modeloNegocio p{
-  font-family: 'BentonSansBBVA-Book';
+  font-family: 'BentonSansBBVABook';
   font-size: 16px;
   color: #1a1a1a;
 }
