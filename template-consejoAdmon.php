@@ -148,17 +148,21 @@ get_header();
                         <div class="col-md-6 col-sm-6 col-xs-12 admon-separation">
                             <div class="row">
                               <h3 class="header-bloque"> <?php the_sub_field('titulobloque'); ?> </h3>
-                              <h3 class="cuerpo-bloque text-left"> <?php the_sub_field('infobloque'); ?> </h3>
+                              <p class="cuerpo-bloque text-left"> <?php the_sub_field('infobloque'); ?> </p>
                             </div>
                             <div class="row"> 
                               <?php if( have_rows('itembloque') ): ?>
                                     <?php while ( have_rows('itembloque') ) : the_row(); ?> 
                                      <div class="row">
                                       <div class="col-md-1 col-sm-1 col-xs-1 img-pdf"><!-- img-pdf-->
+                                       <a href="<?php the_field('linkpdf'); ?>"> 
                                         <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/facebook-icon.png">  
+                                       </a>    
                                       </div>
                                       <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
-                                        <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3>    
+                                       <a href="<?php the_field('linkpdf'); ?>"> 
+                                        <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3> 
+                                       </a>        
                                       </div>
                                      </div> 
                                       
