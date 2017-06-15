@@ -159,9 +159,9 @@ get_header();
                                         <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png">  
                                        </a>    
                                       </div>
-                                      <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
+                                      <div class="col-md-9 col-sm-9 col-xs-9 pdf-text-center"> <!--celda -->
                                        <a href="<?php the_field('linkpdf'); ?>"> 
-                                        <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3> 
+                                        <h3 class="nombre-pdf" > <?php the_sub_field('textosubitem'); ?> </h3> 
                                        </a>        
                                       </div>
                                      </div> 

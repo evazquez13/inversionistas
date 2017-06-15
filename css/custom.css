@@ -1156,3 +1156,8 @@ p.bloque-texto{
   font-weight: 500;
   color: #1a1a1a;
 }
+
+/*PDF Aligner */
+.pdf-text-center{
+  margin-top:8px;
+}
