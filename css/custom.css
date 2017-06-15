@@ -1045,7 +1045,7 @@ font-family: 'BentonSansBBVA-Book';
 }
 
 .historia ul{
-list-style-image: url("http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-iconf.png");
+list-style-image: url("http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png");
 font-family: 'BentonSansBBVA-Book';
  font-size: 16px;
   color: #1a1a1a;

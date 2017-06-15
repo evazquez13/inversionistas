@@ -154,7 +154,7 @@ get_header();
                               <?php if( have_rows('itembloque') ): ?>
                                     <?php while ( have_rows('itembloque') ) : the_row(); ?> 
                                       <div class="col-md-3 col-sm-3 col-xs-3 img-pdf"><!-- img-pdf-->
-                                        <img src="<?php the_sub_field('imagensubitem'); ?>" alt="" height="23.6px" width="31.4px"/>  
+                                        <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png" alt="" height="23.6px" width="31.4px"/>  
                                       </div>
                                       <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
                                         <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3>    
