@@ -215,7 +215,7 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
 
 <?php 
   } 
-if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta")) { ?>
+if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -341,7 +341,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
   </div>
  
 <?php 
-if (is_page("Conócenos-en")) { ?>
+if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") || is_page("conocenos_gfbbenresumen_en") || is_page("modelodenegocio-en") || is_page("estructuradirectiva-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -362,7 +362,7 @@ if (is_page("Conócenos-en")) { ?>
 
 <?php 
   } 
-if (is_page("Renta_fija-en")) { ?>
+if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_page("emisiones-corporativas-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -378,7 +378,7 @@ if (is_page("Renta_fija-en")) { ?>
  </div>
 <?php 
   } 
-if (is_page("Gobierno_Corporativo-en")) { ?>
+if (is_page("Gobierno_Corporativo-en") || is_page("consejoadministracion-en") || is_page("estatutos-convenio-en") || is_page("codigodeconducta-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
