@@ -174,7 +174,7 @@ echo '<script languaje="JavaScript">
   </div>
  
 <?php 
-if (is_page("Conócenos")) { ?>
+if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page("conocenos_gfbbenresumen") || is_page("modelodenegocio") || is_page("estructuradirectiva")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -198,7 +198,7 @@ if (is_page("Conócenos")) { ?>
  </div>
 
 <?php } ?>
-<?php if (is_page("Renta_fija")) { ?>
+<?php if (is_page("Renta_fija") || is_page("rentafija_calificaciones") || is_page("emisiones-corporativas")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -215,7 +215,7 @@ if (is_page("Conócenos")) { ?>
 
 <?php 
   } 
-if (is_page("Gobierno_Corporativo")) { ?>
+if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
