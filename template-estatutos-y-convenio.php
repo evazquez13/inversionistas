@@ -127,7 +127,7 @@ get_header();
 				while ( have_rows('seccion-pdf') ) : the_row();			
 		?>
 		<?php if (($i%2) != 0) {
-			echo "<div class='row margin' style='margin: 0px'>";
+			echo "<div class='row'>";
 		}
 		?>
 			<div class = "col-md-6 col-sm-6 col-xs-12 ">
@@ -142,7 +142,7 @@ get_header();
 				 <p><?php the_sub_field('subtitulo') ?></p>
 				 	<div class="row">
 				 		<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"><a href="<?php the_sub_field('url-pdf') ?>" target="_BLANK"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a> </div>
-				 		<div class="col-xs-10 col-md-11 col-sm-10"><a href="<?php the_sub_field('url-pdf') ?>" target="_BLANK"><?php the_sub_field('nombre-pdf') ?></a></div>
+				 		<div class="col-xs-10 col-md-11 col-sm-10 pdf-text-center"><a href="<?php the_sub_field('url-pdf') ?>" target="_BLANK"><?php the_sub_field('nombre-pdf') ?></a></div>
 				 	</div>
 				 </div>
 				 <?php
