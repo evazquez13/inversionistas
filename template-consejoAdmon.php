@@ -153,12 +153,16 @@ get_header();
                             <div class="row"> 
                               <?php if( have_rows('itembloque') ): ?>
                                     <?php while ( have_rows('itembloque') ) : the_row(); ?> 
-                                      <div class="col-md-3 col-sm-3 col-xs-3 img-pdf"><!-- img-pdf-->
-                                        <img src="<?php the_sub_field('imagensubitem'); ?>" alt="" height="23.6px" width="31.4px"/>  
+                                     <div class="row">
+                                      <div class="col-md-1 col-sm-1 col-xs-1 img-pdf"><!-- img-pdf-->
+                                        <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/facebook-icon.png">  
                                       </div>
                                       <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->
                                         <h3 class="nombre-pdf"> <?php the_sub_field('textosubitem'); ?> </h3>    
                                       </div>
+                                     </div> 
+                                      
+                                      
                                      <?php endwhile ?>
                               <?php endif ?>
                              </div> 
