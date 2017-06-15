@@ -156,7 +156,7 @@ get_header();
                                      <div class="row">
                                       <div class="col-md-1 col-sm-1 col-xs-1 img-pdf"><!-- img-pdf-->
                                        <a href="<?php the_field('linkpdf'); ?>"> 
-                                        <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/facebook-icon.png">  
+                                        <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png">  
                                        </a>    
                                       </div>
                                       <div class="col-md-9 col-sm-9 col-xs-9"> <!--celda -->

@@ -127,7 +127,7 @@ get_header();
 						<div class="col-sm-11 col-md-11 col-xs-10 parrafoBold"><p><?php the_sub_field('anio'); ?></p></div>
 						</div>
 						<div class="row">
-						<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"> <img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-iconf.png"></div>
+						<div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"> <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png"></div>
 							
 								<div class="col-md-11 col-sm-11 col-xs-10">
 								<p><?php the_sub_field('descripcion')?></p>			

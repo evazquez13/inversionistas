@@ -1010,7 +1010,7 @@ margin-bottom: 11px;
 
 /*Personalizacion de la pagina de Mision */
 .mision ul{
-list-style-image: url("http://localhost:8888/wordpress/wp-content/uploads/2017/06/menu-toggle-mobile-icon-1.png");
+list-style-image: url("http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png");
 font-family: 'BentonSansBBVA-Book';
  font-size: 16px;
   color: #1a1a1a;
@@ -1092,9 +1092,6 @@ font-family: 'BentonSansBBVA';
   color: #121212;
 }
 /*Statutos sociales*/
-.estatSociales img{
-    padding-left: 15px;
-}
 .estatSociales  h1{
   font-size: 32px;
   color: #1a1a1a;
@@ -1120,7 +1117,7 @@ font-family: 'BentonSansBBVA';
 /*Estilos Código de Conducta*/
 
 .bullet-lista  ul{
-    list-style-image: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/facebook-icon@2x.png');
+    list-style-image: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/bullet.png');
 }
 
 h1.cabecera-principal-conducta{
