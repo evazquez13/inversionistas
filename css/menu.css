@@ -182,7 +182,7 @@ a {
     padding: 1em 0;
 }
 .menu-claro{
-    width: 110%;
+    width: 100%;
     margin: 0 auto;
     background-color: #004481;
     border: solid 1px #004481;
@@ -220,7 +220,7 @@ a {
 
 .menu-claro > ul > li {
     float: left;
-    padding: 3px;
+    padding-bottom: 3px;
     margin: 0; 
     background-color:  #004481;
     border: solid 1px #004481;
