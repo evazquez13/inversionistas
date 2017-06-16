@@ -174,7 +174,7 @@ echo '<script languaje="JavaScript">
   </div>
  
 <?php 
-if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page("conocenos_gfbbenresumen") || is_page("modelodenegocio") || is_page("estructuradirectiva")) { ?>
+if (is_page("Conócenos")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -198,7 +198,7 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
  </div>
 
 <?php } ?>
-<?php if (is_page("Renta_fija") || is_page("rentafija_calificaciones") || is_page("emisiones-corporativas")) { ?>
+<?php if (is_page("Renta_fija")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -215,7 +215,7 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
 
 <?php 
   } 
-if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta-en")) { ?>
+if (is_page("Gobierno_Corporativo")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -341,7 +341,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
   </div>
  
 <?php 
-if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") || is_page("conocenos_gfbbenresumen_en") || is_page("modelodenegocio-en") || is_page("estructuradirectiva-en")) { ?>
+if (is_page("Conócenos-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -362,7 +362,7 @@ if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") |
 
 <?php 
   } 
-if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_page("emisiones-corporativas-en")) { ?>
+if (is_page("Renta_fija-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
@@ -378,7 +378,7 @@ if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_pag
  </div>
 <?php 
   } 
-if (is_page("Gobierno_Corporativo-en") || is_page("consejoadministracion-en") || is_page("estatutos-convenio-en") || is_page("codigodeconducta-en")) { ?>
+if (is_page("Gobierno_Corporativo-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
