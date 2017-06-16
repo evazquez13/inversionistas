@@ -127,7 +127,7 @@ get_header(); ?>
 			</div>
 			<?php if (get_field('tipo-informacion',142)) {?>
 			<div class="col-md-12 col-xs-12 col-sm-12 space">
-				<div class="col-md-4 col-xs-12 col-sm-12 form-group">
+				<div class="col-md-4 col-xs-12 col-sm-6 form-group">
 					<select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarInstitucion(this)">
 						<option>-Selecciona</option>
 						

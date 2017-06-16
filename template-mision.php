@@ -53,7 +53,7 @@ get_header();
   		</div>
   	</div>
 	<div class="visible-xs">
-  		<img class="img-responsive" src="<?php the_sub_field('imag-1'); ?>">
+  		<img class="img-responsive" src="<?php the_sub_field('imagen'); ?>">
 	  	<div class="container">
 	  		<div class="row sec-index-mov">
 				<div class="col-xs-12 text-center">
