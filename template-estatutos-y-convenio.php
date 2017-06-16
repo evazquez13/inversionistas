@@ -111,13 +111,9 @@ get_header();
 <div class="container estatSociales" >
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1></div>
-		</div>
-		<div class="space"></div>
-		<div class="row">
 			<div class="col-md-12 "><p><?php echo get_field('mensajeadobe') ?><span><a href="<?php echo get_field('urladobe') ?>" target="_BLANK"><?php echo get_field('textourladobe') ?></a></span></p></div>
 		</div>
-
-		<div class="container estatSociales">
+		<div class="estatSociales">
 		<div class="row">
 			<?php
 			$i =0;
