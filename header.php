@@ -109,7 +109,7 @@ echo '<script languaje="JavaScript">
                             <li class="desktop <?php if (is_page('historia')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/historia/">Historia</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('conocenos_gfbbenresumen')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/conocenos_gfbbenresumen/">BBVA en Resumen</a>
+                            <li class="desktop <?php if (is_page('conocenos_gfbbenresumen')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/conocenos_gfbbenresumen/">GFBB en Resumen</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop <?php if (is_page('modelodenegocio')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/modelodenegocio/">Modelo de Negocio</a>
@@ -118,10 +118,10 @@ echo '<script languaje="JavaScript">
                             <li class="desktop <?php if (is_page('estructuradirectiva')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estructuradirectiva/">Estructura Directiva</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('negocio-responsable')) { echo 'desktopSelect'; } ?>"><a href="#">Negocio Responsable</a>
+                            <li class="desktop <?php if (is_page('negocio-responsable')) { echo 'desktopSelect'; } ?>"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Negocio Responsable</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('GrupoBBVA')) { echo 'desktopSelect'; } ?>"><a href="#">Grupo BBVA</a>
+                            <li class="desktop <?php if (is_page('GrupoBBVA')) { echo 'desktopSelect'; } ?>"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">Grupo BBVA</a>
                                 <ul></ul>
                             </li>
                         </ul> 
@@ -190,14 +190,14 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
                  <ul>
                      <li class="desktop <?php if (is_page('mision')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/mision/">Misión</a></li>
                         <li class="desktop <?php if (is_page('historia')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/historia/">Historia</a></li>
-                        <li class="desktop <?php if (is_page('conocenos_gfbbenresumen')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/conocenos_gfbbenresumen/">BBVA en Resumen</a></li>
+                        <li class="desktop <?php if (is_page('conocenos_gfbbenresumen')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/conocenos_gfbbenresumen/">GFBB en Resumen</a></li>
                         <li class="desktop <?php if (is_page('modelodenegocio')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/modelodenegocio/">Modelo de Negocio</a>
                         </li>
                         <li class="desktop <?php if (is_page('estructuradirectiva')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estructuradirectiva/">Estructura Directiva</a>
                         </li>
-                        <li class="desktop <?php if (is_page('negocio-responsable')) { echo 'desktopSelect'; } ?>"><a href="#">Negocio Responsable</a>
+                        <li class="desktop <?php if (is_page('negocio-responsable')) { echo 'desktopSelect'; } ?>"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Negocio Responsable</a>
                         </li>
-                        <li class="desktop <?php if (is_page('GrupoBBVA')) { echo 'desktopSelect'; } ?>"><a href="#">Grupo BBVA</a>
+                        <li class="desktop <?php if (is_page('GrupoBBVA')) { echo 'desktopSelect'; } ?>"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">Grupo BBVA</a>
                         </li>
                  </ul>
              </div>
@@ -292,10 +292,10 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Directive Structure</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Liable Business</a>
+                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Liable Business</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Group BBVA</a>
+                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">Group BBVA</a>
                                 <ul></ul>
                             </li>
                         </ul> 
@@ -365,8 +365,8 @@ if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") |
                         <li class="desktop <?php if (is_page('conocenos_gfbbenresumen_en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos_gfbbenresumen_en/">BBVA in Resume</a></li>
                         <li class="desktop <?php if (is_page('modelodenegocio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/modelodenegocio-en/">Business Model</a></li>
                         <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Directive Structure</a></li>
-                        <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Liable Business</a></li>
-                        <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Group BBVA</a></li>
+                        <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Liable Business</a></li>
+                        <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">Group BBVA</a></li>
                  </ul>
              </div>
          </div>
