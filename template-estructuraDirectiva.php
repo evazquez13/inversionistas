@@ -6,16 +6,8 @@ get_header();
 ?>
 
     <?php 
-    $directorgeneral= get_field('directorgeneral');
-	$equipodirectivo = get_field('equipodirectivo');
-	$tituloSec3 = get_field('titulo-sec-3');
-    $subUrl = get_field('subUrl');
-    $subTexto3 = get_sub_field('subtexto3');
     $boton=get_sub_field('boton');
-    $botonUrl=get_sub_field('botonUrl');
-    $contactUs=get_field('textocontacto');
-    
-?>
+    ?>
 
     <!--  -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -54,7 +46,7 @@ get_header();
                                 <?php if (get_sub_field('botonurl')) {?>
                                 <div class="row tt3">
                                     <div class="col-md-7 col-sm-7 col-xs-7 text-left">
-                                        <a href="<?php the_sub_field('botonUrl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
+                                        <a href="<?php the_sub_field('botonurl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
                                     </div>
                                 </div>
                                 <?php } ?>
