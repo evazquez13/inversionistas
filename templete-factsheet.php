@@ -116,8 +116,9 @@ get_header(); ?>
 <dir class="container">
 	<div class="row">
 		<div class="col-md-12 col-sm-12 col-xs-12">
-			<h1>Facsheet de BBVA Bancome</h1>
-			<p>Regardless of what fnancial stage you are in, The Bank Investment Solutions is here to help. Our experienced Financial Advisorsare here to guide you through each fnancial stage of your life. Work with our professionals to create a complimentary, <br>customized<br>plan, or get started with one of these fnancial planning tools below</p>
+			<h1 class="titulo-factsheet"><?php the_field('tituloseccion') ?></h1>
+			<p class="parrafo-factsheet"> <?php the_field('bloquedetexto') ?></p>
+			<img src="<?php the_field('imagenfactsheet'); ?>" alt="" class="img-responsive imagen-factsheet">
 		</div>
 	</div>
 </dir>

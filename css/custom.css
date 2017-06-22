@@ -1161,3 +1161,25 @@ p.bloque-texto{
 .pdf-text-center{
   margin-top:8px;
 }
+
+/*Estilos Factsheet*/
+
+h1.titulo-factsheet {
+	font-family: 'BentonSansBBVA';
+	font-size: 32px;
+	font-weight: 500;
+	color: #1a1a1a;
+    padding-bottom: 50px;
+}
+
+p.parrafo-factsheet {
+	font-family: 'BentonSansBBVABook';
+	font-size: 16px;
+	color: #1a1a1a;
+    padding-bottom: 50px;
+}
+
+img.imagen-factsheet {
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
