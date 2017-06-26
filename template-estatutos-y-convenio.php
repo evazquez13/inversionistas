@@ -114,7 +114,7 @@ get_header();
 			<div class="col-md-12 "><p><?php echo get_field('mensajeadobe') ?><span><a href="<?php echo get_field('urladobe') ?>" target="_BLANK"><?php echo get_field('textourladobe') ?></a></span></p></div>
 		</div>
 		<div class="estatSociales">
-		<div class="row">
+	
 			<?php
 			$i =0;
 			// check if the repeater field has rows of data
@@ -156,7 +156,7 @@ get_header();
 						endwhile;
 							endif;
 					?>
-		</div>
+		
 		</div>
 		<div class="space3"></div>
 		</div>
