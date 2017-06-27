@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: templete-CodigoMejoresPracticas
+Template Name: templete-AsambleaYAccionistas
 */
 get_header(); 
 ?>

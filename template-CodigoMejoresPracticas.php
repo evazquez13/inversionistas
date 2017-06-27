@@ -3,18 +3,12 @@
 Template Name: templete-CodigoMejoresPracticas
 */
 get_header(); 
+
 ?>
 
-    <?php 
-	$contacto = get_field('contacto');
-	$idioma = pll_current_language( 'slug' );
-	$tituloSec3 = get_field('titulo-sec-3');
-    $subUrl = get_field('subUrl');
-    $subTexto3 = get_sub_field('subtexto3');
+<?php 
     $boton=get_sub_field('boton');
     $botonUrl=get_sub_field('botonUrl');
-    $contactUs=get_field('textocontacto');
-    
 ?>
 
     <!--  -->
@@ -138,13 +132,79 @@ get_header();
                 </div>
 <?php endif ?>                
            
-<?php  if(get_field('bloqueparrafo')){ ?>                     
+<?php  if(get_field('bloqueparrafo')): ?>                     
             <div class="container">
                 <div class="row">
                     <p class="cuerpo-bloque text-left"> <?php the_field('bloqueparrafo'); ?> </p>
-                </div>             
+                </div>           
             </div>
+<?php endif ?>
+
+
+<?php  if(get_field('listainformacion',388)){ ?>     
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 col-sm-12 form-group">
+                        <select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarPdf(this)">
+                            <option >Año</span></option>
+                            <?php					
+                                $t=0;
+                                if (have_rows('listainformacion',388) ):
+                                    while (have_rows('listainformacion',388) ): the_row(); 
+                             ?>
+                             <option value="<?php echo $t; ?>"><?php the_sub_field('yearfield') ?></option>
+                             <?php 
+                                $t++;
+                                endwhile;
+                                endif;
+                              ?>	 
+                        </select>
+				    </div>
+                </div>                                                                                            
+            </div>    
 <?php } ?>
+
+<div class="container">
+    <div class="row">
+         <?php $e=0;?>
+         <?php if (have_rows('listainformacion',388) ): ?>
+            <?php while (have_rows('listainformacion',388) ): the_row(); ?>
+                
+                       <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
+                           <div class="col-md-6 col-sm-4 col-xs-4 " align="left">Nombre del Documento</div>
+                           <!--<div class="col-md-2 col-sm-4 col-xs-4 " align="right">Descargable</div>
+                           <div class="col-md-3 col-sm-4 col-xs-4 " align="right">Idioma del Texto</div>-->
+                           <hr>
+                            <?php if( have_rows('pdf_files',388) ):?>
+                                <?php while ( have_rows('pdf_files',388) ) : the_row();  ?>
+                                  <div class="row">    
+                                   <!-- <div class="col-md-7 col-sm-7 col-xs-10"><?php the_sub_field('nombrepdf'); ?></div>-->
+                                    <div class="col-md-1 col-sm-1 col-xs-1" style="margin-top: -10px;">
+                                        <a target="_BLANK" href="<?php the_sub_field('urlpdf'); ?>"><img src="http://localhost:8888/wordpress/wp-content/uploads/2017/06/pdf-icon.png"></a>
+                                    </div>  
+                                    <!--<div class="col-md-4 col-sm-4 col-xs-12">
+                                        <?php if (get_sub_field('idioma')=="ingles") { ?>
+                                            <p class="desPdf" align="center">Inglés</p>
+                                        <?php } ?>
+                                        <?php if (get_sub_field('idioma')=="espanol") : ?>
+                                            <p class="desPdf" align="center">Español</p>
+                                        <?php endif ?>
+                                    </div> -->
+                                 </div> 
+                                 <hr>  
+                                <?php endwhile ?> 
+                              <?php endif ?>
+                            </div>    
+                        </div>        
+                <?php $e++; ?>
+            <?php endwhile ?> 
+        <?php endif ?>                                                                               
+    </div>                   
+</div>
+
+
+
 
 
 <!--Sección Interés --> 

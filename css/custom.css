@@ -663,6 +663,7 @@ select.form-control{
   appearance: none;
   background: url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/icn_down.svg') no-repeat 95% #f4f4f4;
   background-size: 6%;
+    background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2017/06/downArrow-1.png);
 }
 select.form-control option{
   color: #000;
@@ -1182,4 +1183,22 @@ p.parrafo-factsheet {
 img.imagen-factsheet {
     margin: 0 auto;
     padding-bottom: 50px;
+}
+
+ .btn-bbva {
+	background-color: #f4f4f4;
+     font-family: 'BentonSansBBVABook';
+	font-size: 15px;
+	color: #666666;
+}
+
+.caret-bbva{
+    border-top:#2a86ca;
+}
+
+/*Estilo Mejores prácticas*/
+
+input.next-btn{
+   height: 44px;
+    width: 44px;
 }
