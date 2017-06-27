@@ -106,7 +106,7 @@ get_header();
 <?php } } ?>
 
 </div>
-
+<!-- Contenido -->
 <div class="container" >
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1></div>
@@ -153,7 +153,7 @@ get_header();
 					?>
 	
 		</div>
-			<div class="space3"></div>
+<!-- Seccion de Interes -->
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
