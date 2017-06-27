@@ -114,7 +114,7 @@ get_header();
 		<div class="space"></div>
 </div>
 		<div class="container historia center-block">
-		<div class="row">
+		
 			<?php
 			// check if the repeater field has rows of data
 			if( have_rows('fecha-historia') ):
@@ -138,7 +138,7 @@ get_header();
 						endwhile;
 							endif;
 					?>
-		</div>
+		
 		</div>
 			<div class="space3"></div>
 

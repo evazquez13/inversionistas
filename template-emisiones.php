@@ -117,7 +117,7 @@ get_header();
 			</div>
 		</div>
 		<div class="center-block">
-		<div class="row">
+	
 			<?php
 			$i =0;
 			// check if the repeater field has rows of data
@@ -149,7 +149,7 @@ get_header();
 						endwhile;
 							endif;
 					?>
-		</div>
+		
 		</div>
 			<div class="space3"></div>
 </div>
