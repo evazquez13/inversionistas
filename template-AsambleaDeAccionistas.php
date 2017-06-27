@@ -108,8 +108,8 @@ get_header(); ?>
 
     <div class="container asamblea-acionistas">
         <div class="row">
-            <div class="col-md-12 col-xs-12 col-sm-12 text-center-xs">
-                <h1><?php echo get_field('titulopdf')?></h1>
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <h1 class="text-center-xs"><?php echo get_field('titulopdf')?></h1>
                 <div class="space"></div>
                 <p><?php echo get_field('descripcion') ?>
                 <div class="space"></div>

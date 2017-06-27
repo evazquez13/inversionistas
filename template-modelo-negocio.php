@@ -130,7 +130,7 @@ get_header();
 			<?php } ?>
 		</div>
 		<div class="space"></div>
-		<div class="row">
+	
 		<?php
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
@@ -156,7 +156,7 @@ get_header();
 						endwhile;
 							endif;
 					?>
-		</div >
+		
 		<div class="space"></div>
 	</div>
 </div>
