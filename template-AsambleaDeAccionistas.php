@@ -108,7 +108,7 @@ get_header(); ?>
 
     <div class="container asamblea-acionistas">
         <div class="row">
-            <div class="col-md-12 col-xs-12 col-sm-12">
+            <div class="col-md-12 col-xs-12 col-sm-12 text-center-xs">
                 <h1><?php echo get_field('titulopdf')?></h1>
                 <div class="space"></div>
                 <p><?php echo get_field('descripcion') ?>
@@ -194,7 +194,7 @@ get_header(); ?>
 
             <?php $e=0;
             if (have_rows('asamblea-acionistas-pdf',390) ):
-                                while (have_rows('asamblea-acionistas-pdf',390) ): the_row();
+                while (have_rows('asamblea-acionistas-pdf',390) ): the_row();
                     if( have_rows('institucion',390) ):
                                 // loop through the rows of data
                                 while ( have_rows('institucion',390) ) : the_row();
