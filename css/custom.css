@@ -1183,3 +1183,20 @@ img.imagen-factsheet {
     margin: 0 auto;
     padding-bottom: 50px;
 }
+/*Asamblea de accionistas*/
+.asamblea-acionistas h1{
+ font-family: 'BentonSansBBVAMedium';
+  font-size: 30px;
+  color: #1a1a1a;
+}
+.asamblea-acionistas p{
+ font-family: 'BentonSansBook';
+ font-size: 16px;
+  color: #000000;
+}
+
+.asamblea-acionistas a{
+  font-family: 'BentonSansBook';
+  color: #2371be;
+  font-size: 16px;
+}
