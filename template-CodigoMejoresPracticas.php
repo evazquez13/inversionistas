@@ -171,7 +171,7 @@ get_header();
             <?php while (have_rows('listainformacion',425) ): the_row(); ?>
                 
                        <div class="col-md-12 col-sm-12 col-xs-12">
-                           <div class="col-md-12 col-xs-12 col-sm-12 insti " id="insti<?php echo $e; ?>">
+                           <div class="col-md-12 col-xs-12 col-sm-12 insti sombras" id="insti<?php echo $e; ?>">
 <!--                           <div class="col-md-6 col-sm-4 col-xs-4 " align="left">Nombre del Documento</div>-->
                            <!--<div class="col-md-2 col-sm-4 col-xs-4 " align="right">Descargable</div>
                            <div class="col-md-3 col-sm-4 col-xs-4 " align="right">Idioma del Texto</div>-->
