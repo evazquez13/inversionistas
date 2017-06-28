@@ -153,7 +153,7 @@ get_header();
                             <div class="row"> 
                               <?php if( have_rows('itembloque') ): ?>
                                     <?php while ( have_rows('itembloque') ) : the_row(); ?> 
-                                     <div class="row">
+                                     
                                       <div class="col-md-1 col-sm-1 col-xs-1 img-pdf"><!-- img-pdf-->
                                        <a href="<?php the_field('linkpdf'); ?>"> 
                                         <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png">  
@@ -164,7 +164,7 @@ get_header();
                                         <h3 class="nombre-pdf" > <?php the_sub_field('textosubitem'); ?> </h3> 
                                        </a>        
                                       </div>
-                                     </div> 
+                                   
                                       
                                       
                                      <?php endwhile ?>
@@ -192,7 +192,7 @@ get_header();
 			</div>
 		</div>
 		<div class="space"></div>
-		<div class="row">
+	
 		<?php
 		if (get_field('interes')) {
 			// check if the repeater field has rows of data
@@ -219,7 +219,7 @@ get_header();
 						endwhile;
 							endif;
 				} ?>
-	</div >
+	
 	<div class="space"></div>
 </div>
 </div>
