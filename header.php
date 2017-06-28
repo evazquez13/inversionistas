@@ -83,7 +83,7 @@ echo '<script languaje="JavaScript">
                   <li class="desktop <?php if (is_page('Renta_fija')|| is_page('rentafija_calificaciones') || is_page('factsheet')|| is_page('emisiones-corporativas')  ) { echo 'desktopSelect'; } ?>">
                   <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/rentafija_calificaciones/">Renta Fija</a></li>
 
-                  <li class="desktop <?php if (is_page('Gobierno_Corporativo') || is_page('consejoadministracion')|| is_page('asamblea-accionistas') || is_page('estatutos-convenio') || is_page('codigodeconducta') || is_page('codigodepracticas')) { echo 'desktopSelect'; } ?>">
+                  <li class="desktop <?php if (is_page('Gobierno_Corporativo') || is_page('consejoadministracion')|| is_page('asamblea-accionistas') || is_page('estatutos-convenio') || is_page('asamblea-accionistas') || is_page('codigodeconducta') || is_page('codigomejorespracticas-es')) { echo 'desktopSelect'; } ?>">
                   <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/consejoadministracion/">Gobierno Corporativo</a></li>
 
                   <li class="desktop <?php if (is_page('Contacto')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/contacto/">Contacto</a></li>
@@ -147,7 +147,7 @@ echo '<script languaje="JavaScript">
                             <li class="desktop <?php if (is_page('consejoadministracion')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/consejoadministracion/">Consejo de Administración</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('asamblea-accionistas')) { echo 'desktopSelect'; } ?>"><a href="#">Asamblea de Accionistas</a>
+                            <li class="desktop <?php if (is_page('asamblea-accionistas')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/asamblea-accionistas/">Asamblea de Accionistas</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop <?php if (is_page('estatutos-convenio')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estatutos-convenio/">Estatutos Sociales y Convenio Único</a>
@@ -156,7 +156,7 @@ echo '<script languaje="JavaScript">
                             <li class="desktop <?php if (is_page('codigodeconducta')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/codigodeconducta/">Código de Conducta</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('codigodepracticas')) { echo 'desktopSelect'; } ?>"><a href="#">Código de Mejores Prácticas Corporativas</a>
+                            <li class="desktop <?php if (is_page('codigomejorespracticas-es')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/codigomejorespracticas-es/">Código de Mejores Prácticas Corporativas</a>
                                 <ul></ul>
                             </li>
                         </ul>       
@@ -223,17 +223,17 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
 
 <?php 
   } 
-if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta")) { ?>
+if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_page("estatutos-convenio") || is_page("codigodeconducta") || is_page("asamblea-accionistas") || is_page("codigomejorespracticas-es") ) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
                 <ul>
                     <li class="desktop <?php if (is_page('consejoadministracion')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/consejoadministracion/">Consejo de Administración</a></li>
-                    <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Asamblea de Accionistas</a></li>
+                    <li class="desktop <?php if (is_page('asamblea-accionistas')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/asamblea-accionistas/">Asamblea de Accionistas</a></li>
                     <li class="desktop <?php if (is_page('estatutos-convenio')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/estatutos-convenio/">Estatutos Sociales y Convenio Único</a></li>
                     <li class="desktop <?php if (is_page('codigodeconducta')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/codigodeconducta/">Código de Conducta</a></li>
-                    <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Código de Mejores Prácticas Corporativas</a></li>
+                    <li class="desktop <?php if (is_page('codigomejorespracticas-es')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/codigomejorespracticas-es/">Código de Mejores Prácticas Corporativas</a></li>
                 </ul>
              </div>
          </div>
@@ -319,7 +319,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('consejoadministracion-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/consejoadministracion-en/">Board of Directors</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Investors Assembly</a>
+                            <li class="desktop <?php if (is_page('asamblea-accionistas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/asamblea-accionistas-en/">Investors Assembly</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop <?php if (is_page('estatutos-convenio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estatutos-convenio-en/">Social Bylaw and Exclusive Agreement</a>
@@ -328,7 +328,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('odigodeconducta-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigodeconducta-en/">Behavior Code</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>><a href="#">Code of Better Corporative Practices</a>
+                            <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Better Corporative Practices</a>
                                 <ul></ul>
                             </li>
                         </ul>       
@@ -391,17 +391,17 @@ if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_pag
  </div>
 <?php 
   } 
-if (is_page("Gobierno_Corporativo-en") || is_page("consejoadministracion-en") || is_page("estatutos-convenio-en") || is_page("codigodeconducta-en")) { ?>
+if (is_page("Gobierno_Corporativo-en") || is_page("consejoadministracion-en") || is_page("estatutos-convenio-en") || is_page("codigodeconducta-en")|| is_page("asamblea-accionistas-en")|| is_page("codigomejorespracticas-en")) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
                 <ul>
                     <li class="desktop <?php if (is_page('consejoadministracion-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/consejoadministracion-en/">Board of Directors</a></li>
-                    <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Investors Assembly</a></li>
+                    <li class="desktop <?php if (is_page('asamblea-accionistas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/asamblea-accionistas-en/">Investors Assembly</a></li>
                     <li class="desktop <?php if (is_page('estatutos-convenio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estatutos-convenio-en/">Social Bylaw and Exclusive Agreement</a></li>
                     <li class="desktop <?php if (is_page('codigodeconducta-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigodeconducta-en/">Behavior Code</a></li>
-                    <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Code of Better Corporative Practices</a></li>
+                    <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Better Corporative Practices</a></li>
                 </ul>
              </div>
          </div>
