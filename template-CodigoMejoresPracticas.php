@@ -141,7 +141,7 @@ get_header();
 <?php endif ?>
 
 
-<?php  if(get_field('listainformacion',388)){ ?>     
+<?php  if(get_field('listainformacion',425)){ ?>     
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12 col-sm-12 form-group">
@@ -149,8 +149,8 @@ get_header();
                             <option >Año</span></option>
                             <?php					
                                 $t=0;
-                                if (have_rows('listainformacion',388) ):
-                                    while (have_rows('listainformacion',388) ): the_row(); 
+                                if (have_rows('listainformacion',425) ):
+                                    while (have_rows('listainformacion',425) ): the_row(); 
                              ?>
                              <option value="<?php echo $t; ?>"><?php the_sub_field('yearfield') ?></option>
                              <?php 
@@ -167,17 +167,17 @@ get_header();
 <div class="container">
     <div class="row">
          <?php $e=0;?>
-         <?php if (have_rows('listainformacion',388) ): ?>
-            <?php while (have_rows('listainformacion',388) ): the_row(); ?>
+         <?php if (have_rows('listainformacion',425) ): ?>
+            <?php while (have_rows('listainformacion',425) ): the_row(); ?>
                 
                        <div class="col-md-12 col-sm-12 col-xs-12">
-                           <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
+                           <div class="col-md-12 col-xs-12 col-sm-12 insti " id="insti<?php echo $e; ?>">
 <!--                           <div class="col-md-6 col-sm-4 col-xs-4 " align="left">Nombre del Documento</div>-->
                            <!--<div class="col-md-2 col-sm-4 col-xs-4 " align="right">Descargable</div>
                            <div class="col-md-3 col-sm-4 col-xs-4 " align="right">Idioma del Texto</div>-->
-                           <hr>
-                            <?php if( have_rows('pdf_files',388) ):?>
-                                <?php while ( have_rows('pdf_files',388) ) : the_row();  ?>
+                          
+                            <?php if( have_rows('pdf_files',425) ):?>
+                                <?php while ( have_rows('pdf_files',425) ) : the_row();  ?>
                                   <div class="row">    
                                    <!-- <div class="col-md-7 col-sm-7 col-xs-10"><?php the_sub_field('nombrepdf'); ?></div>-->
                                     <div class="col-md-1 col-sm-1 col-xs-1" style="margin-top: -10px;">
@@ -192,7 +192,7 @@ get_header();
                                         <?php endif ?>
                                     </div> -->
                                  </div> 
-                                 <hr>  
+                                   
                                 <?php endwhile ?> 
                               <?php endif ?>
                             </div>    
