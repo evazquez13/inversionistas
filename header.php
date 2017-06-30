@@ -80,7 +80,7 @@ echo '<script languaje="JavaScript">
 
                   <li class="desktop <?php if (is_page('Inf_Financiera')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/inf_financiera/">Información Financiera</a></li>
 
-                  <li class="desktop <?php if (is_page('Renta_fija')|| is_page('rentafija_calificaciones') || is_page('factsheet')|| is_page('emisiones-corporativas')  ) { echo 'desktopSelect'; } ?>">
+                  <li class="desktop <?php if (is_page('Renta_fija')|| is_page('rentafija_calificaciones') || is_page('Factsheet-es')|| is_page('emisiones-corporativas')  ) { echo 'desktopSelect'; } ?>">
                   <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/rentafija_calificaciones/">Renta Fija</a></li>
 
                   <li class="desktop <?php if (is_page('Gobierno_Corporativo') || is_page('consejoadministracion')|| is_page('asamblea-accionistas') || is_page('estatutos-convenio') || is_page('asamblea-accionistas') || is_page('codigodeconducta') || is_page('codigomejorespracticas-es')) { echo 'desktopSelect'; } ?>">
@@ -134,7 +134,7 @@ echo '<script languaje="JavaScript">
                             <li class="desktop <?php if (is_page('rentafija_calificaciones')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/rentafija_calificaciones/">Calificaciones</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('factsheet')) { echo 'desktopSelect'; } ?>"><a href="#">Factsheet</a>
+                            <li class="desktop <?php if (is_page('factsheet')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/factsheet-es/">Factsheet</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop <?php if (is_page('emisiones-corporativas')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/emisiones-corporativas/">Emisiones</a>
@@ -206,14 +206,14 @@ if (is_page("Conócenos") || is_page("historia") || is_page("mision") || is_page
  </div>
 
 <?php } ?>
-<?php if (is_page("Renta_fija") || is_page("rentafija_calificaciones") || is_page("emisiones-corporativas")) { ?>
+<?php if (is_page("Renta_fija") || is_page("rentafija_calificaciones") || is_page("emisiones-corporativas") || is_page('Factsheet-es')) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
                 <ul>
                     <li class="desktop <?php if (is_page('rentafija_calificaciones')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/rentafija_calificaciones/">Calificaciones</a> </li>
-                    <li class="desktop <?php if (is_page('factsheet')) { echo 'desktopSelect'; } ?>"><a href="#">Factsheet</a></li>
+                    <li class="desktop <?php if (is_page('Factsheet-es')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/factsheet-es/">Factsheet</a></li>
                     <li class="desktop <?php if (is_page('emisiones-corporativas')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/emisiones-corporativas/">Emisiones</a></li>
                 </ul>  
              </div>
@@ -306,7 +306,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('rentafija_calificaciones_en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/rentafija_calificaciones_en/">Qualifications</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Factsheet</a>
+                            <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/factsheet-en/">Factsheet</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop <?php if (is_page('emisiones-corporativas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/emisiones-corporativas-en/">Emissions</a>
@@ -375,14 +375,14 @@ if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") |
 
 <?php 
   } 
-if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_page("emisiones-corporativas-en")) { ?>
+if (is_page("Renta_fija-en") || is_page("rentafija_calificaciones_en") || is_page("emisiones-corporativas-en") || is_page('Factsheet-en')) { ?>
  <div class="fondoClaro visible-lg visible-md visible-sm">
      <div class="container">
          <div class="row">
              <div class="menu-claro">
                 <ul>
                     <li class="desktop <?php if (is_page('rentafija_calificaciones_en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/rentafija_calificaciones_en/">Qualifications</a> </li>
-                    <li class="desktop <?php if (is_page('Index')) { echo 'desktopSelect'; } ?>"><a href="#">Factsheet</a></li>
+                    <li class="desktop <?php if (is_page('Factsheet-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/factsheet-en/">Factsheet</a></li>
                     <li class="desktop <?php if (is_page('emisiones-corporativas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/emisiones-corporativas-en/">Emissions</a></li>
                 </ul>  
              </div>
