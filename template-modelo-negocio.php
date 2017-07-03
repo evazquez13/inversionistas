@@ -115,6 +115,11 @@ get_header();
 		<div class="row">
 			<div class="col-md-12 "><p><?php echo get_field('descripcion') ?></p></div>
 		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<img src="<?php the_field('imagenModelo'); ?>" class="img-responsive">
+			</div>
+		</div>
 </div>
 		
 
