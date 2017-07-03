@@ -145,9 +145,9 @@ get_header(); ?>
 		<div class="space2"></div>
 			<div class = "col-md-4 col-sm-4 col-xs-12 relleno2 text-center">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<img src="<?php the_sub_field('imgicon'); ?>" alt="" class="">
+					<a href="<?php the_sub_field('linkurl'); ?>"><img src="<?php the_sub_field('imgicon'); ?>"></a>
 					<div class="space"></div>
-					<h3><?php the_sub_field('tituloicon'); ?></h3>
+					<a href="<?php the_sub_field('linkurl'); ?>"><h3><?php the_sub_field('tituloicon'); ?></h3></a>
 				</div>
 			</div>	
 			<?php
