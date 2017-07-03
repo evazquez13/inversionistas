@@ -213,6 +213,7 @@ get_header();
             </div>
 <?php } ?>
 <!--Sección Interés --> 
+<?php if (get_field('interes')) {?>
  <div class="infoInteres">
 	<div class="container">
 	<div class="space2"></div>
@@ -226,7 +227,6 @@ get_header();
 		<div class="space"></div>
 		<div class="row">
 		<?php
-		if (get_field('interes')) {
 			// check if the repeater field has rows of data
 			if( have_rows('interes') ):
 				// loop through the rows of data
