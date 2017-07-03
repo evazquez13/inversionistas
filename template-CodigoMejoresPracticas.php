@@ -178,7 +178,7 @@ get_header();
                                 <?php while ( have_rows('pdf_files',425) ) : the_row();  ?>
                                   <div class="row">    
                                    <!-- <div class="col-md-7 col-sm-7 col-xs-10"><?php the_sub_field('nombrepdf'); ?></div>-->
-                                    <div class="col-md-11 col-sm-4 col-xs-4 " align="left">
+                                    <div class="col-md-4 col-sm-4 col-xs-4 " align="left">
                                         <?php the_sub_field('nombrepdf'); ?>
                                     </div>
                                     <div class="col-md-1 col-sm-1 col-xs-1" style="margin-top: -10px;">
