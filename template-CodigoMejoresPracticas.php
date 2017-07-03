@@ -169,20 +169,22 @@ get_header();
          <?php $e=0;?>
          <?php if (have_rows('listainformacion',425) ): ?>
             <?php while (have_rows('listainformacion',425) ): the_row(); ?>
-                
                        <div class="col-md-12 col-sm-12 col-xs-12">
-                           <div class="col-md-12 col-xs-12 col-sm-12 insti sombras" id="insti<?php echo $e; ?>">
-<!--                           <div class="col-md-6 col-sm-4 col-xs-4 " align="left">Nombre del Documento</div>-->
+                           <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
+<!--                       <div class="col-md-6 col-sm-4 col-xs-4 " align="left">Nombre del Documento</div>-->
                            <!--<div class="col-md-2 col-sm-4 col-xs-4 " align="right">Descargable</div>
                            <div class="col-md-3 col-sm-4 col-xs-4 " align="right">Idioma del Texto</div>-->
-                          
                             <?php if( have_rows('pdf_files',425) ):?>
                                 <?php while ( have_rows('pdf_files',425) ) : the_row();  ?>
                                   <div class="row">    
                                    <!-- <div class="col-md-7 col-sm-7 col-xs-10"><?php the_sub_field('nombrepdf'); ?></div>-->
+                                    <div class="col-md-11 col-sm-4 col-xs-4 " align="left">
+                                        <?php the_sub_field('nombrepdf'); ?>
+                                    </div>
                                     <div class="col-md-1 col-sm-1 col-xs-1" style="margin-top: -10px;">
                                         <a target="_BLANK" href="<?php the_sub_field('urlpdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a>
-                                    </div>  
+                                    </div>
+                                    <div class="space1"></div>
                                     <!--<div class="col-md-4 col-sm-4 col-xs-12">
                                         <?php if (get_sub_field('idioma')=="ingles") { ?>
                                             <p class="desPdf" align="center">Inglés</p>
@@ -192,7 +194,6 @@ get_header();
                                         <?php endif ?>
                                     </div> -->
                                  </div> 
-                                   
                                 <?php endwhile ?> 
                               <?php endif ?>
                             </div>    
