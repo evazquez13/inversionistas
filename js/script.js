@@ -25,6 +25,17 @@ if (varjs=='en') {
 		$('.insti').css('display','none');	
 					$('#insti'+pdf.value).stop().delay(300).fadeIn();
 		}
+	function mostrarCombo(val){
+		$('.anio , .insti').val($('option:first').val());
+		$('.anio, .insti').css('display','none');
+					console.log("Si entra "+val.value);	
+					$('#'+val.value).stop().delay(300).fadeIn();
+	}
+	function mostrarComboPdf(val){
+		$('.insti').css('display','none');
+					console.log("Si entra "+val.value);	
+					$('#'+val.value).stop().delay(300).fadeIn();
+	}
 
 $(document).on('ready',function() {
 

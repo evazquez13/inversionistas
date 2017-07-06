@@ -5,11 +5,6 @@ Template Name: Template-emisiones
 get_header(); 
 ?>
 
-<?php 
-	$campo = get_field('campo-html');
-	$tituloSecInfo = get_field('titulosecinfo');
-?>
-
 <!--  -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -112,44 +107,387 @@ get_header();
 
 <div class="container rentafija" >
 		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1>
+			<div class="col-md-12 col-sm-12 col-xs-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo'); ?></h1>
 			<div class="col-md-12 col-sm-12 col-xs-12"><p><?php echo get_field('descemisiones') ?></p></div>
 			</div>
 		</div>
 		<div class="center-block">
-	
-			<?php
-			$i =0;
-			// check if the repeater field has rows of data
-			if( have_rows('emisiones-corp') ):
-				// loop through the rows of data¡
-				while ( have_rows('emisiones-corp') ) : the_row();			
-		?>
-		<?php if (($i%2) != 0) {
-			echo "<div class='row'>";
-		}
-		?>
-			<div class = "col-md-6 col-sm-6 col-xs-12 ">
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
 						<div class="space"></div>				
-						<img height="33" src="<?php the_sub_field('imagen');?>" > 
-						<h3><?php the_sub_field('titulo2'); ?></h3>
-						<p><?php the_sub_field('descripcion2'); ?></p>
+						<img height="33" src="<?php the_field('imagen');?>" > 
+						<h3><?php the_field('titulo1'); ?></h3>
+						<p><?php the_field('descripcion1'); ?></p>
 						<div class="space"></div>
-						<?php if (get_sub_field('url')) {?>
-							<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-url') ?></a>
-						<?php } ?>
+						<!--  -->
+            <?php if (get_field('emisiones-corp-pdf',485)) {?>
+            <div class="col-md-12 col-xs-12 col-sm-12 space">
+                
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                <?php 
+                $z=0;
+                if (have_rows('emisiones-corp-pdf',485) ):
+                                while (have_rows('emisiones-corp-pdf',485) ): the_row();
+                ?>
+                    <select name="institucion" class="form-control" onchange="mostrarCombo(this)">
+                        <option>-Selecciona</option>
+                        <?php
+                            // check if the repeater field has rows of data
+                            if( have_rows('institucion',485) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',485) ) : the_row();
+                        ?>
+                        <option value="combo<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
+                        <?php 
+                        $z++;
+                        endwhile;
+                        endif;
+                    ?>
+                    </select>
+                    <?php 
+                    endwhile;
+                    endif;
+                     ?>
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                    <?php 
+                    $y=0;
+                    $a=0;
+                    if (have_rows('emisiones-corp-pdf',485) ):
+                                while (have_rows('emisiones-corp-pdf',485) ): the_row();
+                            // check if the repeater field has rows of data
+                     
+                    
+                    if( have_rows('institucion',485) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',485) ) : the_row();
+                        ?>
+                        <select id="combo<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
+                    <option>-Selecciona</option>
+                        <?php
+                         
+                         
+                            // check if the repeater field has rows of data
+                            if( have_rows('anio',485) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',485) ) : the_row();
+                        ?>
+                        <option value="cert<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
+                        <?php
+                        $a++;
+                        endwhile;
+                        endif;
+                        ?>
+                        </select>
+                        <?php
+                        $y++;
+                        endwhile;
+                        endif;
+                        endwhile;
+                        endif;
+                        ?>
+                </div>
+                        
+                
+            </div>
+
+            <?php $e=0;
+            if (have_rows('emisiones-corp-pdf',485) ):
+                while (have_rows('emisiones-corp-pdf',485) ): the_row();
+                    if( have_rows('institucion',485) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',485) ) : the_row();
+                            // check if the repeater field has rows of data
+                            
+                            if( have_rows('anio',485) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',485) ) : the_row();
+                            
+             ?>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="cert<?php echo $e; ?>">
+                <?php 
+                                // check if the repeater field has rows of data
+                            if( have_rows('pdf',485) ):
+                            // loop through the rows of data
+                            while ( have_rows('pdf',485) ) : the_row();
+                 ?>
+                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
+                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
+                        <?php if (get_sub_field('idioma')=="ingles") { ?>
+                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
+                        <?php } ?>
+                    </div>
+                    <div class="space1"></div>
+                    <?php 
+                    endwhile;
+                    endif;      
+                     ?>
+                </div>
+                </div>
+                <?php 
+                $e++;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    }
+                 ?> 
 				</div>
-			</div>	
-			<?php
-			if (($i%2) != 0) {
-			echo "</div>";
-		}
-					$i++;
-						endwhile;
-							endif;
-					?>
-		
+		</div>
+		<div class="center-block">
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
+						<div class="space"></div>				
+						<img height="33" src="<?php the_field('imagen');?>" > 
+						<h3><?php the_field('titulo2'); ?></h3>
+						<p><?php the_field('descripcion2'); ?></p>
+						<div class="space"></div>
+						<!--  -->
+            <?php if (get_field('emisiones-corp-pdf',488)) {?>
+            <div class="col-md-12 col-xs-12 col-sm-12 space">
+                
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                <?php 
+                $z=0;
+                if (have_rows('emisiones-corp-pdf',488) ):
+                                while (have_rows('emisiones-corp-pdf',488) ): the_row();
+                ?>
+                    <select name="institucion" class="form-control" onchange="mostrarCombo(this)">
+                        <option>-Selecciona</option>
+                        <?php
+                            // check if the repeater field has rows of data
+                            if( have_rows('institucion',488) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',488) ) : the_row();
+                        ?>
+                        <option value="com<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
+                        <?php 
+                        $z++;
+                        endwhile;
+                        endif;
+                    ?>
+                    </select>
+                    <?php 
+                    endwhile;
+                    endif;
+                     ?>
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                    <?php 
+                    $y=0;
+                    $a=0;
+                    if (have_rows('emisiones-corp-pdf',488) ):
+                                while (have_rows('emisiones-corp-pdf',488) ): the_row();
+                            // check if the repeater field has rows of data
+                     
+                    
+                    if( have_rows('institucion',488) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',488) ) : the_row();
+                        ?>
+                        <select id="com<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
+                    <option>-Selecciona</option>
+                        <?php
+                         
+                         
+                            // check if the repeater field has rows of data
+                            if( have_rows('anio',488) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',488) ) : the_row();
+                        ?>
+                        <option value="bonos<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
+                        <?php
+                        $a++;
+                        endwhile;
+                        endif;
+                        ?>
+                        </select>
+                        <?php
+                        $y++;
+                        endwhile;
+                        endif;
+                        endwhile;
+                        endif;
+                        ?>
+                </div>
+                        
+                
+            </div>
+
+            <?php $e=0;
+            if (have_rows('emisiones-corp-pdf',488) ):
+                while (have_rows('emisiones-corp-pdf',488) ): the_row();
+                    if( have_rows('institucion',488) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',488) ) : the_row();
+                            // check if the repeater field has rows of data
+                            
+                            if( have_rows('anio',488) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',488) ) : the_row();
+                            
+             ?>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="bonos<?php echo $e; ?>">
+                <?php 
+                                // check if the repeater field has rows of data
+                            if( have_rows('pdf',488) ):
+                            // loop through the rows of data
+                            while ( have_rows('pdf',488) ) : the_row();
+                 ?>
+                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
+                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
+                        <?php if (get_sub_field('idioma')=="ingles") { ?>
+                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
+                        <?php } ?>
+                    </div>
+                    <div class="space1"></div>
+                    <?php 
+                    endwhile;
+                    endif;      
+                     ?>
+                </div>
+                </div>
+                <?php 
+                $e++;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    }
+                 ?> 
+				</div>
+		</div>
+		<div class="center-block">
+				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
+						<div class="space"></div>				
+						<img height="33" src="<?php the_field('imagen');?>" > 
+						<h3><?php the_field('titulo3'); ?></h3>
+						<p><?php the_field('descripcion3'); ?></p>
+						<div class="space"></div>
+						<!--  -->
+            <?php if (get_field('emisiones-corp-pdf',490)) {?>
+            <div class="col-md-12 col-xs-12 col-sm-12 space">
+                
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                <?php 
+                $z=0;
+                if (have_rows('emisiones-corp-pdf',490) ):
+                                while (have_rows('emisiones-corp-pdf',490) ): the_row();
+                ?>
+                    <select name="institucion" class="form-control" onchange="mostrarCombo(this)">
+                        <option>-Selecciona</option>
+                        <?php
+                            // check if the repeater field has rows of data
+                            if( have_rows('institucion',490) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',490) ) : the_row();
+                        ?>
+                        <option value="co<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
+                        <?php 
+                        $z++;
+                        endwhile;
+                        endif;
+                    ?>
+                    </select>
+                    <?php 
+                    endwhile;
+                    endif;
+                     ?>
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                    <?php 
+                    $y=0;
+                    $a=0;
+                    if (have_rows('emisiones-corp-pdf',490) ):
+                                while (have_rows('emisiones-corp-pdf',490) ): the_row();
+                            // check if the repeater field has rows of data
+                     
+                    
+                    if( have_rows('institucion',490) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',490) ) : the_row();
+                        ?>
+                        <select id="co<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
+                    <option>-Selecciona</option>
+                        <?php
+                         
+                         
+                            // check if the repeater field has rows of data
+                            if( have_rows('anio',490) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',490) ) : the_row();
+                        ?>
+                        <option value="obliga<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
+                        <?php
+                        $a++;
+                        endwhile;
+                        endif;
+                        ?>
+                        </select>
+                        <?php
+                        $y++;
+                        endwhile;
+                        endif;
+                        endwhile;
+                        endif;
+                        ?>
+                </div>
+                        
+                
+            </div>
+
+            <?php $e=0;
+            if (have_rows('emisiones-corp-pdf',490) ):
+                while (have_rows('emisiones-corp-pdf',490) ): the_row();
+                    if( have_rows('institucion',490) ):
+                                // loop through the rows of data
+                                while ( have_rows('institucion',490) ) : the_row();
+                            // check if the repeater field has rows of data
+                            
+                            if( have_rows('anio',490) ):
+                                // loop through the rows of data
+                                while ( have_rows('anio',490) ) : the_row();
+                            
+             ?>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="obliga<?php echo $e; ?>">
+                <?php 
+                                // check if the repeater field has rows of data
+                            if( have_rows('pdf',490) ):
+                            // loop through the rows of data
+                            while ( have_rows('pdf',490) ) : the_row();
+                 ?>
+                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
+                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
+                        <?php if (get_sub_field('idioma')=="ingles") { ?>
+                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
+                        <?php } ?>
+                    </div>
+                    <div class="space1"></div>
+                    <?php 
+                    endwhile;
+                    endif;      
+                     ?>
+                </div>
+                </div>
+                <?php 
+                $e++;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    endwhile;
+                    endif;
+                    }
+                 ?> 
+				</div>
 		</div>
 			<div class="space3"></div>
 </div>
