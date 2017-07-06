@@ -183,7 +183,7 @@ get_header();
                             <div class="col-md-6 col-sm-6 col-xs-12 updown-ed">
                                 <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                 <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
-                                <?php $c++;?>
+                                <?php $c++;?> 
                             </div>
                             <?php if (  ( ($i%2) != 0 ) ) { echo "</div>";   } ?>
                             <?php $i++; ?>    
