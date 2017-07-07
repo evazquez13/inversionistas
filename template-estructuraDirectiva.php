@@ -196,9 +196,6 @@ get_header();
                     <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
                             <?php if (($i%3) == 0) { echo "<div class='row'>";  } ?>      
                                 <div class="col-md-4 col-sm-4 col-xs-12 updown-ed">
-                                     <div class="text-left-sm text-center-xs">
-                                       <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150"/>
-                                     </div>
                                       <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                       <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
                                       <?php $c++; ?>
