@@ -196,7 +196,7 @@ get_header(); ?>
 			<?php if (get_field('url-boton')) {?>
 			<div class="row sec-2-index-mov text-center">
 				<div class="col-xs-12">
-					<a href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"><?php echo $textoBtn; ?></button></a>
+					<a target="_BLANK" href="<?php echo $urlBoton; ?>"><button type="button" class="btn btn-primary botonzote"><?php echo $textoBtn; ?></button></a>
 				</div>
 			</div>
 			<?php } ?>					
@@ -236,7 +236,7 @@ get_header(); ?>
 						<p><?php the_sub_field('titulo'); ?></p>
 						<div class="space"></div>
 						<?php if (get_sub_field('url')) {?>
-						<a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-bt'); ?></a>
+						<a target="_BLANK" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('texto-bt'); ?></a>
 						<?php } ?>
 					</div>
 				</div>
