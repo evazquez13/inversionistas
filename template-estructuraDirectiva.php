@@ -132,26 +132,27 @@ get_header();
             <div class="row  ">
                 <div class="col-md-12 col-sm-12 col-xs-12">     
                      
-                            <div class="col-md-3">
-                                <div class="text-left-sm text-center-xs">
-                                  <img class="img-circle" src="<?php the_field('imagendg'); ?>" alt="" height="150" width="150"/>
-                                </div>  
-                                  <h3 class="directorG">
-                                        <?php the_field('nombredg'); ?>
+                            <div class="col-md-3"> 
+                            <div class="col-sm-12 col-md-12 col-xs-12 tarjetaDg"> 
+                                <h3 class="directorG">
+                                    <?php the_field('nombredg'); ?>
+                              </h3>
+                              <h4 class="cargoDirector">
+                                    <?php the_field('cargodg'); ?>
+                              </h4>
+                            </div>
+                              
+                            </div>
+                            <div class="col-md-3" style="margin-top: 30px;">
+                            <div class="col-md-12 col-sm-12 col-xs-12 tarjetaDg">
+                                    <h3 class="directorG">
+                                        <?php the_field('nombredg1'); ?>
                                   </h3>
                                   <h4 class="cargoDirector">
-                                        <?php the_field('cargodg'); ?>
+                                        <?php the_field('cargodg1'); ?>
                                   </h4>
-                            </div>                                                                                                         <div class="col-md-9">
-                                <h4 class="acerca-de-header"> <?php the_field('headerdg'); ?> </h4>
-                                <p class="text-justify infoDirector"> <?php the_field('infodg'); ?> </p>
-                                <?php if( get_field('leermaslink') ){?>  
-                                    <h4>
-                                        <a class="leer-m" href="<?php the_sub_field('leermaslink'); ?>">
-                                           <?php the_field('leermasdg'); ?>
-                                        </a>
-                                    </h4>    
-                                <?php } ?> 
+                             </div>
+                               
                             </div>        
                 </div>
             </div>
@@ -178,37 +179,37 @@ get_header();
         }
             ?>
 
-            <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
+   <!--          <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
                 <?php $m++; ?>
             <?php endwhile ?>
-
+ -->
             <?php if (isMobile() ) : ?><!--Not-isMobileIf -->                                                               
                     <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
                         <?php if (($i%2) == 0) { echo "<div class='row'>";  } ?>      
-                            <div class="col-md-6 col-sm-6 col-xs-12 updown-ed">
-                                <div class="text-left-sm text-center-xs">
-                                <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150"/>
-                                </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                            <div class="col-sm-12 col-xs-12 col-md-12 updown-ed">
                                 <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                 <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
+                            </div>
+                                
                                 <?php $c++;?>
                             </div>
                             <?php if (  ( ($i%2) != 0 ) ) { echo "</div>";   } ?>
                             <?php $i++; ?>    
                     <?php endwhile ?>
-                    <?php if($c==$m){echo "</div>"; }?>     
-               <?php endif ?><!--Not-isMobileIf -->                 
+                 <!--    <?php if($c==$m){echo "</div>"; }?>     --> 
+               <?php endif ?>
 
-
+               <!--Not-isMobileIf -->             
               <?php if (!(isMobile() )) : ?>                                                                
                     <?php  while ( have_rows('equipodirectivo') ) : the_row(); ?>
                             <?php if (($i%3) == 0) { echo "<div class='row'>";  } ?>      
-                                <div class="col-md-4 col-sm-4 col-xs-12 updown-ed">
-                                     <div class="text-left-sm text-center-xs">
-                                       <img class="img-circle" src="<?php the_sub_field('imagendirectivo'); ?>" alt="" height="150" width="150"/>
-                                     </div>
-                                      <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="col-md-12 col-sm-12 updown-ed">
+                                    <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                       <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
+                                </div>
+                               
                                       <?php $c++; ?>
                                 </div>
                             <?php if (  ( ($i%3) != 0 ) && ($c%3==0) ) { echo "</div>";   } ?>
