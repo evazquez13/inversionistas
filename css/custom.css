@@ -753,7 +753,7 @@ span.rell{
 }
 /*Estilos Renta Fija*/
 .rentafija h1{
- font-family: 'BentonSansBBVA-Medium';
+ font-family: 'BentonSansBBVAMedium';
   font-size: 32px;
   color: #1a1a1a;
 }
@@ -828,8 +828,16 @@ a.leer-m{
 }
 
 .updown-ed{
-    margin-top: 40px;
-    margin-bottom: 67px;
+    margin-bottom: 15px;
+   background-color: #F4F4F4;
+
+   height: 170px;
+}
+
+.tarjetaDg {
+  margin-bottom: 15px;
+   background-color: #F4F4F4;
+   height: 170px;
 }
 /*Estilos EstructuraDirectivaUpdated*/
 
