@@ -134,7 +134,7 @@ get_header();
     <div class="space"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 contactanos text-left-sm text-center-xs btn-upper-space btn-lower-space">
+                <div class="col-md-12 contactanos text-left-sm text-center-xs btn-lower-space">
                     <h1>
                         <?php echo get_field('textocontacto');?>
                     </h1>

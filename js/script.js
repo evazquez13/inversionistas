@@ -57,10 +57,7 @@ $(document).on('ready',function() {
 	  	$('.lista-redes').css('marginLeft','-30px');
         $('.margenA').css("margin-left",'20px');    
 	  	$('.menu-mobile .col-xs-2 img').css('float','right');
-        $('.btn-upper-space').css('margin-top','14.8px');
-        $('.btn-lower-space').css('margin-top','89.7px');
-        $('.left-credencial').css('margin-left','30px');
-        $('.right-credencial').css('margin-right','30px');
+        $('.btn-lower-space').css('margin-top','30px');
         $('.credenciales p').css("font-size",'12px');
           
 	  }else{
