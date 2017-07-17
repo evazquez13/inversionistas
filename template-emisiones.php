@@ -112,15 +112,6 @@ get_header();
 			</div>
 		</div>
 		<div class="center-block">
-
-	
-			<?php
-			// check if the repeater field has rows of data
-			if( have_rows('emisiones-corp') ):
-				// loop through the rows of data¡
-				while ( have_rows('emisiones-corp') ) : the_row();			
-		?>
-
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
 						<div class="space"></div>				
 						<img height="33" src="<?php the_field('imagen1');?>" > 
@@ -128,7 +119,6 @@ get_header();
 						<p><?php the_field('descripcion1'); ?></p>
 						<div class="space"></div>
 						<!--  -->
-
             <?php if (get_field('emisiones-corp-pdf',485)) {?>
             <div class="col-md-12 col-xs-12 col-sm-12 space">
                 
@@ -147,32 +137,10 @@ get_header();
                                 while ( have_rows('institucion',485) ) : the_row();
                         ?>
                         <option value="combo<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
-
-
-        <div class="row">
-            <?php if (get_field('emisiones-corp-pdf',406)) {?>
-            <div class="col-md-12 col-xs-12 col-sm-12 space">
-                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
-                <?php       
-                $z=0;
-                if (have_rows('emisiones-corp-pdf',406) ):
-                                while (have_rows('emisiones-corp-pdf',406) ): the_row();
-                ?>
-                    <select name="institucion" class="form-control" onchange="mostrarAnio(this)">
-                        <option>-Selecciona</option>
-                        <?php
-                            // check if the repeater field has rows of data
-                            if( have_rows('institucion',406) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',406) ) : the_row();
-                        ?>
-                        <option value="<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
-
                         <?php 
                         $z++;
                         endwhile;
                         endif;
-
                     ?>
                     </select>
                     <?php 
@@ -184,7 +152,6 @@ get_header();
                     <?php 
                     $y=0;
                     $a=0;
-
                     if (have_rows('emisiones-corp-pdf',485) ):
                                 while (have_rows('emisiones-corp-pdf',485) ): the_row();
                             // check if the repeater field has rows of data
@@ -205,24 +172,6 @@ get_header();
                                 while ( have_rows('anio',485) ) : the_row();
                         ?>
                         <option value="cert<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
-
-                    if (have_rows('emisiones-corp-pdf',406) ):
-                                while (have_rows('emisiones-corp-pdf',406) ): the_row();
-                            // check if the repeater field has rows of data
-                    if( have_rows('institucion',406) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',406) ) : the_row();
-                        ?>
-                        <select id="anio<?php echo $y; ?>" class="form-control anio" onchange="mostrarPdf(this)">
-                    <option>-Selecciona</option>
-                        <?php
-                            // check if the repeater field has rows of data
-                            if( have_rows('anio',406) ):
-                                // loop through the rows of data
-                                while ( have_rows('anio',406) ) : the_row();
-                        ?>
-                        <option value="<?php echo $a; ?>"><?php the_sub_field('numero-anio') ?></option>
-
                         <?php
                         $a++;
                         endwhile;
@@ -242,7 +191,6 @@ get_header();
             </div>
 
             <?php $e=0;
-
             if (have_rows('emisiones-corp-pdf',485) ):
                 while (have_rows('emisiones-corp-pdf',485) ): the_row();
                     if( have_rows('institucion',485) ):
@@ -262,27 +210,6 @@ get_header();
                             if( have_rows('pdf',485) ):
                             // loop through the rows of data
                             while ( have_rows('pdf',485) ) : the_row();
-
-            if (have_rows('emisiones-corp-pdf',406) ):
-                while (have_rows('emisiones-corp-pdf',406) ): the_row();
-                    if( have_rows('institucion',406) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',406) ) : the_row();
-                            // check if the repeater field has rows of data
-                            
-                            if( have_rows('anio',406) ):
-                                // loop through the rows of data
-                                while ( have_rows('anio',406) ) : the_row();
-                            
-             ?>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-12 col-xs-12 col-sm-12 insti sombra" id="insti<?php echo $e; ?>">
-                <?php 
-                                // check if the repeater field has rows of data
-                            if( have_rows('pdf',406) ):
-                            // loop through the rows of data
-                            while ( have_rows('pdf',406) ) : the_row();
-
                  ?>
                     <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
@@ -308,20 +235,7 @@ get_header();
                     endif;
                     }
                  ?> 
-
 				</div>
-
-        </div>
-
-						<!--  -->
-				</div>
-			
-			<?php
-					
-						endwhile;
-							endif;
-					?>
-		
 		</div>
 		<div class="center-block">
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
