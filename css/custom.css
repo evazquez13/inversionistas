@@ -118,7 +118,10 @@
   font-weight: 500;
   font-style: normal;
 }
-
+.containerBBVA{
+  width: 752px;
+  margin-bottom: 30px;
+}
 /*Estilos para header*/
 .fonfoAzul{
   background-color: #072146;
@@ -427,9 +430,8 @@ h3.correo-contacto {
 }
 
 h5.tel-contacto {
-    font-family: 'BentonSansBBVA';
+  font-family: 'BentonSansBBVA';
 	font-size: 16px;
-	font-weight: 500;
 	color: #2371be;
 }
 
@@ -1225,4 +1227,13 @@ input.next-btn{
   font-family: 'BentonSansBook';
   color: #2371be;
   font-size: 16px;
+}
+h5.calbur{
+  font-family: 'BentonSansBBVA';
+  font-size: 16px;
+  color: #2371be;
+}
+.bordeEstruc{
+  border: 3px solid #09549A;
+  padding-top: 13px;
 }

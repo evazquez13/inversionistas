@@ -106,7 +106,7 @@ get_header(); ?>
 </div>
 <!-- Contenido -->
 
-    <div class="container asamblea-acionistas">
+    <div class="container containerBBVA asamblea-acionistas">
         <div class="row">
             <div class="col-md-12 col-xs-12 col-sm-12">
                 <h1 class="text-center-xs"><?php echo get_field('titulopdf')?></h1>
@@ -246,7 +246,7 @@ get_header(); ?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
-    <div class="container">
+    <div class="container containerBBVA">
     <div class="space2"></div>
         <div class="row">
             <div class="col-md-12 text-center">     

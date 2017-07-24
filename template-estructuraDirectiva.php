@@ -132,7 +132,7 @@ get_header();
             <div class="row  ">
                 <div class="col-md-12 col-sm-12 col-xs-12">     
                      
-                            <div class="col-md-4"> 
+                            <div class="col-md-4" style="padding-right: 0px;"> 
                             <div class="col-sm-12 col-md-12 col-xs-12 tarjetaDg"> 
                                 <h3 class="directorG">
                                     <?php the_field('nombredg'); ?>
@@ -143,7 +143,8 @@ get_header();
                             </div>
                               
                             </div>
-                            <div class="col-md-4" style="margin-top: 30px;">
+                            <div class="col-md-2" style="background-image:url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/07/lineaAzul.png'); background-size: cover; background-position: right;height: 3px;margin-top: 150px;"></div>
+                            <div class="col-md-4" style="margin-top: 30px; padding-left: 0px;">
                             <div class="col-md-12 col-sm-12 col-xs-12 tarjetaDg">
                                     <h3 class="directorG">
                                         <?php the_field('nombredg1'); ?>
@@ -170,7 +171,7 @@ get_header();
                 </div>
     </div>
 
-    <div class="container ">
+    <div class="container bordeEstruc">
         <?php  if( have_rows('equipodirectivo') ): ?>
             <?php $m=0; $c=0; $i=0;?>
             <?php

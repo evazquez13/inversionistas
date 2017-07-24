@@ -126,7 +126,7 @@ get_header();
 
 <?php if(get_field('cabeceraprincipalconducta')): ?>
     <div class="space"></div>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 ">
                     <h1 class="cabecera-principal-conducta"><?php echo the_field('cabeceraprincipalconducta');?></h1>
@@ -137,7 +137,7 @@ get_header();
 <div class="space"></div>
 
 <?php if(get_field('subcabeceraconducta')): ?>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 ">
                     <h2 class="subcabecera-conducta"><?php echo the_field('subcabeceraconducta');?></h2>
@@ -148,7 +148,7 @@ get_header();
    
   
 <?php if(get_field('cabecerabloquetextoa')): ?>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h2 class="subcabecera-conducta"><?php echo the_field('cabecerabloquetextoa');?></h2>
@@ -161,7 +161,7 @@ get_header();
    
  <?php if(get_field('bloquetextoa')): ?>
     <div class="space"></div>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p class="bloque-texto"><?php echo the_field('bloquetextoa');?></p>
@@ -174,7 +174,7 @@ get_header();
    
 <?php if(get_field('elementolista')): ?>
     <div class="space"></div>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 bullet-lista">
                     <ul>
@@ -190,7 +190,7 @@ get_header();
   
  <?php if(get_field('bloquetextob')): ?>
     <div class="space"></div>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p class="bloque-texto"><?php echo the_field('bloquetextob');?></p>
@@ -198,14 +198,20 @@ get_header();
             </div>
         </div>
 <?php endif ?>           
-<div class="space"></div>    
+<div class="space"></div>
+    <div class="container containerBBVA">
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-xs-1 columnaIcono"><a href="<?php the_field('urlpdff'); ?>" target="_BLANK"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a> </div>
+            <div class="col-xs-10 col-md-11 col-sm-10 pdf-text-center"><?php the_field('nombrepdf'); ?></div>
+        </div>
+    </div>
      
      
      
  <!--Sección Interés --> 
  <?php if (get_field('interes')) {?>
  <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
