@@ -110,7 +110,7 @@ get_header(); ?>
 
 </div>
 
-<div class="container">
+<div class="container containerBBVA">
 	<div class="row gfbb">
 	<?php
 	if (get_field('tabla')) {
@@ -179,7 +179,7 @@ get_header(); ?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		

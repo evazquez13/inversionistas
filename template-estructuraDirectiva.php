@@ -119,7 +119,7 @@ get_header();
 
 <?php if(get_field('headerestructuradirectiva')){ ?>
     <div class="space"></div>
-        <div class="container estructura-directiva ">
+        <div class="container estructura-directiva containerBBVA">
             <div class="row">
                 <div class="col-md-12 text-left-sm text-center-xs header-directivo directorG ">
                     <h1><?php echo get_field('headerestructuradirectiva');?></h1>
@@ -128,11 +128,11 @@ get_header();
         </div>
     <div class="space"></div>
 
-    <div class="container">
+    <div class="container containerBBVA" style="margin-bottom: 0px;">
             <div class="row  ">
                 <div class="col-md-12 col-sm-12 col-xs-12">     
                      
-                            <div class="col-md-4" style="padding-right: 0px;"> 
+                            <div class="col-md-4 col-sm-4" style="padding-right: 0px;"> 
                             <div class="col-sm-12 col-md-12 col-xs-12 tarjetaDg"> 
                                 <h3 class="directorG">
                                     <?php the_field('nombredg'); ?>
@@ -143,8 +143,8 @@ get_header();
                             </div>
                               
                             </div>
-                            <div class="col-md-2" style="background-image:url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/07/lineaAzul.png'); background-size: cover; background-position: right;height: 3px;margin-top: 150px;"></div>
-                            <div class="col-md-4" style="margin-top: 30px; padding-left: 0px;">
+                            <div class="col-md-2 col-sm-2 hidden-xs" style="background-image:url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/07/lineaAzul.png'); background-size: cover; background-position: right;height: 3px;margin-top: 100px;"></div>
+                            <div class="col-md-4 col-sm-4" style="margin-top: 30px; padding-left: 0px;">
                             <div class="col-md-12 col-sm-12 col-xs-12 tarjetaDg">
                                     <h3 class="directorG">
                                         <?php the_field('nombredg1'); ?>
@@ -163,15 +163,16 @@ get_header();
 
 <?php  if(get_field('equipodirectivo')): ?>
     <div class="space"></div>
-            <div class="container">
+            <div class="container containerBBVA">
                 <div class="row">
-                    <div class="col-md-12 header-equipo-directivo text-left-sm text-center-xs">
-                        <h1> <?php echo get_field('headerequipodirectivo');?> </h1>
-                    </div>
+                    <div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2 hidden-xs" style="background-image:url('http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/07/lineaAzul.png');background-position: center;height: 3px;transform: rotate(90deg);width: 131px;margin-bottom: 31px;margin-top: -13px;"></div>
                 </div>
     </div>
 
-    <div class="container bordeEstruc">
+    <div class="container bordeEstruc containerBBVA" style="margin-top: 0px;">
+        <div class="col-md-12 header-equipo-directivo text-left-sm text-center-xs">
+                        <h1> <?php echo get_field('headerequipodirectivo');?> </h1>
+                    </div>
         <?php  if( have_rows('equipodirectivo') ): ?>
             <?php $m=0; $c=0; $i=0;?>
             <?php
@@ -189,7 +190,7 @@ get_header();
                         <?php if (($i%2) == 0) { echo "<div class='row'>";  } ?>      
                             <div class="col-md-6 col-sm-6 col-xs-12 ">
                             <div class="col-sm-12 col-xs-12 col-md-12 updown-ed">
-                                <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
+                                <h3 class="nombre-equipo-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                 <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
                             </div>
                                 
@@ -207,7 +208,7 @@ get_header();
                             <?php if (($i%3) == 0) { echo "<div class='row'>";  } ?>      
                                 <div class="col-md-4 col-sm-4 col-xs-12">
                                 <div class="col-md-12 col-sm-12 updown-ed">
-                                    <h3 class="nombre-equio-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
+                                    <h3 class="nombre-equipo-directivo"> <?php the_sub_field('nombredirectivo'); ?> </h3>
                                       <h4 class="cargo-equipo-directivo"> <?php the_sub_field('cargodirectivo'); ?> </h4>
                                 </div>
                                
@@ -226,7 +227,7 @@ get_header();
  <!--Sección Interés --> 
  <?php if (get_field('interes')) {?>
  <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">

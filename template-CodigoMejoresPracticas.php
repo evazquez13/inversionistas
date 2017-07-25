@@ -120,7 +120,7 @@ get_header();
 
 
 <?php  if(get_field('tituloseccion')): ?>
-               <div class="container">
+               <div class="container containerBBVA">
                     <h1><?php echo the_field('tituloseccion');?> </h1>
                     <p class="text-adobe text-justify"> <?php echo the_field('descripcionadobe');?> 
                         <?php if (get_field('urladobe')): ?>
@@ -133,7 +133,7 @@ get_header();
 <?php endif ?>                
            
 <?php  if(get_field('bloqueparrafo')): ?>                     
-            <div class="container">
+            <div class="container containerBBVA">
                 <div class="row">
                     <p class="cuerpo-bloque text-left"> <?php the_field('bloqueparrafo'); ?> </p>
                 </div>           
@@ -142,7 +142,7 @@ get_header();
 
 
 <?php  if(get_field('listainformacion',425)){ ?>     
-            <div class="container">
+            <div class="container containerBBVA">
                 <div class="row">
                     <div class="col-md-4 col-xs-12 col-sm-12 form-group">
                         <select name="tipo-info" id="tipo-info" class="form-control" onchange="mostrarPdf(this)">
@@ -164,7 +164,7 @@ get_header();
             </div>    
 <?php } ?>
 
-<div class="container">
+<div class="container containerBBVA">
     <div class="row">
          <?php $e=0;?>
          <?php if (have_rows('listainformacion',425) ): ?>
@@ -211,7 +211,7 @@ get_header();
 <!--Sección Interés --> 
 <?php if (get_field('interes')) {?>
  <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">

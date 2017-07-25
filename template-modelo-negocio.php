@@ -107,7 +107,7 @@ get_header();
 
 </div>
 
-<div class="container modeloNegocio" >
+<div class="container modeloNegocio containerBBVA">
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo the_field('titulo1'); ?></h1></div>
 		</div>
@@ -125,7 +125,7 @@ get_header();
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		

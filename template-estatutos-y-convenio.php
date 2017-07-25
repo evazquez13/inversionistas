@@ -108,7 +108,7 @@ get_header();
 </div>
 
 <!-- Contenido -->
-<div class="container estatSociales" >
+<div class="container estatSociales containerBBVA" >
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 			<div class="col-md-12 "><p><?php echo get_field('mensajeadobe') ?><span><a href="<?php echo get_field('urladobe') ?>" target="_BLANK"><?php echo get_field('textourladobe') ?></a></span></p></div>
@@ -162,7 +162,7 @@ get_header();
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		

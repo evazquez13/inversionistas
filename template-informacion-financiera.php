@@ -115,7 +115,7 @@ get_header(); ?>
 <?php } } ?>
 
 </div>
-	<div class="container infofinanciera">
+	<div class="container infofinanciera containerBBVA">
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
 				<h1><?php echo get_field('titulopdf')?></h1>
@@ -266,7 +266,7 @@ get_header(); ?>
 
 <?php if (get_field('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		

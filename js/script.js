@@ -47,7 +47,6 @@ $(document).on('ready',function() {
 	  	$('.fondo').css("height",'auto');
         $('.separador').css("text-align",'center'); 
         $('.margenA').css("margin-left",'0px'); 
-         
 	  }
 	  else{
 	  	$('.fondo').css("height",'240');
@@ -58,12 +57,14 @@ $(document).on('ready',function() {
         $('.margenA').css("margin-left",'20px');    
 	  	$('.menu-mobile .col-xs-2 img').css('float','right');
         $('.btn-lower-space').css('margin-top','30px');
-        $('.credenciales p').css("font-size",'12px');
+        $('.credenciales p').css('font-size','12px');
+        $('.bordeEstruc').css('border','none');
           
 	  }else{
 	  	$('.lista-redes').css('marginLeft','-12px');
 	  	$('.credenciales p').css("font-size",'14px');
-        $('.margenB').css("margin-left",'14px'); 
+        $('.margenB').css('margin-left','14px');
+        $('.bordeEstruc').css('border','3px solid #09549A');
 	  }
 	}
 

@@ -127,7 +127,7 @@ get_header();
 
 <?php  if(get_field('cabeceraconsejoadministracion')): ?>
     <div class="space"></div> 
-            <div class="container">
+            <div class="container containerBBVA">
                 <h1 class="header-consejo text-left-sm text-center-xs"> <?php echo the_field('cabeceraconsejoadministracion');?> </h1>
                 <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php echo the_field('infoadobe');?> 
                     <?php if (get_field('urladobe')): ?>
@@ -140,7 +140,7 @@ get_header();
 <?php endif ?>                
            
 <?php  if(get_field('bloqueca')){ ?>                     
-            <div class="container">
+            <div class="container containerBBVA">
                 <?php  if( have_rows('bloqueca') ): ?>
                 <?php  $i =0;?>
                   <?php  while ( have_rows('bloqueca') ) : the_row(); ?>
@@ -177,7 +177,7 @@ get_header();
 <!--Sección Interés --> 
 <?php if (get_field('interes')) {?>
  <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">

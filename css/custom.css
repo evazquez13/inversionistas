@@ -780,16 +780,15 @@ span.rell{
 /*Estilos Estructura Directiva*/
 
 .header-directivo h1{
- font-family: 'BentonSansBBVAMedium';
+  font-family: 'BentonSansBBVAMedium';
   font-size: 32px;
   color: #1a1a1a;
 }
 
 h3.directorG{
 	font-family: 'BentonSansBBVAMedium';
-	font-size: 22px;
+	font-size: 19px;
 	color: #1a1a1a;
-    padding-top: 25px;
 }
 
 h4.acerca-de-header{
@@ -801,15 +800,16 @@ h4.acerca-de-header{
 h4.cargoDirector{
 	font-family: 'BentonSansBBVABook';
 	font-size: 16px;
-	color: #1a1a1a;
+	color: #2371be;
+  padding-top: 10px;
 }
 
 .acercaDe h4{
 	font-family: 'BentonSansBBVABook';
 	font-size: 22px;
 	color: #1a1a1a;
-    padding-top: 35px;
-    padding-bottom: 25px;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
 p.infoDirector{
@@ -826,39 +826,42 @@ a.leer-m{
 }
 
 .row-centered {
-    text-align:center;
+  text-align:center;
 }
 
 .updown-ed{
-    margin-bottom: 15px;
-   background-color: #F4F4F4;
-
-   height: 170px;
+  margin-bottom: 15px;
+  background-color: #F4F4F4;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .tarjetaDg {
   margin-bottom: 15px;
-   background-color: #F4F4F4;
-   height: 170px;
+  background-color: #F4F4F4;
+  height: 170px;
+  border-radius: 10px;
 }
 /*Estilos EstructuraDirectivaUpdated*/
 
 h3.nombre-equipo-directivo {
     font-family: 'BentonSansBBVA';
     color: #1a1a1a;
-    padding-top: 22px;
+    font-size: 19px;
+    padding-top: 15px;
 }
 
 h4.cargo-equipo-directivo {
     font-family: 'BentonSansBBVABook';
-    color: #1a1a1a;
+    color: #2371be;
+    font-size: 16px;
     padding-top: 22px;
 }
 /*Estilos Equipo Directivo*/
 .header-equipo-directivo h1{
 	font-family: 'BentonSansBBVAMedium';
-	font-size: 16px;
-	color: #1a1a1a;
+	font-size: 24px;
+	color: #2371be;
 }
 
 /*Estilos Contactos*/
@@ -1196,7 +1199,7 @@ img.imagen-factsheet {
 
  .btn-bbva {
 	background-color: #f4f4f4;
-     font-family: 'BentonSansBBVABook';
+  font-family: 'BentonSansBBVABook';
 	font-size: 15px;
 	color: #666666;
 }
@@ -1235,5 +1238,4 @@ h5.calbur{
 }
 .bordeEstruc{
   border: 3px solid #09549A;
-  padding-top: 13px;
 }

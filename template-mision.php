@@ -107,7 +107,7 @@ get_header();
 
 </div>
 
-<div class="container mision" >
+<div class="container mision containerBBVA">
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulosecmision'); ?></h1></div>
 		</div>
@@ -118,7 +118,7 @@ get_header();
 
 		</div>
 </div>
-		<div class="container">
+		<div class="container containerBBVA">
 		<div class="row">
 			<?php
 			// check if the repeater field has rows of data
@@ -127,7 +127,7 @@ get_header();
 				while ( have_rows('lista') ) : the_row();			
 		?>
 		<!-- Lista de iconos  -->
-		<div class="container mision">
+		<div class="container mision containerBBVA">
 			<ul>
 			<li>
 			<div class="col-sm-11 col-md-11">
@@ -150,7 +150,7 @@ get_header();
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		

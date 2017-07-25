@@ -132,7 +132,7 @@ get_header();
    
 <?php  if( get_field('textocontacto') ): ?>
     <div class="space"></div>
-        <div class="container">
+        <div class="container containerBBVA">
             <div class="row">
                 <div class="col-md-12 contactanos text-left-sm text-center-xs btn-lower-space">
                     <h1>
@@ -146,7 +146,7 @@ get_header();
 
 <?php  if(get_field('contacto')){ ?>
     <div class="space"></div> <!--Study For later -->
-            <div class="container">
+            <div class="container containerBBVA">
                     
                 <?php  if( have_rows('contacto') ): ?>
                         <?php $m=0; $c=0; $i=0;?>
@@ -215,7 +215,7 @@ get_header();
 <!--Sección Interés --> 
 <?php if (get_field('interes')) {?>
  <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">

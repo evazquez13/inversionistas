@@ -107,13 +107,13 @@ get_header();
 
 </div>
 
-<div class="container historia" >
+<div class="container historia containerBBVA">
 		<div class="row">
 			<div class="col-md-12 text-left-sm text-center-xs"> <h1><?php echo get_field('titulo1'); ?></h1></div>
 		</div>
 		<div class="space"></div>
 </div>
-		<div class="container historia center-block">
+		<div class="container historia center-block containerBBVA">
 		
 			<?php
 			// check if the repeater field has rows of data
@@ -144,7 +144,7 @@ get_header();
 
 <?php if (get_field ('interes')) {?>
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">		
