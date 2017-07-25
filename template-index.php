@@ -124,7 +124,7 @@ get_header(); ?>
     
 <!-- Parte iconos -->
 <div class="iconos">
-	<div class="container">
+	<div class="container containerBBVA">
 		<div class="space1"></div>
 		<div class="row">
 		<?php if (get_field('titulo-sec-2')) {?>
@@ -170,7 +170,7 @@ get_header(); ?>
     $imgDestacada = wp_get_attachment_url( $thumbID );    	
 ?>
 	<div class="hidden-xs" style="background:url('<?php echo $img; ?>'); background-size: cover; height: 495px; background-position: right;">
-		<div class="container">
+		<div class="container containerBBVA">
 			<div class="row sec-img-2">
 				<div class="col-md-5">
 					<p><?php echo $descripcion; ?></p>
@@ -208,7 +208,7 @@ get_header(); ?>
 	} ?>
 
 <div class="infoInteres">
-	<div class="container">
+	<div class="container containerBBVA" style="margin-bottom: 0px;">
 	<div class="space2"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">

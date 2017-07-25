@@ -130,7 +130,6 @@ get_header();
 				<div class="col-md-12 col-sm-12 col-xs-12 fondoBlanco">
 						<div class="space"></div>				
 						<h3><?php the_sub_field('titulo'); ?></h3>
-						<!--  -->
 				<?php if (have_rows('seleccion-pdf')) :
 						while (have_rows('seleccion-pdf')) : the_row();
 				 ?>
@@ -145,19 +144,17 @@ get_header();
 						endwhile;
 							endif;
 					?>
-					<!--  -->
 				</div>
 			</div>	
 			<?php
 			if (($i%2) != 0) {
 			echo "</div>";
-			echo "<div class='space'></div>";
 		}
 					$i++;
 						endwhile;
 							endif;
 					?>
-		
+		<div class="space"></div>
 		</div>	
 		</div>
 			
