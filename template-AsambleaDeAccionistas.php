@@ -123,15 +123,12 @@ get_header(); ?>
             <div class="col-md-12 col-xs-12 col-sm-12 space">
                 
                 <div class="col-md-4 col-xs-12 col-sm-6 form-group">
-                <?php 
-                $i=0;
-                $z=0;
-                if (have_rows('asamblea-acionistas-pdf',433) ):
-                                while (have_rows('asamblea-acionistas-pdf',433) ): the_row();
-                ?>
                     <select name="institucion" class="form-control" onchange="mostrarAnio(this)">
                         <option>-Selecciona</option>
                         <?php
+                $z=0;
+                if (have_rows('asamblea-acionistas-pdf',433) ):
+                                while (have_rows('asamblea-acionistas-pdf',433) ): the_row();
                             // check if the repeater field has rows of data
                             if( have_rows('institucion',433) ):
                                 // loop through the rows of data
@@ -142,13 +139,10 @@ get_header(); ?>
                         $z++;
                         endwhile;
                         endif;
-                        $i ++;
+                        endwhile;
+                    endif;
                     ?>
                     </select>
-                    <?php 
-                    endwhile;
-                    endif;
-                     ?>
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 form-group">
                     <?php 
