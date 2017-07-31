@@ -130,15 +130,11 @@ get_header();
                 if (have_rows('emisiones-corp-pdf',485) ):
                                 while (have_rows('emisiones-corp-pdf',485) ): the_row();
                             // check if the repeater field has rows of data
-                            if( have_rows('institucion',485) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',485) ) : the_row();
+                           
                         ?>
                         <option value="combo<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
                         endwhile;
                     endif;
                     ?>
@@ -153,9 +149,6 @@ get_header();
                             // check if the repeater field has rows of data
                      
                     
-                    if( have_rows('institucion',485) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',485) ) : the_row();
                         ?>
                         <select id="combo<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -178,8 +171,6 @@ get_header();
                         $y++;
                         endwhile;
                         endif;
-                        endwhile;
-                        endif;
                         ?>
                 </div>
                         
@@ -189,9 +180,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',485) ):
                 while (have_rows('emisiones-corp-pdf',485) ): the_row();
-                    if( have_rows('institucion',485) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',485) ) : the_row();
+                
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',485) ):
@@ -225,8 +214,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                    
                     endwhile;
                     endif;
                     }
@@ -252,15 +240,12 @@ get_header();
                 if (have_rows('emisiones-corp-pdf',488) ):
                                 while (have_rows('emisiones-corp-pdf',488) ): the_row();
                             // check if the repeater field has rows of data
-                            if( have_rows('institucion',488) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',488) ) : the_row();
+                      
                         ?>
                         <option value="com<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
+                        
                         endwhile;
                     endif;
                     ?>
@@ -275,9 +260,6 @@ get_header();
                             // check if the repeater field has rows of data
                      
                     
-                    if( have_rows('institucion',488) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',488) ) : the_row();
                         ?>
                         <select id="com<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -298,8 +280,7 @@ get_header();
                         </select>
                         <?php
                         $y++;
-                        endwhile;
-                        endif;
+                       
                         endwhile;
                         endif;
                         ?>
@@ -311,9 +292,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',488) ):
                 while (have_rows('emisiones-corp-pdf',488) ): the_row();
-                    if( have_rows('institucion',488) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',488) ) : the_row();
+                   
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',488) ):
@@ -347,8 +326,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                    
                     endwhile;
                     endif;
                     }
@@ -374,15 +352,12 @@ get_header();
                 if (have_rows('emisiones-corp-pdf',490) ):
                                 while (have_rows('emisiones-corp-pdf',490) ): the_row();
                             // check if the repeater field has rows of data
-                            if( have_rows('institucion',490) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',490) ) : the_row();
+                            
                         ?>
                         <option value="co<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
+                       
                         endwhile;
                     endif;
                     ?>
@@ -395,11 +370,7 @@ get_header();
                     if (have_rows('emisiones-corp-pdf',490) ):
                                 while (have_rows('emisiones-corp-pdf',490) ): the_row();
                             // check if the repeater field has rows of data
-                     
-                    
-                    if( have_rows('institucion',490) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',490) ) : the_row();
+     
                         ?>
                         <select id="co<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -420,8 +391,7 @@ get_header();
                         </select>
                         <?php
                         $y++;
-                        endwhile;
-                        endif;
+                        
                         endwhile;
                         endif;
                         ?>
@@ -433,9 +403,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',490) ):
                 while (have_rows('emisiones-corp-pdf',490) ): the_row();
-                    if( have_rows('institucion',490) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',490) ) : the_row();
+                   
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',490) ):
@@ -469,8 +437,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                   
                     endwhile;
                     endif;
                     }
@@ -495,15 +462,12 @@ get_header();
                 if (have_rows('emisiones-corp-pdf',540) ):
                                 while (have_rows('emisiones-corp-pdf',540) ): the_row();
                             // check if the repeater field has rows of data
-                            if( have_rows('institucion',540) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',540) ) : the_row();
+                           
                         ?>
                         <option value="const<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
+                       
                         endwhile;
                     endif;
                     ?>
@@ -518,9 +482,7 @@ get_header();
                             // check if the repeater field has rows of data
                      
                     
-                    if( have_rows('institucion',540) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',540) ) : the_row();
+      
                         ?>
                         <select id="const<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -541,8 +503,7 @@ get_header();
                         </select>
                         <?php
                         $y++;
-                        endwhile;
-                        endif;
+                        
                         endwhile;
                         endif;
                         ?>
@@ -554,9 +515,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',540) ):
                 while (have_rows('emisiones-corp-pdf',540) ): the_row();
-                    if( have_rows('institucion',540) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',540) ) : the_row();
+           
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',540) ):
@@ -590,8 +549,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                    
                     endwhile;
                     endif;
                     }
@@ -616,15 +574,12 @@ get_header();
                 if (have_rows('emisiones-corp-pdf',542) ):
                                 while (have_rows('emisiones-corp-pdf',542) ): the_row();
                             // check if the repeater field has rows of data
-                            if( have_rows('institucion',542) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',542) ) : the_row();
+                            
                         ?>
                         <option value="consta<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
+                      
                         endwhile;
                     endif;
                     ?>
@@ -639,9 +594,7 @@ get_header();
                             // check if the repeater field has rows of data
                      
                     
-                    if( have_rows('institucion',542) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',542) ) : the_row();
+                   
                         ?>
                         <select id="consta<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -662,8 +615,7 @@ get_header();
                         </select>
                         <?php
                         $y++;
-                        endwhile;
-                        endif;
+                       
                         endwhile;
                         endif;
                         ?>
@@ -675,9 +627,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',542) ):
                 while (have_rows('emisiones-corp-pdf',542) ): the_row();
-                    if( have_rows('institucion',542) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',542) ) : the_row();
+                 
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',542) ):
@@ -711,8 +661,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                   
                     endwhile;
                     endif;
                     }
@@ -730,30 +679,23 @@ get_header();
             <div class="col-md-12 col-xs-12 col-sm-12 space">
                 
                 <div class="col-md-4 col-xs-12 col-sm-6 form-group">
-                <?php 
-                $z=0;
-                if (have_rows('emisiones-corp-pdf',544) ):
-                                while (have_rows('emisiones-corp-pdf',544) ): the_row();
-                ?>
+                
                     <select name="institucion" class="form-control" onchange="mostrarCombo(this)">
                         <option>-Selecciona</option>
-                        <?php
-                            // check if the repeater field has rows of data
-                            if( have_rows('institucion',544) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',544) ) : the_row();
+                        <?php  
+                        $z=0;
+                           if (have_rows('emisiones-corp-pdf',544) ):
+                                while (have_rows('emisiones-corp-pdf',544) ): the_row(); // check if the repeater field has rows of data
+                  
                         ?>
                         <option value="constan<?php echo $z; ?>"><?php the_sub_field('nombre-institucion') ?></option>
                         <?php 
                         $z++;
-                        endwhile;
-                        endif;
+                      endwhile;
+                    endif;  
                     ?>
                     </select>
-                    <?php 
-                    endwhile;
-                    endif;
-                     ?>
+                   
                 </div>
                 <div class="col-md-4 col-xs-12 col-sm-6 form-group">
                     <?php 
@@ -764,9 +706,7 @@ get_header();
                             // check if the repeater field has rows of data
                      
                     
-                    if( have_rows('institucion',544) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',544) ) : the_row();
+              
                         ?>
                         <select id="constan<?php echo $y; ?>" class="form-control anio" onchange="mostrarComboPdf(this)">
                     <option>-Selecciona</option>
@@ -787,8 +727,7 @@ get_header();
                         </select>
                         <?php
                         $y++;
-                        endwhile;
-                        endif;
+                     
                         endwhile;
                         endif;
                         ?>
@@ -800,9 +739,7 @@ get_header();
             <?php $e=0;
             if (have_rows('emisiones-corp-pdf',544) ):
                 while (have_rows('emisiones-corp-pdf',544) ): the_row();
-                    if( have_rows('institucion',544) ):
-                                // loop through the rows of data
-                                while ( have_rows('institucion',544) ) : the_row();
+ 
                             // check if the repeater field has rows of data
                             
                             if( have_rows('anio',544) ):
@@ -836,8 +773,7 @@ get_header();
                 $e++;
                     endwhile;
                     endif;
-                    endwhile;
-                    endif;
+                   
                     endwhile;
                     endif;
                     }
