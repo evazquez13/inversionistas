@@ -196,14 +196,10 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',485) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                 <div class="row" style="margin-top: 5px;">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
                     <?php 
                     endwhile;
                     endif;      
@@ -308,14 +304,11 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',488) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                   <div class="row emisiones-corp-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    
                     <?php 
                     endwhile;
                     endif;      
@@ -419,14 +412,11 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',490) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="row emisiones-corp-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    
                     <?php 
                     endwhile;
                     endif;      
@@ -531,14 +521,11 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',540) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="row emisiones-corp-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    
                     <?php 
                     endwhile;
                     endif;      
@@ -643,14 +630,11 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',542) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="row emisiones-corp-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    
                     <?php 
                     endwhile;
                     endif;      
@@ -755,14 +739,11 @@ get_header();
                             // loop through the rows of data
                             while ( have_rows('pdf',544) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="row emisiones-corp-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
-                        <?php if (get_sub_field('idioma')=="ingles") { ?>
-                            <p class="desPdf">Esta información solo está disponible en Inglés</p>
-                        <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    
                     <?php 
                     endwhile;
                     endif;      

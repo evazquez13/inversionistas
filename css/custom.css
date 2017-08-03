@@ -648,6 +648,10 @@ p.desPdf{
   margin-bottom: 30px;
   padding-top: 30px;
 }
+
+.infofinanciera-row{
+  margin-bottom: 12px;
+}
 /* Termina estilos infofinanciera   */  
 select.form-control{
   color: #2a86ca;
@@ -1238,4 +1242,8 @@ h5.calbur{
 }
 .bordeEstruc{
   border: 3px solid #09549A;
+}
+
+.emisiones-corp-row {
+  margin-bottom: 5px;
 }

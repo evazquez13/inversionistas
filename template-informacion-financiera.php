@@ -206,14 +206,16 @@ get_header(); ?>
                             // loop through the rows of data
                             while ( have_rows('pdf',142) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                 <div class="row infofinanciera-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
+                    <div class="col-md-6 col-sm-6 col-xs-12 <?php the_sub_field('idioma'); ?>">
                         <?php if (get_sub_field('idioma')=="ingles") { ?>
                             <p class="desPdf">Esta información solo está disponible en Inglés</p>
                         <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    </div>
+                    
                     <?php 
                     endwhile;
                     endif;      
@@ -311,14 +313,15 @@ get_header(); ?>
                             // loop through the rows of data
                             while ( have_rows('pdf',964) ) : the_row();
                  ?>
-                    <div class="col-md-4 col-sm-4 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
+                    <div class="row infofinanciera-row">
+                    <div class="col-md-5 col-sm-5 col-xs-6"><?php the_sub_field('nombre-pdf'); ?></div>
                     <div class="col-md-1 col-sm-1 col-xs-6" style="margin-top: -10px;"><a target="_BLANK" href="<?php the_sub_field('url-pdf'); ?>"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png"></a></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12 <?php the_sub_field('idioma'); ?>">
+                    <div class="col-md-6 col-sm-6 col-xs-12 <?php the_sub_field('idioma'); ?>">
                         <?php if (get_sub_field('idioma')=="ingles") { ?>
                             <p class="desPdf">Esta información solo está disponible en Inglés</p>
                         <?php } ?>
                     </div>
-                    <div class="space1"></div>
+                    </div>
                     <?php 
                     endwhile;
                     endif;      
