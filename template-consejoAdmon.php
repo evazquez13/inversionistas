@@ -158,7 +158,7 @@ get_header();
                                         <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png">  
                                        </a>    
                                       </div>
-                                      <div class="col-md-11 col-sm-10 col-xs-10 pdf-text-center"> <!--celda -->
+                                      <div class="col-md-11 col-sm-10 col-xs-10"> <!--celda -->
                                         <h3 class="nombre-pdf" > <?php the_sub_field('textosubitem'); ?> </h3>
                                       </div>
                                      <?php endwhile ?>
