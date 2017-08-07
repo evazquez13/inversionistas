@@ -141,25 +141,26 @@ get_header();
                      <?php if (($i%2) == 0) { echo "<div class='row margenA'>";} ?>
                         <div class="col-md-6 col-sm-6 col-xs-12 admon-separation">
                             <div class="row">
-                              <h3 class="header-bloque"> <?php the_sub_field('titulobloque'); ?> </h3>
-                              <p class="cuerpo-bloque text-left"> <?php the_sub_field('infobloque'); ?> </p>
+                              <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="header-bloque"> <?php the_sub_field('titulobloque'); ?> </h3>
+                                <p class="cuerpo-bloque text-left"> <?php the_sub_field('infobloque'); ?> </p>
+                              </div>
                             </div>
+                            <?php if( have_rows('itembloque') ): ?>
+                                    <?php while ( have_rows('itembloque') ) : the_row(); ?>
                             <div class="row"> 
-                              <?php if( have_rows('itembloque') ): ?>
-                                    <?php while ( have_rows('itembloque') ) : the_row(); ?> 
                                       <div class="col-md-1 col-sm-1 col-xs-1 img-pdf"><!-- img-pdf-->
                                        <a href="<?php the_sub_field('urlitem'); ?>"> 
                                         <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/06/pdf_icon.png">  
                                        </a>    
                                       </div>
-                                      <div class="col-md-11 col-sm-10 col-xs-10"> <!--celda -->
+                                      <div class="col-md-10 col-sm-10 col-xs-10"> <!--celda -->
                                         <h3 class="nombre-pdf" > <?php the_sub_field('textosubitem'); ?> </h3>
                                       </div>
-                                     <?php endwhile ?>
-                              <?php endif ?>
-                             </div> 
+                             </div>
+                             <?php endwhile ?>
+                              <?php endif ?> 
                           <?php if (($i%2) != 0){ echo "</div>"; } ?>  
-                          
                         </div>  
                         <?php $i++; ?> 
                       <?php endwhile ?>
