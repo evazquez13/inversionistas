@@ -38,8 +38,6 @@ get_header();
 								<p><?php the_sub_field('descripcion'); ?></p>
 							</div>
 						</div>
-						<?php $boton = get_sub_field('url-boton');
-						if($boton !=''){ ?>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
 								<? if (get_sub_field('url-boton')) { ?>
@@ -47,7 +45,6 @@ get_header();
 								<?php } ?>
 							</div>
 						</div>
-						<?php } ?>
 		    		</div>
 		      </div>
   		</div>
@@ -65,8 +62,6 @@ get_header();
 					<p><?php the_sub_field('descripcion'); ?></p>
 				</div>
 			</div>
-			<?php $boton = get_sub_field('url-boton');
-						if($boton !=''){ ?>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
 					<? if (get_sub_field('url-boton')) { ?>
@@ -74,7 +69,6 @@ get_header();
 								<?php } ?>
 				</div>
 			</div>
-			<?php } ?>
 	  	</div>
   	</div>
 	<?php 

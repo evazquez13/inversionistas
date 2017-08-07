@@ -48,8 +48,8 @@ get_header(); ?>
 						</div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-							<? if (get_sub_field('urldeboton')) { ?>
-								<a href="<?php the_sub_field('urldeboton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+							<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 							</div>
 						</div>
@@ -72,8 +72,8 @@ get_header(); ?>
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-12 text-center">
-					<? if (get_sub_field('urldeboton')) { ?>
-								<a href="<?php the_sub_field('urldeboton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+					<? if (get_sub_field('boton')) { ?>
+								<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
 								<?php } ?>
 				</div>
 			</div>

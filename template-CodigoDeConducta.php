@@ -49,15 +49,12 @@ get_header();
                                         </p>
                                     </div>
                                 </div>
-                                <?php $boton = get_sub_field('boton');
-						if($boton !=''){ ?>
                                 <?php if (get_sub_field('botonurl')) {?>
                                 <div class="row tt3">
                                     <div class="col-md-7 col-sm-7 col-xs-7 text-left">
                                         <a href="<?php the_sub_field('botonUrl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
                                     </div>
                                 </div>
-                                <?php } ?>
                                 <?php } ?>
                             </div>
                         </div>
@@ -78,9 +75,6 @@ get_header();
                                 <p>
                                     <?php the_sub_field('introduccion'); ?>
                                 </p>
-
-                                <?php $boton = get_sub_field('boton');
-						if($boton !=''){ ?>
                                 <?php if (get_sub_field('botonurl')) {?>
                                 <div class="tt">
                                     <div class="text-center">
@@ -88,8 +82,6 @@ get_header();
                                     </div>
                                 </div>
                                 <?php } ?>
-                                <?php } ?>
-
                             </div>
                         </div>
                     </div>

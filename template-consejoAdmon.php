@@ -51,15 +51,12 @@ get_header();
                                         </p>
                                     </div>
                                 </div>
-                                <?php $boton = get_sub_field('boton');
-						if($boton !=''){ ?>
                                 <?php if (get_sub_field('botonurl')) {?>
                                 <div class="row tt3">
                                     <div class="col-md-7 col-sm-7 col-xs-7 text-left">   
-                                        <a href="<?php the_sub_field('botonUrl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
+                                        <a href="<?php the_sub_field('botonurl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
                                     </div>
                                 </div>
-                                <?php } ?>
                                 <?php } ?>
                             </div>
                         </div>
@@ -80,15 +77,12 @@ get_header();
                                 <p>
                                     <?php the_sub_field('introduccion'); ?>
                                 </p>
-                                <?php $boton = get_sub_field('boton');
-						if($boton !=''){ ?>
                                 <?php if (get_sub_field('botonurl')) {?>
                                 <div class="tt">
                                     <div class="text-center">
-                                        <a href="<?php the_sub_field('botonUrl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
+                                        <a href="<?php the_sub_field('botonurl'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('boton'); ?></button></a>
                                     </div>
                                 </div>
-                                <?php } ?>
                                 <?php } ?>
                             </div>
                         </div>
@@ -128,11 +122,11 @@ get_header();
 <?php  if(get_field('cabeceraconsejoadministracion')): ?>
     <div class="space"></div> 
             <div class="container containerBBVA">
-                <h1 class="header-consejo text-left-sm text-center-xs"> <?php echo the_field('cabeceraconsejoadministracion');?> </h1>
-                <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php echo the_field('infoadobe');?> 
+                <h1 class="header-consejo text-left-sm text-center-xs"> <?php the_field('cabeceraconsejoadministracion');?> </h1>
+                <p class="text-adobe text-left-sm text-center-xs text-justify"> <?php the_field('infoadobe');?> 
                     <?php if (get_field('urladobe')): ?>
 				       <a href="<?php the_field('urladobe'); ?>" class="url-adobe" > 
-				            <?php echo the_field('textolinkadobe');?> 
+				            <?php the_field('textolinkadobe');?> 
 				       </a>
 				    <?php endif ?> 
                 </p>
@@ -182,7 +176,7 @@ get_header();
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<?php if (get_field('titulo-sec-3')) {?>
-				<h1><?php the_field('titulo-sec-3') ?></h1>
+				<h1><?php the_field('titulo-sec-3');?></h1>
 				<?php } ?>
 			</div>
 		</div>
