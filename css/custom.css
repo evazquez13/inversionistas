@@ -917,18 +917,15 @@ margin-bottom: 30px;
 /*Estilos Consejo Administracion*/
 
 h1.header-consejo{
-    font-family: 'BentonSansBBVA';
+  font-family: 'BentonSansBBVA';
 	font-size: 24px;
-	font-weight: 500;
 	color: #1a1a1a;
-    margin-left: -14px;
 }
 
 p.text-adobe {
 	font-family: 'BentonSansBBVABook';
 	font-size: 16px;
 	color: #1a1a1a;
-    margin-left: -14px;
 }
 
 a.url-adobe {

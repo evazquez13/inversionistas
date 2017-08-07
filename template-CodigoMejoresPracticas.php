@@ -115,21 +115,27 @@ get_header();
 
 <?php  if(get_field('tituloseccion')): ?>
                <div class="container containerBBVA">
-                    <h1><?php echo the_field('tituloseccion');?> </h1>
-                    <p class="text-adobe text-justify"> <?php echo the_field('descripcionadobe');?> 
-                        <?php if (get_field('urladobe')): ?>
-                           <a href="<?php the_field('urladobe'); ?>" class="url-adobe" > 
-                           <?php echo the_field('textolinkadobe');?> 
-                           </a>
-                        <?php endif ?> 
-                    </p>   
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h1 class="header-consejo"><?php echo the_field('tituloseccion');?> </h1>
+                            <p class="text-adobe text-justify"> <?php echo the_field('descripcionadobe');?> 
+                                <?php if (get_field('urladobe')): ?>
+                                   <a href="<?php the_field('urladobe'); ?>" class="url-adobe" > 
+                                   <?php echo the_field('textolinkadobe');?> 
+                                   </a>
+                                <?php endif ?> 
+                            </p>   
+                        </div>
+                    </div>
                 </div>
 <?php endif ?>                
            
 <?php  if(get_field('bloqueparrafo')): ?>                     
             <div class="container containerBBVA">
                 <div class="row">
-                    <p class="cuerpo-bloque text-left"> <?php the_field('bloqueparrafo'); ?> </p>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p class="cuerpo-bloque text-left"> <?php the_field('bloqueparrafo'); ?> </p>
+                    </div>
                 </div>           
             </div>
 <?php endif ?>
