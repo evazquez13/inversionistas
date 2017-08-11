@@ -120,11 +120,10 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
 				<div class="space"></div>
-				<p><?php echo get_field('textopdf') ?>
+				<p><?php the_field('textopdf') ?>
 				<span>
-				<a href="<?php echo get_field('iradobeurl')?>" target="_BLANK">
-				<?php echo get_field('iradobe')?></a></span></p>
-				<p><span><?php echo get_field('selecciondoc'); ?></span></p>
+				<a href="<?php the_field('iradobeurl')?>" target="_BLANK">
+				<?php the_field('iradobe')?></a></span></p>
 			</div>
 			
 			<div class="center-block">

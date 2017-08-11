@@ -35,12 +35,12 @@ echo '<script languaje="JavaScript">
   <div class="fonfoAzul hidden-xs">    
     <div class="container cabecera">
       <div class="row hidden-xs">
-        <div class="col-md-3 col-sm-3">
+        <div class="col-md-9 col-sm-7">
           <div class="logo-container">
             <a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/es/index/" class="logo-cabecera"><img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png" class="img-responsive hidden-xs"></a>
           </div>
         </div>
-        <div class="col-md-6 col-sm-4 accionistahead">
+        <!-- <div class="col-md-6 col-sm-4 accionistahead">
         	<?php if ($idioma== 'en') { ?>
             <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Financial Information</p>
             <p class="visible-sm" style="font-size: 17px;">Financial Information</p>
@@ -49,7 +49,7 @@ echo '<script languaje="JavaScript">
             <p class="hidden-xs hidden-sm"><span class="bordehead"></span>Información Financiera</p>
             <p class="visible-sm" style="font-size: 17px;">Información Financiera</p>
             <?php } ?>
-        </div>
+        </div> -->
         
         <div class="col-md-3 col-sm-5">
 	        <ul class="lista-idioma">
@@ -292,7 +292,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Organization Chart</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Responsible Business</a>
+                            <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">Responsible Business</a>
                                 <ul></ul>
                             </li>
                             <li class="desktop"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">BBVA Group</a>
@@ -365,7 +365,7 @@ if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") |
                         <li class="desktop <?php if (is_page('conocenos_gfbbenresumen_en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos_gfbbenresumen_en/">GFBB in Brief</a></li>
                         <li class="desktop <?php if (is_page('modelodenegocio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/modelodenegocio-en/">Business Model</a></li>
                         <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Organization Chart</a></li>
-                        <li class="desktop"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank"></a></li>
+                        <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">Responsible Business</a></li>
                         <li class="desktop"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">BBVA Group</a></li>
                  </ul>
              </div>

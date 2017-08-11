@@ -61,9 +61,9 @@
       <div class="col-md-4 col-sm-12 col-sx-12">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
-      <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
+      <!-- <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
         <p>Información Financiera</p>
-      </div>
+      </div> -->
     </div>
 		<div class="row text-center">
 			<div class="col-md-1 col-sm-12 col-xs-12">
@@ -102,9 +102,9 @@
       <div class="col-md-4 col-sm-12 col-sx-12">
       <img src="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/03/group-2.png"/>        
       </div>
-      <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
+      <!-- <div class="col-md-8 col-sm-12 accionista hidden-xs hidden-sm">
         <p>Financial Information</p>
-      </div>
+      </div> -->
     </div>
     <div class="row text-center">
       <div class="col-md-1 col-sm-12 col-xs-12">
@@ -136,6 +136,11 @@
   </div>
 </div>
 <?php } ?>
+<!-- Colaboradores
+  Emmanuel Vazquez Bravo
+  Eduardo Baños Diaz
+  Mario Hernandez
+-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
