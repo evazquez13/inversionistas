@@ -292,10 +292,10 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Organization Chart</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">Responsible Business</a>
+                            <li class="desktop"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Responsible Business</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">BBVA Group</a>
+                            <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">BBVA Group</a>
                                 <ul></ul>
                             </li>
                         </ul> 
@@ -328,7 +328,7 @@ if (is_page("Gobierno_Corporativo") || is_page("consejoadministracion") || is_pa
                             <li class="desktop <?php if (is_page('odigodeconducta-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigodeconducta-en/">Behavior Code</a>
                                 <ul></ul>
                             </li>
-                            <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Better Corporative Practices</a>
+                            <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Best Corporate Practices</a>
                                 <ul></ul>
                             </li>
                         </ul>       
@@ -365,8 +365,8 @@ if (is_page("Conócenos-en") || is_page("mision-en") || is_page("historia-en") |
                         <li class="desktop <?php if (is_page('conocenos_gfbbenresumen_en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/conocenos_gfbbenresumen_en/">GFBB in Brief</a></li>
                         <li class="desktop <?php if (is_page('modelodenegocio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/modelodenegocio-en/">Business Model</a></li>
                         <li class="desktop <?php if (is_page('estructuradirectiva-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estructuradirectiva-en/">Organization Chart</a></li>
-                        <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">Responsible Business</a></li>
-                        <li class="desktop"><a href="http://inversores.bbva.com/TLBB/tlbb/bbvair/esp/index.jsp" target="_blank">BBVA Group</a></li>
+                        <li class="desktop"><a href="https://www.bancomer.com/nuestrom/negocio-responsable.jsp" target="_blank">Responsible Business</a></li>
+                        <li class="desktop"><a href="http://shareholdersandinvestors.bbva.com/TLBB/tlbb/bbvair/ing/index.jsp" target="_blank">BBVA Group</a></li>
                  </ul>
              </div>
          </div>
@@ -401,7 +401,7 @@ if (is_page("Gobierno_Corporativo-en") || is_page("consejoadministracion-en") ||
                     <li class="desktop <?php if (is_page('asamblea-accionistas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/asamblea-accionistas-en/">Shareholders Assembly</a></li>
                     <li class="desktop <?php if (is_page('estatutos-convenio-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/estatutos-convenio-en/">Corporate Bylaws and Exclusive Agreement</a></li>
                     <li class="desktop <?php if (is_page('codigodeconducta-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigodeconducta-en/">Behavior Code</a></li>
-                    <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Better Corporative Practices</a></li>
+                    <li class="desktop <?php if (is_page('codigomejorespracticas-en')) { echo 'desktopSelect'; } ?>"><a href="http://ec2-52-50-46-136.eu-west-1.compute.amazonaws.com/en/codigomejorespracticas-en/">Code of Best Corporate Practices</a></li>
                 </ul>
              </div>
          </div>

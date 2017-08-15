@@ -122,7 +122,7 @@ get_header(); ?>
             <?php if (get_field('asamblea-acionistas-pdf',433)) {?>
             <div class="col-md-12 col-xs-12 col-sm-12 space">
                 
-                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                <div class="col-md-5 col-xs-12 col-sm-6 form-group">
                     <select name="institucion" class="form-control" onchange="mostrarAnio(this)">
                         <option>-Selecciona</option>
                         <?php
@@ -144,7 +144,7 @@ get_header(); ?>
                     ?>
                     </select>
                 </div>
-                <div class="col-md-4 col-xs-12 col-sm-6 form-group">
+                <div class="col-md-5 col-xs-12 col-sm-6 form-group">
                     <?php 
                     $y=0;
                     $a=0;

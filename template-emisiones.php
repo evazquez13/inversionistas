@@ -761,7 +761,7 @@ get_header();
                         <img height="33" src="<?php the_field('imagen7');?>" > 
                         <h3><?php the_field('titulo7'); ?></h3>
                         <p><?php the_field('descripcion7'); ?></p>
-                        <a href="<?php the_field('calurl'); ?>"><h5 class="calbur">Aceptar</h5></a>
+                        <a href="<?php the_field('calurl'); ?>"><h5 class="calbur"><?php the_field('texoLiga'); ?></h5></a>
                         <div class="space"></div>
                 </div>
         </div>

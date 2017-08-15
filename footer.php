@@ -67,25 +67,25 @@
     </div>
 		<div class="row text-center">
 			<div class="col-md-1 col-sm-12 col-xs-12">
-				<p><a href="#">Seguridad</a></p>
+				<p><a href="https://www.bancomer.com/personas/consejos-seguridad.jsp" target="_BLANK">Seguridad</a></p>
 			</div>
 			<div class="col-md-2 col-sm-12 col-xs-12">
-				<p><a href="#">Aviso Legal</a></p>
+				<p><a href="https://www.bancomer.com/serviciocliente/aviso-legal.jsp" target="_BLANK">Aviso Legal</a></p>
 			</div>
 			<div class="col-md-2 col-sm-12 col-xs-12">
-				<p><a href="#">Mapa del Sitio</a></p>
+				<p><a href="https://www.bancomer.com/meta/mapa-sitio/index.jsp" target="_BLANK">Mapa del Sitio</a></p>
 			</div>
 			<div class="col-md-2 col-sm-12 col-xs-12">
-				<p><a href="#">Aviso de Privacidad</a></p>
+				<p><a href="https://www.bancomer.com/personas/aviso-privacidad.jsp" target="_BLANK">Aviso de Privacidad</a></p>
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
-				<p><a href="#">Consulta los Costos y las Comisiones de nuestros productos</a></p>
+				<p><a href="https://www.bancomer.com/fbin/FMT_Tarifario_tcm1344-565438.pdf" target="_BLANK">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
-          <li><a href="#"><div class="icon-redes-footer facebook"></div></a></li>
-          <li><a href="#"><div class="icon-redes-footer twitter"></div></a></li>
-          <li><a href="#"><div class="icon-redes-footer youtube"></div></a></li>
+          <li><a href="https://www.facebook.com/BBVABancomer" target="_BLANK"><div class="icon-redes-footer facebook"></div></a></li>
+          <li><a href="https://twitter.com/BBVABancomer" target="_BLANK"><div class="icon-redes-footer twitter"></div></a></li>
+          <li><a href="https://www.youtube.com/user/bbvabancomer" target="_BLANK"><div class="icon-redes-footer youtube"></div></a></li>
         </ul>
       </div>
       <div class="social">
@@ -108,25 +108,25 @@
     </div>
     <div class="row text-center">
       <div class="col-md-1 col-sm-12 col-xs-12">
-        <p><a href="#">Security</a></p>
+        <p><a href="https://www.bancomer.com/personas/consejos-seguridad.jsp" target="_BLANK">Security</a></p>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
-        <p><a href="#">Legal warning</a></p>
+        <p><a href="https://www.bancomer.com/serviciocliente/aviso-legal.jsp" target="_BLANK">Legal warning</a></p>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
-        <p><a href="#">Site Map</a></p>
+        <p><a href="https://www.bancomer.com/meta/mapa-sitio/index.jsp" target="_BLANK">Site Map</a></p>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
-        <p><a href="#">Notice of Privacy</a></p>
+        <p><a href="https://www.bancomer.com/personas/aviso-privacidad.jsp" target="_BLANK">Notice of Privacy</a></p>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
-        <p><a href="#">Consult the Costs and Commissions of our products</a></p>
+        <p><a href="https://www.bancomer.com/fbin/FMT_Tarifario_tcm1344-565438.pdf" target="_BLANK">Consult the Costs and Commissions of our products</a></p>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
-          <li><a href="#"><div class="icon-redes-footer facebook"></div></a></li>
-          <li><a href="#"><div class="icon-redes-footer twitter"></div></a></li>
-          <li><a href="#"><div class="icon-redes-footer youtube"></div></a></li>
+          <li><a href="https://www.facebook.com/BBVABancomer" target="_BLANK"><div class="icon-redes-footer facebook"></div></a></li>
+          <li><a href="https://twitter.com/BBVABancomer" target="_BLANK"><div class="icon-redes-footer twitter"></div></a></li>
+          <li><a href="https://www.youtube.com/user/bbvabancomer" target="_BLANK"><div class="icon-redes-footer youtube"></div></a></li>
         </ul>
       </div>
       <div class="social">
