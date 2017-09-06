@@ -79,7 +79,7 @@
 				<p><a href="https://www.bancomer.com/personas/aviso-privacidad.jsp" target="_BLANK">Aviso de Privacidad</a></p>
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
-				<p><a href="https://www.bancomer.com/fbin/FMT_Tarifario_tcm1344-565438.pdf" target="_BLANK">Consulta los Costos y las Comisiones de nuestros productos</a></p>
+				<p><a href="https://www.bancomer.com/fbin/repositorio/FMT_Tarifario_BCOM.pdf" target="_BLANK">Consulta los Costos y las Comisiones de nuestros productos</a></p>
 			</div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
@@ -120,7 +120,7 @@
         <p><a href="https://www.bancomer.com/personas/aviso-privacidad.jsp" target="_BLANK">Notice of Privacy</a></p>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
-        <p><a href="https://www.bancomer.com/fbin/FMT_Tarifario_tcm1344-565438.pdf" target="_BLANK">Consult the Costs and Commissions of our products</a></p>
+        <p><a href="https://www.bancomer.com/fbin/repositorio/FMT_Tarifario_BCOM.pdf" target="_BLANK">Consult the Costs and Commissions of our products</a></p>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
         <ul class="lista-redes">
@@ -136,11 +136,6 @@
   </div>
 </div>
 <?php } ?>
-<!-- Colaboradores
-  Emmanuel Vazquez Bravo
-  Eduardo Baños Diaz
-  Mario Hernandez
--->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
